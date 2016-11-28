@@ -8,6 +8,13 @@
 - [x] Typography
 - [x] Button
 
+## Colors
+- <p style="color:#3498db">Sea<p>
+- <p style="color:#145d8e">DeepSea<p>
+- <p style="color:#e14d4c">Sunset<p>
+- <p style="color:#2be8ce">Mint<p>
+- <p style="color:#db9634">Mikan<p>
+
 ## Development
 ```
 $ git clone git@github.com:abouthiroppy/scuba.git

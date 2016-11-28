@@ -1,14 +1,13 @@
 import {
   sea,
   white,
-  fontFamily
 } from '../styles/variables';
 
 const common = {
   borderRadius: '5px',
-  color: sea,
+  borderWidth: 1,
+  borderStyle: 'solid',
   cursor: 'pointer',
-  fontFamily: fontFamily,
   fontWeight: 400,
   margin: 0,
   outline: 'none',
@@ -19,13 +18,11 @@ const common = {
 const styles = {
   base: {
     ...common,
-    border: `1px solid ${sea}`
   },
   hover: {
     ...common,
     background: sea,
-    color: white,
-    border: `1px solid ${white}`
+    color: white
   }
 };
 

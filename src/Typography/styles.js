@@ -1,11 +1,4 @@
-import {
-  sea,
-  fontFamily
-} from '../styles/variables';
-
 const common = {
-  color: sea,
-  fontFamily: fontFamily,
   fontWeight: 300,
   margin: 0,
   lineHeight: 1.5
