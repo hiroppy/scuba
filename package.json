@@ -1,0 +1,48 @@
+{
+  "name": "scuba",
+  "main": "lib/index.js",
+  "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "homepage": "",
+  "scripts": {
+    "storybook": "start-storybook -p 8080",
+    "babel": "babel src -d lib",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint": "eslint .",
+    "test": "ava",
+    "test:watch": "ava -w",
+    "postcover": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true
+  },
+  "dependencies": {
+    "react": "^15.4.1"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.33.0",
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "eslint": "^3.11.0",
+    "eslint-config-sky": "^1.2.1",
+    "eslint-plugin-react": "^6.7.1",
+    "nyc": "^10.0.0",
+    "react-dom": "^15.4.1"
+  }
+}
