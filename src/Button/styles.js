@@ -17,11 +17,7 @@ const common = {
 
 const styles = {
   base: {
-    ...common,
-  },
-  hover: {
-    ...common,
-    color: white
+    ...common
   }
 };
 

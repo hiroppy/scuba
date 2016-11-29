@@ -7,6 +7,7 @@
 ## Components
 - [x] Typography
 - [x] Button
+- [x] Blockquotes
 
 ## Colors
 - <p style="color:#3498db">Sea<p>

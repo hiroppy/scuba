@@ -28,6 +28,7 @@
     "tap": true
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^15.4.1"
   },
   "devDependencies": {
