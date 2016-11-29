@@ -6,7 +6,7 @@ import Button from '../src/Button';
 const styles = {
   wrapper: {
     background: '#eee',
-    height: 150,
+    height: 500,
     padding: 30
   }
 };
@@ -15,36 +15,88 @@ storiesOf('Button', module).add('list', () => (
   <div style={styles.wrapper}>
     <Container
       theme="sea"
+      subColor="light"
       style={{
         margin: 10
       }}
     >
       <Button
         style={{margin: 5}}
-        onClick={action('aa')}
+        onClick={action('button')}
       >
         Hello
       </Button>
-      <Button style={{margin: 5}}>
-        Hello-Hello-Hello
+      <Button
+        style={{margin: 5}}
+        disabled
+        onClick={action('button')}
+      >
+        disabled
+      </Button>
+    </Container>
+    <Container
+      theme="sea"
+      subColor="dark"
+      style={{
+        margin: 10
+      }}
+    >
+      <Button
+        style={{margin: 5}}
+        onClick={action('button')}
+      >
+        Hello
+      </Button>
+      <Button
+        style={{margin: 5}}
+        disabled
+        onClick={action('button')}
+      >
+        disabled
+      </Button>
+    </Container>
+
+    <Container
+      theme="deepSea"
+      subColor="light"
+      style={{
+        margin: 10
+      }}
+    >
+      <Button
+        style={{margin: 5}}
+        onClick={action('button')}
+      >
+        Hello
+      </Button>
+      <Button
+        disabled
+        style={{margin: 5}}
+      >
+        disabled
       </Button>
     </Container>
     <Container
       theme="deepSea"
+      subColor="dark"
       style={{
         margin: 10
       }}
     >
       <Button
         style={{margin: 5}}
-        onClick={action('aa')}
+        onClick={action('button')}
       >
         Hello
       </Button>
-      <Button style={{margin: 5}}>
-        Hello-Hello-Hello
+      <Button
+        disabled
+        style={{margin: 5}}
+      >
+        disabled
       </Button>
     </Container>
+
     <Container
       theme="sunset"
       style={{
@@ -53,7 +105,7 @@ storiesOf('Button', module).add('list', () => (
     >
       <Button
         style={{margin: 5}}
-        onClick={action('aa')}
+        onClick={action('button')}
       >
         Hello
       </Button>
@@ -69,7 +121,7 @@ storiesOf('Button', module).add('list', () => (
     >
       <Button
         style={{margin: 5}}
-        onClick={action('aa')}
+        onClick={action('button')}
       >
         Hello
       </Button>
@@ -85,7 +137,7 @@ storiesOf('Button', module).add('list', () => (
     >
       <Button
         style={{margin: 5}}
-        onClick={action('aa')}
+        onClick={action('button')}
       >
         Hello
       </Button>

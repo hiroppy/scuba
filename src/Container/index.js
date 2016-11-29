@@ -12,7 +12,7 @@ import {
 
 type Props = {
   theme: string;
-  subColor: string; // ??
+  subColor: string;
   style?: Object;
   className?: string;
 };
@@ -41,6 +41,10 @@ const createRootStyle = (containerId, key, sub) => {
     #${containerId} .scuba-button:hover {
       color: ${sub};
       background-color: ${key};
+    }
+    #${containerId} .scuba-button-disabled {
+      cursor: not-allowed;
+      color: ${sub};
     }
     #${containerId} .blockquote {
       border-color: ${key};
