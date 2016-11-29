@@ -21,7 +21,6 @@ const styles = {
   },
   hover: {
     ...common,
-    background: sea,
     color: white
   }
 };

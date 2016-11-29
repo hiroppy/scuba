@@ -19,21 +19,48 @@ const colorRouter= (theme) => {
   if (theme === 'sunset') return sunset;
   if (theme === 'mint') return mint;
   if (theme === 'mikan') return mikan;
-  else return sea;
+  return sea;
 };
 
-const Container = (props: Props) => (
-  <div style={Object.assign(
-    {},
-    styles.container,
-    {
-      color: colorRouter(props.theme),
-      borderColor: colorRouter(props.theme)
-    },
-    props.style
-  )}>
-    {props.children}
-  </div>
-);
+class Container extends React.Component {
+  containerId;
+
+  componentWillMount() {
+    this.containerId = `scuba--${Date.now()}`;
+  }
+
+  render() {
+    const {
+      theme,
+      style,
+      children
+    } = this.props;
+
+    const color = colorRouter(theme);
+
+    const containerStyle = `
+      #${this.containerId} a:hover {
+        background-color: ${color};
+      }
+    `;
+
+    return (
+      <div style={Object.assign(
+        {},
+        styles.container,
+        {
+          color,
+          borderColor: color
+        },
+        style
+      )}
+      id={this.containerId}
+    >
+      <style>{containerStyle}</style>
+      {children}
+    </div>
+    );
+  }
+}
 
 export default Container;
