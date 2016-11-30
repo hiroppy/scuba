@@ -16,7 +16,7 @@ storiesOf('Blockquote', module).add('code', () => (
     >
       <Blockquote>
         <span>This is an example.</span>
-        <p>Hello :)</p>
+        <div>Hello :)</div>
       </Blockquote>
     </Container>
 

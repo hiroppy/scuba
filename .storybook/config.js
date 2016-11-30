@@ -5,6 +5,7 @@ function loadStories() {
   require('../stories/Typography');
   require('../stories/Button');
   require('../stories/Blockquotes');
+  require('../stories/List');
 }
 
 configure(loadStories, module);

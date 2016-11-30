@@ -37,6 +37,8 @@ const createRootStyle = (containerId, key, sub) => {
     #${containerId} {
       borderColor: ${key};
       color: ${key};
+      font-size: 1.2em;
+      line-height: 1.5;
     }
     #${containerId} .scuba-button:hover {
       color: ${sub};
@@ -45,11 +47,15 @@ const createRootStyle = (containerId, key, sub) => {
     #${containerId} .scuba-button-disabled {
       cursor: not-allowed;
       color: ${sub};
+      opacity: .6;
     }
     #${containerId} .blockquote {
       border-color: ${key};
     }
     #${containerId} .blockquote > * {
+      color: ${sub};
+    }
+    #${containerId} .scuba-list-li > div {
       color: ${sub};
     }
   `;
