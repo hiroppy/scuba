@@ -58,6 +58,14 @@ const createRootStyle = (containerId, key, sub) => {
     #${containerId} .scuba-list-li > div {
       color: ${sub};
     }
+    #${containerId} .scuba-textfield {
+      color: ${key};
+      border: 1px ${light} solid;
+      background: ${light};
+    }
+    #${containerId} .scuba-textfield:focus {
+      border: 1px ${key} solid;
+    }
   `;
 };
 

@@ -9,6 +9,7 @@ const createClasses = (disabled, className) => {
 
 const Button = (props) => (
   <a
+    {...props}
     style={Object.assign({}, styles.base, props.style)}
     onClick={() => props.onClick && !props.disabled ? props.onClick() : null}
     className={createClasses(props.disabled, props.className)}
