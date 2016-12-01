@@ -3,11 +3,11 @@ import queryString from 'query-string';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Concept from './components/Concept';
-import {Container} from '../../lib/';
-import * as color from '../../lib/styles/variables';
+import Container from '../../lib/';
+import * as colors from '../../lib/styles/colors';
 import styles from './style';
 
-const fetchColorHex = (name) => color[name];
+const fetchColorHex = (name) => colors[name];
 
 class App extends React.Component {
   constructor() {
@@ -21,6 +21,7 @@ class App extends React.Component {
 
     this.changeTheme = this.changeTheme.bind(this);
     this.changeSubColor = this.changeSubColor.bind(this);
+    this.changeBackgroundColor = this.changeBackgroundColor.bind(this);
   }
 
   changeTheme(theme) {
@@ -31,13 +32,18 @@ class App extends React.Component {
     this.setState({subColor});
   }
 
+  changeBackgroundColor(background) {
+    if (background.length === 0) this.setState({background: '#333'});
+    else this.setState({background: `#${background}`})
+  }
+
   componentWillMount() {
     const queries = queryString.parse(location.search);
     const res = {};
 
     Object.keys(queries).forEach((key) => {
       if(queries[key]) {
-        if (parseInt(queries[key],16).toString(16) === queries[key]) {
+        if (parseInt(queries[key], 16).toString(16) === queries[key]) {
           res[key] = `#${queries[key]}`;
         }
         else {
@@ -56,7 +62,7 @@ class App extends React.Component {
     } = this.state;
 
     return (
-      <div>
+      <div style={{background}}>
         <Container
           style={{background}}
           theme={theme}
@@ -69,11 +75,8 @@ class App extends React.Component {
             subColorHex={fetchColorHex(subColor)}
             changeTheme={this.changeTheme}
             changeSubColor={this.changeSubColor}
+            changeBackgroundColor={this.changeBackgroundColor}
           />
-          <section className={styles.linkSection}>
-            <a href="#concepts">concepts</a>
-            <a href="#documentation">documentation</a>
-          </section>
           <div className={styles.container}>
             <Hero />
             <Concept />

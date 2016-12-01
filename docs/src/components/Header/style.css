@@ -1,12 +1,48 @@
 .container {
   align-items: center;
+  bottom: 0;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+}
+
+.topBox {
   display: flex;
-  height: 30px;
-  justify-content: space-between;
-  padding: 10px 0;
+  height: 25px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.bottomBox {
+  display: flex;
+  margin-top: 5px;
+  justify-content: flex-end;
   width: 100%;
 }
 
 .selectBox {
-  float: right;
+  display: flex;
+  margin-right: 15px;
+}
+
+.selectBox > * {
+  margin: 0 10px;
+}
+
+.textField {
+  width: 70px;
+}
+
+.linkSection {
+  background: #535353;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.linkSection > a {
+  color: #f5f5f5;
+  font-weight: 200;
+  margin: 0 10px;
+  text-decoration: none;
 }

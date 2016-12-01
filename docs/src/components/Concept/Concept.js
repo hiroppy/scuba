@@ -1,18 +1,47 @@
 import React from 'react';
+import Container, {List, Li, Button} from '../../../../lib';
 import styles from './style';
 import commonStyles from '../../common';
-import {H1, H2, List, Li} from '../../../../lib';
 
-const ContainerCode = () => (
+const ContainerCode1 = () => (
   <pre className={commonStyles.code}>
     <code>
       {
         `import Container from 'Scuba';
 
 const Root = () => (
-  <Container>
-  </Container>
+    <Container>
+        <p>Hello :)</p>
+    </Container>
 );`
+        }
+    </code>
+  </pre>
+);
+
+const ContainerCode2 = () => (
+  <pre
+    className={commonStyles.code}
+    style={{width: '50%'}}
+  >
+    <code>
+      {
+        `<div>
+    <Container
+      theme="mint"
+      subColor="light"
+    >
+          <Button>Mint</Button>
+          <span>Mint Button</span>
+    </Container>
+    <Container
+        theme="mikan"
+        subColor="dark"
+    >
+          <Button>Mikan</Button>
+          <span>Mikan Button</span>
+    </Container>
+</div>`
         }
     </code>
   </pre>
@@ -20,7 +49,8 @@ const Root = () => (
 
 const Concept = () => (
   <section className={styles.container}>
-    <H1 id="concepts">Concepts</H1>
+    <h1 id="concepts">Concepts</h1>
+    <hr />
     <p>
       <em>Scuba </em>
       is a UI components for React.
@@ -29,7 +59,7 @@ const Concept = () => (
       is to have theme and sub color.
     </p>
     <br />
-    <H2 id="colors">Colors</H2>
+    <h2 id="colors">Colors</h2>
     <p>
       <em>Scuba </em>
       provides Sea, DeepSea, Sunset, Mint and Mikan as themes.
@@ -41,6 +71,7 @@ const Concept = () => (
       <Li><span style={{color: '#2be8ce'}}>Mint: #2be8ce</span></Li>
       <Li><span style={{color: '#db9634'}}>Mikan: #db9634</span></Li>
     </List>
+    <p>The default theme is Sea.</p>
     <p>
       <em>Scuba </em>
       provides Light and Dark as sub colors.
@@ -63,10 +94,32 @@ const Concept = () => (
         </span>
       </Li>
     </List>
-    <H2 id="container">Container</H2>
+    <p>The default subColor is light.</p>
+    <h2 id="container">Container</h2>
     <p>You must use Container in the place you want Scuba to apply.</p>
-    <ContainerCode />
+    <ContainerCode1 />
     <p>Props(replace table)</p>
+    <h3>capsule</h3>
+    <p>The theme is reflected only in Container.</p>
+    <div className={styles.capsule}>
+      <ContainerCode2 />
+      <div className={styles.preview}>
+        <Container
+          theme="mint"
+          subColor="light"
+        >
+          <Button>Mint</Button>
+          <span>Mint Button</span>
+        </Container>
+        <Container
+          theme="mikan"
+          subColor="dark"
+        >
+          <Button>Mikan</Button>
+          <span>Mikan Button</span>
+        </Container>
+      </div>
+    </div>
   </section>
 );
 

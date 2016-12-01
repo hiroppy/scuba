@@ -1,0 +1,18 @@
+.capsule {
+  display: flex;
+}
+
+.preview {
+  background: #777;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.preview > div {
+  margin: 20px 0;
+}
+
+.preview span {
+  margin-left: 10px;
+}
