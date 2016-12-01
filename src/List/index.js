@@ -9,7 +9,7 @@ type ListType= {
 export const List = (props) => (
   <ul
     style={Object.assign(styles.ul, {listStyleType: props.type}, props.style)}
-    className={classnames(props.className)}
+    className={classnames('scuba-list', props.className)}
   >
     {props.children}
   </ul>

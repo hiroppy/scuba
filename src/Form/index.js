@@ -6,12 +6,16 @@ export const TextField = (props) => (
   <input
     type="text"
     style={styles.textField}
-    className={classnames('scuba-textfield', props.className)}
+    className={classnames('scuba-textform', props.className)}
     {...props}
   />
 );
 
-export const TextArea = () => (
-  <textarea>
+export const TextArea = (props) => (
+  <textarea
+    style={styles.textField}
+    className={classnames('scuba-textform', props.className)}
+    {...props}
+  >
   </textarea>
 );

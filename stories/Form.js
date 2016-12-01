@@ -1,6 +1,6 @@
 import React from 'react';
 import {storiesOf, action} from '@kadira/storybook';
-import {Container, TextField} from '../src';
+import Container, {TextField, TextArea} from '../src';
 
 const styles = {
   box: {
@@ -49,37 +49,9 @@ storiesOf('Form', module).add('TextField', () => (
   </div>
 )).add('TextArea', () => (
   <div>
-    <Container>
+    <Container theme="mikan" subColor="dark">
       <div style={styles.box}>
-        <TextField
-          onChange={action('onChange')}
-        />
-      </div>
-    </Container>
-    <Container theme="deepSea">
-      <div style={styles.box}>
-        <TextField
-          onChange={action('onChange')}
-        />
-      </div>
-    </Container>
-    <Container theme="sunset">
-      <div style={styles.box}>
-        <TextField
-          onChange={action('onChange')}
-        />
-      </div>
-    </Container>
-    <Container theme="mint">
-      <div style={styles.box}>
-        <TextField
-          onChange={action('onChange')}
-        />
-      </div>
-    </Container>
-    <Container theme="mikan">
-      <div style={styles.box}>
-        <TextField
+        <TextArea
           onChange={action('onChange')}
         />
       </div>

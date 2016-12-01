@@ -1,4 +1,5 @@
 import React from 'react';
+import generateRootStyle from './generateRootStyle';
 import styles from './styles';
 import {
   sea,
@@ -7,8 +8,9 @@ import {
   mint,
   mikan,
   light,
-  dark
-} from '../styles/variables';
+  dark,
+} from '../styles/colors';
+import {fontFamily} from '../styles/variables';
 
 type Props = {
   theme: string;
@@ -32,43 +34,6 @@ const subColorRouter= (sub) => {
   return light;
 };
 
-const createRootStyle = (containerId, key, sub) => {
-  return `
-    #${containerId} {
-      borderColor: ${key};
-      color: ${key};
-      font-size: 1.2em;
-      line-height: 1.5;
-    }
-    #${containerId} .scuba-button:hover {
-      color: ${sub};
-      background-color: ${key};
-    }
-    #${containerId} .scuba-button-disabled {
-      cursor: not-allowed;
-      color: ${sub};
-      opacity: .6;
-    }
-    #${containerId} .blockquote {
-      border-color: ${key};
-    }
-    #${containerId} .blockquote > * {
-      color: ${sub};
-    }
-    #${containerId} .scuba-list-li > div {
-      color: ${sub};
-    }
-    #${containerId} .scuba-textfield {
-      color: ${key};
-      border: 1px ${light} solid;
-      background: ${light};
-    }
-    #${containerId} .scuba-textfield:focus {
-      border: 1px ${key} solid;
-    }
-  `;
-};
-
 class Container extends React.Component {
   containerId;
 
@@ -87,13 +52,14 @@ class Container extends React.Component {
     const key = themeRouter(theme);
     const sub = subColorRouter(subColor);
 
-    const containerStyle = createRootStyle(this.containerId, key, sub);
+    const containerStyle = generateRootStyle(this.containerId, key, sub);
 
     return (
       <div
         style={style}
         id={this.containerId}
       >
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
         <style>{containerStyle}</style>
         {children}
       </div>

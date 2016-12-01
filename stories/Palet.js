@@ -1,7 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@kadira/storybook';
 import {Container} from '../src';
-import {H2} from '../src/Typography';
 
 storiesOf('Palet', module).add('list', () => (
   <div
@@ -10,19 +9,19 @@ storiesOf('Palet', module).add('list', () => (
     }}
   >
     <Container theme={'sea'}>
-      <H2>Sea</H2>
+      <h2>Sea</h2>
     </Container>
     <Container theme={'deepSea'}>
-      <H2>DeepSea</H2>
+      <h2>DeepSea</h2>
     </Container>
     <Container theme={'sunset'}>
-      <H2>Sunset</H2>
+      <h2>Sunset</h2>
     </Container>
     <Container theme={'mint'}>
-      <H2>Mint</H2>
+      <h2>Mint</h2>
     </Container>
     <Container theme={'mikan'}>
-      <H2>Mikan</H2>
+      <h2>Mikan</h2>
     </Container>
   </div>
 ));
