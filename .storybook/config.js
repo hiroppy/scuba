@@ -7,6 +7,7 @@ function loadStories() {
   require('../stories/Blockquotes');
   require('../stories/List');
   require('../stories/Form');
+  require('../stories/Table');
 }
 
 configure(loadStories, module);

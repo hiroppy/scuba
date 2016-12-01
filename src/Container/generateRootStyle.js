@@ -72,6 +72,13 @@ const generateRootStyle = (containerId, key, sub) => (
     #${containerId} .scuba-textform:focus {
       border: 1px ${key} solid;
     }
+    #${containerId} .scuba-tableheader,
+    #${containerId} .scuba-tablerow {
+      border-bottom: 1px ${key} solid;
+    }
+    #${containerId} .scuba-tablefooter {
+      border-top: 1px ${key} solid;
+    }
   `
 );
 
