@@ -1,0 +1,12 @@
+.container {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.selectBox {
+  float: right;
+}

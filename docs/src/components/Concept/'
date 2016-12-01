@@ -1,0 +1,30 @@
+import React from 'react';
+import styles from './style';
+import {H1, H2, List, Li} from '../../../../lib';
+
+const Concept = () => (
+  <section className={styles.container}>
+    <H1 id="#concepts">Concepts</H1>
+    <p>
+      <em>Scuba </em>
+      is a UI components for React.
+      The features of
+      <em> Scuba </em>
+      is to have theme and sub color.
+    </p>
+    <br />
+    <H2 id="#colors">Colors</H2>
+    <p>
+      <em>Scuba </em>
+      provides Sea, DeepSea, Sunset, Mint and Mikan as themes.
+    </p>
+    <List type="circle">
+      <Li>
+        <span style={{color: '##3498db'}}>Sea</span>
+      </Li>
+      <Li>aaaa</Li>
+    </List>
+  </section>
+);
+
+export default Concept;
