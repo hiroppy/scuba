@@ -3,6 +3,7 @@ import queryString from 'query-string';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Concept from './components/Concept';
+import Documentation from './components/Documentation';
 import Container from '../../lib/';
 import * as colors from '../../lib/styles/colors';
 import styles from './style';
@@ -62,7 +63,7 @@ class App extends React.Component {
     } = this.state;
 
     return (
-      <div style={{background}}>
+      <div style={{background, paddingBottom: 100}}>
         <Container
           style={{background}}
           theme={theme}
@@ -80,6 +81,7 @@ class App extends React.Component {
           <div className={styles.container}>
             <Hero />
             <Concept />
+            <Documentation />
           </div>
         </Container>
       </div>

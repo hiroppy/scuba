@@ -7,10 +7,20 @@ const Hero = () => (
     <div className={styles.logo} />
     <div className={styles.buttons}>
       <Container style={{display: 'inline'}}>
-        <Button>Github</Button>
+        <Button
+          href="https://github.com/abouthiroppy/scuba"
+          target="_blank"
+        >
+          Github
+        </Button>
       </Container>
       <Container style={{display: 'inline'}} theme="mikan">
-        <Button>npmjs</Button>
+        <Button
+          href="https://www.npmjs.com/package/scuba"
+          target="_blank"
+        >
+          npmjs
+        </Button>
       </Container>
     </div>
     <div className={styles.install}>
