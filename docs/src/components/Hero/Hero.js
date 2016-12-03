@@ -4,7 +4,13 @@ import styles from './style';
 
 const Hero = () => (
   <div className={styles.container}>
-    <div className={styles.logo} />
+    { /* <div className={styles.logo} /> */}
+    <h1 style={{
+      textAlign: 'center',
+      fontSize: '5.0rem'
+    }}>
+      scuba
+    </h1>
     <div className={styles.buttons}>
       <Container style={{display: 'inline'}}>
         <Button

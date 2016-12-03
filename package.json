@@ -4,12 +4,17 @@
   "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
   "version": "0.0.0",
   "license": "MIT",
-  "description": "",
+  "description": "UI Components for React",
   "files": [
     "lib"
   ],
-  "keywords": [],
-  "homepage": "",
+  "keywords": [
+    "react",
+    "react-component",
+    "style",
+    "scuba"
+  ],
+  "homepage": "https://abouthiroppy.github.io/scuba/",
   "scripts": {
     "storybook": "start-storybook -p 8080",
     "babel": "babel src -d lib",
