@@ -5,10 +5,12 @@ import generateTableTemplate from './generateTableTemplate';
 
 const sampleCode = `import {TextField, TextArea} from 'scuba';
 
-<label style={{marginBottom: '.5rem'}}>textField</label>
-<TextField placeholder="placeholder 😎" />
-<label style={{margin: '1.2rem 0 .5rem 0'}}>textArea</label>
-<TextArea placeholder="😊" />
+<div>
+    <label style={{marginBottom: '.5rem'}}>textField</label>
+    <TextField placeholder="placeholder 😎" />
+    <label style={{margin: '1.2rem 0 .5rem 0'}}>textArea</label>
+    <TextArea placeholder="😊" />
+</div>
 `;
 
 const Forms = () => (

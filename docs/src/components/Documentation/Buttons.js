@@ -6,9 +6,11 @@ import styles from './style';
 
 const sampleCode = `import {Button} from 'scuba';
 
-<Button>BUTTON</Button>
-<Button disabled>DISABLED</Button>
-<Button clear>CLEAR</Button>
+<div>
+    <Button>BUTTON</Button>
+    <Button disabled>DISABLED</Button>
+    <Button clear>CLEAR</Button>
+</div>
 `;
 
 const Buttons = () => (

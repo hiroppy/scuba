@@ -5,18 +5,20 @@ import generateTableTemplate from './generateTableTemplate';
 
 const sampleCode = `import Container, {Paper} from 'scuba';
 
-<Paper style={{marginBottom: 15}}>
-    <span>This is paper!</span>
-</Paper>
-
-<Container
-    theme="sunset"
-    subColor="dark"
->
-    <Paper>
-        <span>This is Paper!</span>
+<div>
+    <Paper style={{marginBottom: 15}}>
+        <span>This is paper!</span>
     </Paper>
-</Container>
+
+    <Container
+        theme="sunset"
+        subColor="dark"
+    >
+        <Paper>
+            <span>This is Paper!</span>
+        </Paper>
+    </Container>
+</div>
 `;
 
 const Lists = () => (

@@ -68,6 +68,7 @@ class App extends React.Component {
           style={{background}}
           theme={theme}
           subColor={subColor}
+          codeTheme="obsidian"
         >
           <Header
             theme={theme}

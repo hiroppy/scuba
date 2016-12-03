@@ -5,22 +5,24 @@ import generateTableTemplate from './generateTableTemplate';
 
 const sampleCode = `import {List, Li} from 'scuba';
 
-<List type="none">
-    <Li><dt>dt, type: none</dt></Li>
-    <Li><dd>dd, type: none</dd></Li>
-</List>
-<List type="circle">
-    <Li><span>span, type: circle</span></Li>
-    <Li><span>span, type: circle</span></Li>
-</List>
-<List type="square">
-    <Li><span>span, type: square</span></Li>
-    <Li><span>span, type: square</span></Li>
-</List>
-<List type="decimal">
-    <li><p>p, type: decimal</p></li>
-    <li><p>p, type: decimal</p></li>
-</List>
+<div>
+    <List type="none">
+        <Li><dt>dt, type: none</dt></Li>
+        <Li><dd>dd, type: none</dd></Li>
+    </List>
+    <List type="circle">
+        <Li><span>span, type: circle</span></Li>
+        <Li><span>span, type: circle</span></Li>
+    </List>
+    <List type="square">
+        <Li><span>span, type: square</span></Li>
+        <Li><span>span, type: square</span></Li>
+    </List>
+    <List type="decimal">
+        <li><p>p, type: decimal</p></li>
+        <li><p>p, type: decimal</p></li>
+    </List>
+</div>
 `;
 
 const Lists = () => (

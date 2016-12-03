@@ -43,8 +43,32 @@ const ContainerSection = () => (
         name: 'subColor',
         type: '(light | dark) or hex',
         default: 'light'
+      },
+      {
+        name: 'codeTheme',
+        type: 'a theme name',
+        default: 'undefined'
       }
     ])}
+    <p>
+      If you specify
+      <code>codeColor</code>
+      ,
+      <em> scuba </em>
+      fetches it from cdnjs.com.
+    </p>
+    <p>
+      {`https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/$\{codeTheme\}.min.css`}
+    </p>
+    <p>see:
+      <a
+        href="https://cdnjs.com/libraries/highlight.js/"
+        target="_blank"
+      >
+        cdnjs/highlight.js
+      </a>
+    </p>
+    <p>The theme used on this page is obsidian.</p>
     {generateCodeTemplate(sampleCode1)}
     <h3>capsule</h3>
     <p>The theme is reflected only in Container.</p>
