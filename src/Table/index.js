@@ -51,7 +51,6 @@ type TableRowType = {
 
 const TableRow = (props) => (
   <tr
-    {...props}
     style={Object.assign({}, createAlignStyle(props.align), props.style)}
     className={classnames((props.borderBottom ? 'scuba-tablerow' : ''), props.className)}
   >

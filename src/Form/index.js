@@ -4,18 +4,18 @@ import styles from './styles';
 
 export const TextField = (props) => (
   <input
-    type="text"
-    style={styles.textField}
-    className={classnames('scuba-textform', props.className)}
     {...props}
+    type="text"
+    style={Object.assign({}, styles.textField, props.style)}
+    className={classnames('scuba-textform', props.className)}
   />
 );
 
 export const TextArea = (props) => (
   <textarea
-    style={styles.textField}
-    className={classnames('scuba-textform', props.className)}
     {...props}
+    style={Object.assign({}, styles.textField, props.style)}
+    className={classnames('scuba-textform', props.className)}
   >
   </textarea>
 );

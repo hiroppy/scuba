@@ -7,15 +7,30 @@ const createClasses = (disabled, className) => {
   return classnames('scuba-button', className);
 };
 
-const Button = (props) => (
-  <a
-    {...props}
-    style={Object.assign({}, styles.base, props.style)}
-    onClick={() => props.onClick && !props.disabled ? props.onClick() : null}
-    className={createClasses(props.disabled, props.className)}
-  >
-    {props.children}
-  </a>
-);
+class Button extends React.Component {
+  render() {
+    const {
+      style,
+      clear,
+      onClick,
+      disabled,
+      children,
+      className
+    } = this.props;
+
+    const buttonStyle = clear ? styles.clear : style;
+
+    return (
+      <a
+        {...this.props}
+        style={Object.assign({}, styles.base, buttonStyle)}
+        onClick={() => onClick && !disabled ? onClick() : null}
+        className={createClasses(disabled, className)}
+      >
+        {children}
+      </a>
+    );
+  }
+}
 
 export default Button;

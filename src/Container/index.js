@@ -44,7 +44,6 @@ class Container extends React.Component {
   render() {
     const {
       theme,
-      style,
       subColor,
       children
     } = this.props;
@@ -56,7 +55,7 @@ class Container extends React.Component {
 
     return (
       <div
-        style={style}
+        {...this.props}
         id={this.containerId}
       >
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />

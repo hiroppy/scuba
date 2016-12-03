@@ -4,6 +4,7 @@ import classnames from 'classnames';
 
 const Blockquote = (props) => (
   <pre
+    {...props}
     style={Object.assign({}, styles.pre, props.style)}
     className={classnames('scuba-blockquote', props.className)}
   >

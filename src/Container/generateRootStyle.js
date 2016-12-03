@@ -9,6 +9,8 @@ const generateRootStyle = (containerId, key, sub) => (
       color: ${sub};
       font-size: 1.1rem;
       line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
     }
     #${containerId} h1,
     #${containerId} h2,
@@ -40,8 +42,51 @@ const generateRootStyle = (containerId, key, sub) => (
     #${containerId} hr {
       border-color: ${sub};
     }
+    #${containerId} a {
+      color: ${key};
+      margin: 0 .2rem;
+      text-decoration: none;
+    }
+    #${containerId} a:hover {
+      opacity: .8;
+    }
+    #${containerId} label {
+      display: block;
+      font-weight: 700;
+    }
+    #${containerId} pre:before {
+      background: ${light};
+      border: solid 1px ${light};
+      border-top: none;
+      border-left: none;
+      color: #555;
+      font-size: .9rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #${containerId} pre > code {
+      background:  transparent;
+      font-size: 1.0rem;
+      margin: 0;
+      padding: 0;
+    }
+    #${containerId} code {
+      position: relative;
+      font-size: 1.1rem;
+      padding: .1em;
+      border-radius: .3em;
+      margin: 0 .2rem;
+      background: ${(sub === dark ? light : dark)};
+    }
+
+    #${containerId} .scuba-paper {
+      color: ${sub};
+      border: 1px solid ${key};
+      background: ${(sub === dark ? light : dark)};
+    }
     #${containerId} .scuba-button {
-      color: ${key}
+      color: ${key};
     }
     #${containerId} .scuba-button:hover {
       color: ${sub};
@@ -54,9 +99,6 @@ const generateRootStyle = (containerId, key, sub) => (
     }
     #${containerId} .scuba-blockquote {
       border-color: ${key} !important;
-    }
-    #${containerId} .blockquote > * {
-      color: ${sub};
     }
     #${containerId} .scuba-list {
       color: ${key};

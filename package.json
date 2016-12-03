@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "react": "^15.4.1"
+    "react": "^15.4.1",
+    "react-syntax-highlighter": "^3.0.0"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.33.0",

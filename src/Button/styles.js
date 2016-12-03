@@ -8,6 +8,8 @@ const common = {
   borderWidth: 1,
   borderStyle: 'solid',
   cursor: 'pointer',
+  display: 'inline-block',
+  fontSize: '1.0rem',
   fontWeight: 400,
   margin: 0,
   outline: 'none',
@@ -19,6 +21,10 @@ const common = {
 const styles = {
   base: {
     ...common
+  },
+  clear: {
+    ...common,
+    border: 'none'
   }
 };
 
