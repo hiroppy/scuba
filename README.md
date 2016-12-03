@@ -4,11 +4,17 @@
 
 <strong>UI components for React</strong>
 
+https://abouthiroppy.github.io/scuba/
+
 ## Components
 - [x] Typography
-- [x] Buttons
 - [x] Blockquotes
+- [x] Buttons
+- [x] codes
+- [ ] Forms
 - [x] Lists
+- [x] Tables
+- [x] Papers
 
 ## Colors
 - <p style="color:#3498db">Sea<p>
