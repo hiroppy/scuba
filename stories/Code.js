@@ -4,7 +4,9 @@ import Container, {Code} from '../src';
 
 storiesOf('Code', module).add('list', () => (
   <div style={{padding: 30}}>
-    <Container>
+    <Container
+      codeTheme="obsidian"
+    >
       <Code
         fileName="hoge"
         theme="brownPaper"
@@ -14,6 +16,11 @@ storiesOf('Code', module).add('list', () => (
           `import Container from 'scuba';
 
 const num: number = 1;
+const Root = () => (
+    <div onClick={(e) => console.log(e)}>
+        Root
+    </div>
+);
           `
         }
       </Code>
@@ -42,7 +49,7 @@ const num: number = 1;
       >
         {
           `<html>
-    <div>
+    <div class="hello">
         <p>hello</p>
     </div>
 </html>

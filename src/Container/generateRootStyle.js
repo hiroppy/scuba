@@ -64,9 +64,9 @@ const generateRootStyle = (containerId, key, sub) => (
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 100;
     }
     #${containerId} pre > code {
-      background:  transparent;
       font-size: 1.0rem;
       margin: 0;
       padding: 0;
@@ -77,7 +77,7 @@ const generateRootStyle = (containerId, key, sub) => (
       padding: .1em;
       border-radius: .3em;
       margin: 0 .2rem;
-      background: ${(sub === dark ? light : dark)};
+      /* background: ${(sub === dark ? light : dark)}; */
     }
 
     #${containerId} .scuba-paper {
@@ -96,6 +96,9 @@ const generateRootStyle = (containerId, key, sub) => (
       cursor: not-allowed !important;
       color: ${sub};
       opacity: .6;
+    }
+    #${containerId} .scuba-button-clear {
+      background-color: transparent;
     }
     #${containerId} .scuba-blockquote {
       border-color: ${key} !important;

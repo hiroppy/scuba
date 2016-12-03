@@ -1,35 +1,38 @@
 import React from 'react';
+import {findDOMNode} from 'react-dom';
 import classnames from 'classnames';
-import SyntaxHighlighter from 'react-syntax-highlighter';
 import * as highlightColors from 'react-syntax-highlighter/dist/styles';
 import styles from './styles';
 import js from 'highlight.js/lib/languages/javascript';
-
-// https://github.com/conorhastings/react-syntax-highlighter
+import highlight from 'highlight.js';
 
 type Props = {
   id: string;
   style: Object;
-  theme: string;
   children: React.Element<*>;
   language: string;
   fileName: string;
   className: string;
-  showLineNumbers: boolean;
-  lineNumberStyle: Object;
 };
 
 class Code extends React.Component {
   id;
+  code;
 
   componentWillMount() {
     this.id = `scuba-code-${Math.floor(Math.random() * 10000)}`;
   }
 
-  componentDidMount() {
-    const el = document.getElementById(this.id);
+  componentDidUpdate() {
+    highlight.initHighlighting.called = false;
+    highlight.highlightBlock(findDOMNode(this.code));
+  }
 
-    if (this.props.fileName) el.setAttribute('data-content', this.props.fileName);
+  componentDidMount() {
+    highlight.highlightBlock(findDOMNode(this.code));
+
+    const el = document.getElementById(this.id);
+    if (this.props.fileName && el) el.setAttribute('data-content', this.props.fileName);
   }
 
   render() {
@@ -52,9 +55,6 @@ class Code extends React.Component {
             <style>
               {
                 `
-                  #${this.id} {
-                    padding-top: 40px !important;
-                  }
                   #${this.id}:before {
                     content: attr(data-content);
                     padding: 1px 5px;
@@ -64,17 +64,19 @@ class Code extends React.Component {
             </style>
           ) : null
         }
-        <SyntaxHighlighter
+        <pre
           id={classnames(this.id, id)}
-          style={highlightColors[theme]}
-          customStyle={Object.assign({}, style, styles.pre)}
-          language={language}
+          style={Object.assign({}, styles.pre, style)}
           className={classnames('scuba-code', className)}
-          showLineNumbers={showLineNumbers}
-          lineNumberStyle={lineNumberStyle}
         >
-          {children}
-        </SyntaxHighlighter>
+          <code
+            ref={(ref) => this.code = ref}
+            style={Object.assign({}, styles.code)}
+            className={classnames(language, className)}
+          >
+            {children}
+          </code>
+        </pre>
       </div>
     );
   }

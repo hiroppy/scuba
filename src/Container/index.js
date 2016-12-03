@@ -15,6 +15,7 @@ import {fontFamily} from '../styles/variables';
 type Props = {
   theme: string;
   subColor: string;
+  codeTheme?: string;
   style?: Object;
   className?: string;
 };
@@ -45,7 +46,9 @@ class Container extends React.Component {
     const {
       theme,
       subColor,
-      children
+      children,
+      className,
+      codeTheme
     } = this.props;
 
     const key = themeRouter(theme);
@@ -55,11 +58,19 @@ class Container extends React.Component {
 
     return (
       <div
-        {...this.props}
         id={this.containerId}
+        className={className}
       >
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
         <style>{containerStyle}</style>
+        {
+          codeTheme ? (
+            <link
+              rel="stylesheet"
+              href={`https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/${codeTheme}.min.css`}
+            />
+          ) : null
+        }
         {children}
       </div>
     );
