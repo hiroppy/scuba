@@ -7,6 +7,7 @@ import ButtonsSection from './Buttons';
 import TablesSection from './Tables';
 import ListsSection from './Lists';
 import FormsSection from './Forms';
+import CodesSection from './Codes';
 import styles from './style';
 
 const Documentation = () => (
@@ -21,6 +22,7 @@ const Documentation = () => (
     <TablesSection />
     <ListsSection />
     <FormsSection />
+    <CodesSection />
   </section>
 );
 
