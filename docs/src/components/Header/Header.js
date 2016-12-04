@@ -1,4 +1,5 @@
 import React from 'react';
+import GithubCorner from 'react-github-corner';
 import styles from './style';
 import {TextField} from '../../../../lib';
 

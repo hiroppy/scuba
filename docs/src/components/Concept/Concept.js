@@ -9,8 +9,9 @@ const Concept = () => (
       is a UI components for React.
       The features of
       <em> Scuba </em>
-      is to have theme and sub color.
+      is to have theme and subColor.
     </p>
+    <p>The theme and subColor are reflected only in Container.</p>
     <br />
   </section>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Button, Blockquote} from '../../../../lib';
+import Container, {Blockquote} from '../../../../lib';
 import styles from './style';
 
 const Hero = () => (
@@ -11,24 +11,6 @@ const Hero = () => (
     }}>
       scuba
     </h1>
-    <div className={styles.buttons}>
-      <Container style={{display: 'inline'}}>
-        <Button
-          href="https://github.com/abouthiroppy/scuba"
-          target="_blank"
-        >
-          Github
-        </Button>
-      </Container>
-      <Container style={{display: 'inline'}} theme="mikan">
-        <Button
-          href="https://www.npmjs.com/package/scuba"
-          target="_blank"
-        >
-          npmjs
-        </Button>
-      </Container>
-    </div>
     <div className={styles.install}>
       <Blockquote style={{display: 'inline'}}>
         <code>

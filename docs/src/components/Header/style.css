@@ -42,7 +42,7 @@
 }
 
 .linkSection > a {
-  color: #f5f5f5;
+  color: #f5f5f5 !important;
   font-weight: 200;
   margin: 0 10px;
   text-decoration: none;

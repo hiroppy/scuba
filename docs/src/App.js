@@ -1,5 +1,6 @@
 import React from 'react';
 import queryString from 'query-string';
+import GithubCorner from 'react-github-corner';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Concept from './components/Concept';
@@ -62,6 +63,8 @@ class App extends React.Component {
       background
     } = this.state;
 
+    const themeColor = fetchColorHex(theme);
+
     return (
       <div style={{background, paddingBottom: 100}}>
         <Container
@@ -70,9 +73,15 @@ class App extends React.Component {
           subColor={subColor}
           codeTheme="obsidian"
         >
+          <div className={styles.githubCorner}>
+            <GithubCorner
+              href="https://github.com/abouthiroppy/scuba"
+              bannerColor={themeColor}
+            />
+          </div>
           <Header
             theme={theme}
-            themeHex={fetchColorHex(theme)}
+            themeHex={themeColor}
             subColor={subColor}
             subColorHex={fetchColorHex(subColor)}
             changeTheme={this.changeTheme}

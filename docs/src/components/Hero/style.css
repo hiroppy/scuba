@@ -9,13 +9,7 @@
   width: 250px;
 }
 
-.buttons {
-  display: flex;
-  margin: 50px auto;
-  justify-content: space-between;
-  width: 250px;
-}
-
 .install {
   text-align: center;
+  margin: 70px 0;
 }

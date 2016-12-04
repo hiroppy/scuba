@@ -2,3 +2,13 @@
   max-width: 900px;
   margin: auto;
 }
+
+.container h2 {
+  margin-top: 80px !important;
+}
+
+.githubCorner {
+  position: fixed;
+  right: 0;
+  top: 0;
+}

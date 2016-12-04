@@ -1,4 +1,5 @@
 import React from 'react';
+import {Code} from '../../../../lib';
 import ColorsSection from './Colors';
 import ContainerSection from './Container';
 import TypographySection from './Typography';
@@ -14,6 +15,21 @@ const Documentation = () => (
   <section className={styles.container}>
     <h1 id="documentation">Documentation</h1>
     <hr />
+    <h3>Customization(common)</h3>
+    <p>If you want to change style or class name or others you can specify it like react.</p>
+    <Code fileName="Button.js">
+      {
+        `<Button
+    className="customName"
+    style={{fontSize: '3rem'}}
+    onClick={() => console.log('clicked')}
+>
+    BUTTON
+</Button>
+        `
+      }
+    </Code>
+
     <ColorsSection />
     <ContainerSection />
     <TypographySection />
