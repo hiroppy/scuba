@@ -2,7 +2,7 @@
   "name": "scuba",
   "main": "lib/index.js",
   "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "description": "UI Components for React",
   "files": [
