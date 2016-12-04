@@ -4,9 +4,42 @@
 
 <strong>UI components for React</strong>
 
-https://abouthiroppy.github.io/scuba/
+Site: https://abouthiroppy.github.io/scuba/
 
-## Components
+# Getting Started
+Install the module with `npm install --save scuba`.
+
+Scuba has 5 themes and 2 subColors.  
+The theme and subColor are reflected only in Container.
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Container, {Button} from 'scuba';
+
+const Root = () => (
+  <Container
+    theme="mint"
+    subColor="dark"
+  >
+    <Button>Hello!!</Button>
+  </Container>
+);
+
+ReactDOM.render(
+  <Root />,
+  document.getElementById('root')
+);
+```
+
+## Colors
+- <p style="color:#3498db">Sea(#3498db)<p>
+- <p style="color:#145d8e">DeepSea(#145d8e)<p>
+- <p style="color:#e14d4c">Sunset(#e14d4c)<p>
+- <p style="color:#2be8ce">Mint(#2be8ce)<p>
+- <p style="color:#db9634">Mikan(#db9634)<p>
+
+## Components List
 - [x] Typography
 - [x] Blockquotes
 - [x] Buttons
@@ -15,13 +48,6 @@ https://abouthiroppy.github.io/scuba/
 - [x] Lists
 - [x] Tables
 - [x] Papers
-
-## Colors
-- <p style="color:#3498db">Sea<p>
-- <p style="color:#145d8e">DeepSea<p>
-- <p style="color:#e14d4c">Sunset<p>
-- <p style="color:#2be8ce">Mint<p>
-- <p style="color:#db9634">Mikan<p>
 
 ## Development
 ```
