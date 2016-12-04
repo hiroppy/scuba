@@ -18,7 +18,6 @@
   "scripts": {
     "flow": "flow",
     "flowtyped": "flow-typed install",
-    "postinstall": "npm run flowtyped",
     "prepublish": "npm run babel",
     "storybook": "start-storybook -p 8080",
     "babel": "babel src -d lib",
