@@ -1,9 +1,7 @@
 import React from 'react';
 import {findDOMNode} from 'react-dom';
 import classnames from 'classnames';
-import * as highlightColors from 'react-syntax-highlighter/dist/styles';
 import styles from './styles';
-import js from 'highlight.js/lib/languages/javascript';
 import highlight from 'highlight.js';
 
 type Props = {
