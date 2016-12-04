@@ -7,11 +7,14 @@
 Site: https://abouthiroppy.github.io/scuba/
 
 [![Build Status](https://travis-ci.org/abouthiroppy/scuba.svg?branch=master)](https://travis-ci.org/abouthiroppy/scuba)
+[![codecov](https://codecov.io/gh/abouthiroppy/scuba/branch/master/graph/badge.svg)](https://codecov.io/gh/abouthiroppy/scuba)
+[![Build status](https://ci.appveyor.com/api/projects/status/hrk1vpy5gsxl8r37/branch/master?svg=true)](https://ci.appveyor.com/project/abouthiroppy/scuba/branch/master)
+[![dependencies Status](https://david-dm.org/abouthiroppy/scuba/status.svg)](https://david-dm.org/abouthiroppy/scuba)
 
 # Getting Started
 Install the module with `npm install --save scuba`.
 
-Scuba has 5 themes and 2 subColors.  
+Scuba has 5 themes and 2 subColors.
 The theme and subColor are reflected only in Container.
 
 ```javascript
