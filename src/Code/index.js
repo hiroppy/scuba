@@ -29,11 +29,6 @@ class Code extends React.Component<void, CommonProps & Props, void> {
     if (this.props.fileName && el) el.setAttribute('data-content', this.props.fileName);
   }
 
-  componentDidUpdate() {
-    highlight.initHighlighting.called = false;
-    highlight.highlightBlock(findDOMNode(this.code));
-  }
-
   render() {
     const {
       id,
