@@ -4,6 +4,7 @@ node_js:
   - stable
 before_script:
   - npm install
+  - npm run flowtyped
   - npm run flow
   - npm run lint
   - npm test
