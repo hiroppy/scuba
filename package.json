@@ -12,9 +12,12 @@
     "react",
     "react-component",
     "style",
-    "scuba"
+    "scuba",
+    "css",
+    "css3"
   ],
   "homepage": "https://abouthiroppy.github.io/scuba/",
+  "repository": "abouthiroppy/scuba",
   "scripts": {
     "flow": "flow",
     "flowtyped": "flow-typed install",
