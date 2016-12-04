@@ -12,6 +12,10 @@ const Concept = () => (
       is to have theme and subColor.
     </p>
     <p>The theme and subColor are reflected only in Container.</p>
+    <p>
+      <em>Scuba </em>
+      gives a sense of unity, making the site easier to build.
+    </p>
     <br />
   </section>
 );

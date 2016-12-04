@@ -17,7 +17,7 @@ const sampleCode2 = `import {Blockquote} from 'scuba';
 `;
 const Typography = () => (
   <div>
-    <h2 id="colors">Typography</h2>
+    <h2 id="typography">Typography</h2>
     <p>
       <em>Scuba </em>
       uses
@@ -30,7 +30,7 @@ const Typography = () => (
       font.
     </p>
     <h3>Changing fonts</h3>
-    {generateCodeTemplate(sampleCode1)}
+    {generateCodeTemplate(sampleCode1, 'html')}
     <h3>Headers</h3>
     <Paper>
       <h1>h1(4.2rem). Heading</h1>

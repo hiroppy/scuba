@@ -27,7 +27,7 @@ const sampleCode = `import {List, Li} from 'scuba';
 
 const Lists = () => (
   <div>
-    <h2 id="colors">Lists</h2>
+    <h2 id="lists">Lists</h2>
     <p>
       We have
       <code>none</code>

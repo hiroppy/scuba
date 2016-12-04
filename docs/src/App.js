@@ -4,6 +4,7 @@ import GithubCorner from 'react-github-corner';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Concept from './components/Concept';
+import GettingStarted from './components/GettingStarted';
 import Documentation from './components/Documentation';
 import Container from '../../lib/';
 import * as colors from '../../lib/styles/colors';
@@ -91,6 +92,7 @@ class App extends React.Component {
           <div className={styles.container}>
             <Hero />
             <Concept />
+            <GettingStarted />
             <Documentation />
           </div>
         </Container>

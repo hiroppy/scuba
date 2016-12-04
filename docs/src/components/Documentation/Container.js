@@ -70,10 +70,10 @@ const ContainerSection = () => (
     </p>
     <p>The theme used on this page is obsidian.</p>
     {generateCodeTemplate(sampleCode1)}
-    <h3>capsule</h3>
+    <h3 id="capsule">capsule</h3>
     <p>The theme is reflected only in Container.</p>
     <div className={styles.capsule}>
-      {generateCodeTemplate(sampleCode2)}
+      {generateCodeTemplate(sampleCode2, 'html')}
       <Paper className={styles.preview}>
         <Container
           theme="mint"

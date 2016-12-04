@@ -2,9 +2,9 @@ import React from 'react';
 import {Code} from '../../../../lib';
 import commonStyles from '../../common';
 
-const generateCodeTemplate = (codeStr) => (
+const generateCodeTemplate = (codeStr, language) => (
   <Code
-    language="javascript"
+    language={language ? language : 'javascript'}
   >
     {codeStr}
   </Code>
