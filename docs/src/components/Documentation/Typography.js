@@ -1,5 +1,5 @@
 import React from 'react';
-import {Blockquote, Paper} from '../../../../lib';
+import { Blockquote, Paper } from '../../../../lib';
 import generateCodeTemplate from './generateCodeTemplate';
 
 const sampleCode1 = `<Container

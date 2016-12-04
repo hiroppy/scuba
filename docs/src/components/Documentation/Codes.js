@@ -1,5 +1,5 @@
 import React from 'react';
-import {Code} from '../../../../lib';
+import { Code } from '../../../../lib';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
@@ -54,13 +54,13 @@ int main() {
     </Code>
     {generateTableTemplate([
       {
-        name: 'language',
-        type: 'string',
+        name   : 'language',
+        type   : 'string',
         default: 'undefined'
       },
       {
-        name: 'fileName',
-        type: 'string',
+        name   : 'fileName',
+        type   : 'string',
         default: 'undefined'
       }
     ])}

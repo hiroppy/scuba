@@ -1,21 +1,21 @@
 import {
   sea,
-  white,
+  white
 } from '../styles/variables';
 
 const common = {
-  borderRadius: '5px',
-  borderWidth: 1,
-  borderStyle: 'solid',
-  cursor: 'pointer',
-  display: 'inline-block',
-  fontSize: '1.0rem',
-  fontWeight: 400,
-  margin: 0,
-  outline: 'none',
-  userSelect: 'none',
-  padding: '5px 15px',
-  lineHeight: 1.5
+  margin      : 0,
+  cursor      : 'pointer',
+  display     : 'inline-block',
+  outline     : 'none',
+  padding     : '5px 15px',
+  fontSize    : '1.0rem',
+  fontWeight  : 400,
+  lineHeight  : 1.5,
+  userSelect  : 'none',
+  borderWidth : 1,
+  borderStyle : 'solid',
+  borderRadius: '5px'
 };
 
 const styles = {

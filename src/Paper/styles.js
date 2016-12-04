@@ -1,7 +1,7 @@
 const styles = {
   container: {
-    borderRadius: 5,
-    padding: 16
+    padding     : 16,
+    borderRadius: 5
   }
 };
 

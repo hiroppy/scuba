@@ -1,13 +1,13 @@
 import React from 'react';
-import {storiesOf} from '@kadira/storybook';
-import {Container, Blockquote} from '../src';
+import { storiesOf } from '@kadira/storybook';
+import { Container, Blockquote } from '../src';
 
 storiesOf('Blockquote', module).add('code', () => (
   <div
     style={{
       background: '#ccc',
-      padding: 10,
-      height: 500
+      padding   : 10,
+      height    : 500
     }}
   >
     <Container
@@ -20,7 +20,7 @@ storiesOf('Blockquote', module).add('code', () => (
       </Blockquote>
     </Container>
 
-   <Container
+    <Container
       theme="mint"
       subColor="light"
     >

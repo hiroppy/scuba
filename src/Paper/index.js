@@ -1,8 +1,12 @@
+// @flow
+
+import type { CommonProps } from '../CommonTypes';
+
 import React from 'react';
 import classnames from 'classnames';
 import styles from './styles';
 
-const Paper = (props) => (
+const Paper = (props: CommonProps) => (
   <div
     {...props}
     style={Object.assign({}, styles.container, props.style)}

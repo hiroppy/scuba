@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style';
-import Container, {List, Li, Button, Paper} from '../../../../lib';
+import Container, { List, Li, Button, Paper } from '../../../../lib';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
@@ -35,18 +35,18 @@ const ContainerSection = () => (
     <p>You must use Container component in the place you want Scuba to apply.</p>
     {generateTableTemplate([
       {
-        name: 'theme',
-        type: '(sea | deepSea | sunset | mint | mikan) or hex',
+        name   : 'theme',
+        type   : '(sea | deepSea | sunset | mint | mikan) or hex',
         default: 'sea'
       },
       {
-        name: 'subColor',
-        type: '(light | dark) or hex',
+        name   : 'subColor',
+        type   : '(light | dark) or hex',
         default: 'light'
       },
       {
-        name: 'codeTheme',
-        type: 'a theme name',
+        name   : 'codeTheme',
+        type   : 'a theme name',
         default: 'undefined'
       }
     ])}
@@ -58,7 +58,7 @@ const ContainerSection = () => (
       fetches it from cdnjs.com.
     </p>
     <p>
-      {`https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/$\{codeTheme\}.min.css`}
+      {'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/$\{codeTheme\}.min.css'}
     </p>
     <p>see:
       <a

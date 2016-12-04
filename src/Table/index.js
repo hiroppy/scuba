@@ -1,8 +1,12 @@
+// @flow
+
+import type { CommonProps } from '../CommonTypes';
+
 import React from 'react';
 import classnames from 'classnames';
 import styles from './style';
 
-const TableHeader = (props) => (
+const TableHeader = (props: CommonProps) => (
   <thead
     {...props}
     className={classnames('scuba-tableheader', props.className)}
@@ -11,7 +15,7 @@ const TableHeader = (props) => (
   </thead>
 );
 
-const TableHeaderColumn = (props) => (
+const TableHeaderColumn = (props: CommonProps) => (
   <th
     {...props}
     style={Object.assign({}, styles.th, props.style)}
@@ -20,7 +24,7 @@ const TableHeaderColumn = (props) => (
   </th>
 );
 
-const TableFooter = (props) => (
+const TableFooter = (props: CommonProps) => (
   <tfoot
     {...props}
     className={classnames('scuba-tablefooter', props.className)}
@@ -29,7 +33,7 @@ const TableFooter = (props) => (
   </tfoot>
 );
 
-const TableBody = (props) => (
+const TableBody = (props: CommonProps) => (
   <tbody
     {...props}
   >
@@ -37,19 +41,20 @@ const TableBody = (props) => (
   </tbody>
 );
 
-const createAlignStyle = (align) => {
-  if (align === 'left') return {textAlign: 'left'};
-  if (align === 'center') return {textAlign: 'center'};
-  if (align === 'right') return {textAlign: 'right'};
-  return {textAlign: 'left'};
+const createAlignStyle = (align: 'left' | 'center' | 'right'
+): {textAlign: string; } => {
+  if (align === 'left') return { textAlign: 'left' };
+  if (align === 'center') return { textAlign: 'center' };
+  if (align === 'right') return { textAlign: 'right' };
+  return { textAlign: 'left' };
 };
 
-type TableRowType = {
-  align: 'left' | 'center' | 'right' | undefined;
+type TableRowProps = {
+  align: 'left' | 'center' | 'right';
   borderBottom: boolean;
 };
 
-const TableRow = (props) => (
+const TableRow = (props: CommonProps & TableRowProps) => (
   <tr
     style={Object.assign({}, createAlignStyle(props.align), props.style)}
     className={classnames((props.borderBottom ? 'scuba-tablerow' : ''), props.className)}
@@ -58,7 +63,7 @@ const TableRow = (props) => (
   </tr>
 );
 
-const TableRowColumn = (props) => (
+const TableRowColumn = (props: CommonProps) => (
   <td
     {...props}
     style={Object.assign({}, styles.td, props.style)}
@@ -67,7 +72,7 @@ const TableRowColumn = (props) => (
   </td>
 );
 
-const Table = (props) => (
+const Table = (props: CommonProps) => (
   <table
     {...props}
     style={Object.assign({}, styles.table, props.style)}

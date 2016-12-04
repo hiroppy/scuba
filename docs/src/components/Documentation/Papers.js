@@ -1,5 +1,5 @@
 import React from 'react';
-import Container, {Paper} from '../../../../lib';
+import Container, { Paper } from '../../../../lib';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
@@ -24,9 +24,9 @@ const sampleCode = `import Container, {Paper} from 'scuba';
 const Lists = () => (
   <div>
     <h2 id="papers">Papers</h2>
-    <p></p>
+    <p />
     <Paper
-      style={{marginBottom: 15}}
+      style={{ marginBottom: 15 }}
     >
       <span>This is paper!</span>
     </Paper>

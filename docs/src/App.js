@@ -17,8 +17,8 @@ class App extends React.Component {
     super();
 
     this.state = {
-      theme: 'sea',
-      subColor: 'light',
+      theme     : 'sea',
+      subColor  : 'light',
       background: '#333'
     };
 
@@ -28,16 +28,16 @@ class App extends React.Component {
   }
 
   changeTheme(theme) {
-    this.setState({theme});
+    this.setState({ theme });
   }
 
   changeSubColor(subColor) {
-    this.setState({subColor});
+    this.setState({ subColor });
   }
 
   changeBackgroundColor(background) {
-    if (background.length === 0) this.setState({background: '#333'});
-    else this.setState({background: `#${background}`})
+    if (background.length === 0) this.setState({ background: '#333' });
+    else this.setState({ background: `#${background}` });
   }
 
   componentWillMount() {
@@ -67,9 +67,9 @@ class App extends React.Component {
     const themeColor = fetchColorHex(theme);
 
     return (
-      <div style={{background, paddingBottom: 100}}>
+      <div style={{ background, paddingBottom: 100 }}>
         <Container
-          style={{background}}
+          style={{ background }}
           theme={theme}
           subColor={subColor}
           codeTheme="obsidian"

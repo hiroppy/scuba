@@ -1,3 +1,7 @@
+// @flow
+
+import type { CommonProps } from '../CommonTypes';
+
 import React from 'react';
 import generateRootStyle from './generateRootStyle';
 import styles from './styles';
@@ -8,19 +12,17 @@ import {
   mint,
   mikan,
   light,
-  dark,
+  dark
 } from '../styles/colors';
-import {fontFamily} from '../styles/variables';
+import { fontFamily } from '../styles/variables';
 
 type Props = {
   theme: string;
   subColor: string;
   codeTheme?: string;
-  style?: Object;
-  className?: string;
 };
 
-const themeRouter= (theme) => {
+const themeRouter = (theme) => {
   if (theme === 'sea') return sea;
   if (theme === 'deepSea') return deepSea;
   if (theme === 'sunset') return sunset;
@@ -29,14 +31,14 @@ const themeRouter= (theme) => {
   return sea;
 };
 
-const subColorRouter= (sub) => {
+const subColorRouter = (sub) => {
   if (sub === 'light') return light;
   if (sub === 'dark') return dark;
   return light;
 };
 
-class Container extends React.Component {
-  containerId;
+class Container extends React.Component<void, CommonProps & Props, void> {
+  containerId: string;
 
   componentWillMount() {
     this.containerId = `scuba--${Date.now()}__${Math.floor(Math.random() * 10000)}`;

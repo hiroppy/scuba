@@ -1,10 +1,10 @@
 import React from 'react';
-import {storiesOf, action} from '@kadira/storybook';
-import Container, {TextField, TextArea} from '../src';
+import { storiesOf, action } from '@kadira/storybook';
+import Container, { TextField, TextArea } from '../src';
 
 const styles = {
   box: {
-    width: 500,
+    width  : 500,
     padding: 10
   }
 };

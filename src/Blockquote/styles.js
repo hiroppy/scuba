@@ -1,6 +1,6 @@
 const styles = {
   pre: {
-    borderLeft: 'solid 3px',
+    borderLeft : 'solid 3px',
     paddingLeft: 20
   }
 };

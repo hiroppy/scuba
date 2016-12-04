@@ -1,5 +1,5 @@
 import React from 'react';
-import {storiesOf} from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import Container, {
   Table, TableBody, TableRow, TableRowColumn, TableHeader, TableHeaderColumn, TableFooter
 } from '../src';
@@ -8,7 +8,7 @@ storiesOf('Table', module).add('list', () => (
   <div
     style={{
       padding: 30,
-      width: 400
+      width  : 400
     }}
   >
     <Container theme="sea" subColor="dark">

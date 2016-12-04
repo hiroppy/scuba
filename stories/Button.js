@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import {Container} from '../src';
+import { Container } from '../src';
 import Button from '../src/Button';
 
 const styles = {
   wrapper: {
     background: '#eee',
-    height: 500,
-    padding: 30
+    height    : 500,
+    padding   : 30
   }
 };
 
@@ -21,13 +21,13 @@ storiesOf('Button', module).add('list', () => (
       }}
     >
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         onClick={action('button')}
       >
         Hello
       </Button>
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         disabled
         onClick={action('button')}
       >
@@ -42,13 +42,13 @@ storiesOf('Button', module).add('list', () => (
       }}
     >
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         onClick={action('button')}
       >
         Hello
       </Button>
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         disabled
         onClick={action('button')}
       >
@@ -64,14 +64,14 @@ storiesOf('Button', module).add('list', () => (
       }}
     >
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         onClick={action('button')}
       >
         Hello
       </Button>
       <Button
         disabled
-        style={{margin: 5}}
+        style={{ margin: 5 }}
       >
         disabled
       </Button>
@@ -84,14 +84,14 @@ storiesOf('Button', module).add('list', () => (
       }}
     >
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         onClick={action('button')}
       >
         Hello
       </Button>
       <Button
         disabled
-        style={{margin: 5}}
+        style={{ margin: 5 }}
       >
         disabled
       </Button>
@@ -104,12 +104,12 @@ storiesOf('Button', module).add('list', () => (
       }}
     >
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         onClick={action('button')}
       >
         Hello
       </Button>
-      <Button style={{margin: 5}}>
+      <Button style={{ margin: 5 }}>
         Hello-Hello-Hello
       </Button>
     </Container>
@@ -120,12 +120,12 @@ storiesOf('Button', module).add('list', () => (
       }}
     >
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         onClick={action('button')}
       >
         Hello
       </Button>
-      <Button style={{margin: 5}}>
+      <Button style={{ margin: 5 }}>
         Hello-Hello-Hello
       </Button>
     </Container>
@@ -136,12 +136,12 @@ storiesOf('Button', module).add('list', () => (
       }}
     >
       <Button
-        style={{margin: 5}}
+        style={{ margin: 5 }}
         onClick={action('button')}
       >
         Hello
       </Button>
-      <Button style={{margin: 5}}>
+      <Button style={{ margin: 5 }}>
         Hello-Hello-Hello
       </Button>
     </Container>

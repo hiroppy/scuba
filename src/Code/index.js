@@ -1,29 +1,25 @@
+// @flow
+
+import type { CommonProps } from '../CommonTypes';
+
 import React from 'react';
-import {findDOMNode} from 'react-dom';
+import { findDOMNode } from 'react-dom';
 import classnames from 'classnames';
 import styles from './styles';
 import highlight from 'highlight.js';
 
 type Props = {
   id: string;
-  style: Object;
-  children: React.Element<*>;
   language: string;
   fileName: string;
-  className: string;
 };
 
-class Code extends React.Component {
-  id;
-  code;
+class Code extends React.Component<void, CommonProps & Props, void> {
+  id: string;
+  code: HTMLElement;
 
   componentWillMount() {
     this.id = `scuba-code-${Math.floor(Math.random() * 10000)}`;
-  }
-
-  componentDidUpdate() {
-    highlight.initHighlighting.called = false;
-    highlight.highlightBlock(findDOMNode(this.code));
   }
 
   componentDidMount() {
@@ -33,17 +29,19 @@ class Code extends React.Component {
     if (this.props.fileName && el) el.setAttribute('data-content', this.props.fileName);
   }
 
+  componentDidUpdate() {
+    highlight.initHighlighting.called = false;
+    highlight.highlightBlock(findDOMNode(this.code));
+  }
+
   render() {
     const {
       id,
       style,
-      theme,
       children,
       language,
       fileName,
-      className,
-      showLineNumbers,
-      lineNumberStyle
+      className
     } = this.props;
 
     return (

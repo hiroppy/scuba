@@ -6,6 +6,8 @@
 
 Site: https://abouthiroppy.github.io/scuba/
 
+[![Build Status](https://travis-ci.org/abouthiroppy/scuba.svg?branch=master)](https://travis-ci.org/abouthiroppy/scuba)
+
 # Getting Started
 Install the module with `npm install --save scuba`.
 

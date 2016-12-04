@@ -1,9 +1,9 @@
 import React from 'react';
-import {storiesOf} from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import Container from '../src';
 
 storiesOf('Palet', module).add('list', () => (
-  <div style={{padding: 30}}>
+  <div style={{ padding: 30 }}>
     <Container theme="sea">
       <h2>Sea</h2>
     </Container>

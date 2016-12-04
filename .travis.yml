@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - stable
+before_script:
+  - npm install
+  - npm run flow
+  - npm run lint
+  - npm test
+after_success:
+  - npm install codecov -g
+  - npm run postcover

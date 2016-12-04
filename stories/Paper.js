@@ -1,9 +1,9 @@
 import React from 'react';
-import {storiesOf} from '@kadira/storybook';
-import Container, {Paper} from '../src';
+import { storiesOf } from '@kadira/storybook';
+import Container, { Paper } from '../src';
 
 storiesOf('Paper', module).add('list', () => (
-  <div style={{padding: 30}}>
+  <div style={{ padding: 30 }}>
     <Container theme="sea">
       <Paper>
         <p>kami!</p>
@@ -12,7 +12,7 @@ storiesOf('Paper', module).add('list', () => (
     <Container
       theme="mint"
       subColor="dark"
-      style={{marginTop: 10}}
+      style={{ marginTop: 10 }}
     >
       <Paper>
         <p>kami!</p>

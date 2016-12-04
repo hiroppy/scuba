@@ -1,3 +1,5 @@
+// @flow
+
 // color
 export const sea = '#3498db';
 export const deepSea = '#145d8e';

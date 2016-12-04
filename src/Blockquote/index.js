@@ -1,8 +1,12 @@
+// @flow
+
+import type { CommonProps } from '../CommonTypes';
+
 import React from 'react';
 import styles from './styles';
 import classnames from 'classnames';
 
-const Blockquote = (props) => (
+const Blockquote = (props: CommonProps) => (
   <pre
     {...props}
     style={Object.assign({}, styles.pre, props.style)}

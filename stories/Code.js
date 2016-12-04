@@ -1,9 +1,9 @@
 import React from 'react';
-import {storiesOf} from '@kadira/storybook';
-import Container, {Code} from '../src';
+import { storiesOf } from '@kadira/storybook';
+import Container, { Code } from '../src';
 
 storiesOf('Code', module).add('list', () => (
-  <div style={{padding: 30}}>
+  <div style={{ padding: 30 }}>
     <Container
       codeTheme="obsidian"
     >

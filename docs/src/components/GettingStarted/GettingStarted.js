@@ -1,5 +1,5 @@
 import React from 'react';
-import Container, {Code} from '../../../../lib';
+import Container, { Code } from '../../../../lib';
 
 const GettingStarted = () => (
   <div>

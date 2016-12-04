@@ -1,12 +1,12 @@
 import React from 'react';
 import GithubCorner from 'react-github-corner';
 import styles from './style';
-import {TextField} from '../../../../lib';
+import { TextField } from '../../../../lib';
 
 const Header = (props) => (
   <header
     className={styles.container}
-    style={{backgroundColor: props.themeHex}}
+    style={{ backgroundColor: props.themeHex }}
   >
     <div className={styles.topBox}>
       <section className={styles.linkSection}>
@@ -44,4 +44,4 @@ const Header = (props) => (
   </header>
 );
 
-export default Header
+export default Header;

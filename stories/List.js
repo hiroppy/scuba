@@ -1,16 +1,16 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import {Container, List, Li} from '../src';
+import { Container, List, Li } from '../src';
 
 const styles = {
   light: {
-    height: 500,
-    padding: 10,
+    height    : 500,
+    padding   : 10,
     background: '#eee'
   },
   dark: {
-    height: 500,
-    padding: 10,
+    height    : 500,
+    padding   : 10,
     background: '#333'
   }
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import {storiesOf} from '@kadira/storybook';
-import {Container} from '../src';
+import { storiesOf } from '@kadira/storybook';
+import { Container } from '../src';
 
 storiesOf('Typography', module).add('list', () => (
   <Container>

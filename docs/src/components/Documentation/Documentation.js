@@ -1,5 +1,5 @@
 import React from 'react';
-import {Code, List, Li} from '../../../../lib';
+import { Code, List, Li } from '../../../../lib';
 import ColorsSection from './Colors';
 import ContainerSection from './Container';
 import TypographySection from './Typography';

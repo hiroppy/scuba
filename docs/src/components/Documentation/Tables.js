@@ -78,13 +78,13 @@ const Tables = () => (
     <p>Only TableRow has custom props.</p>
     {generateTableTemplate([
       {
-        name: 'align',
-        type: 'left | center | right',
+        name   : 'align',
+        type   : 'left | center | right',
         default: 'left'
       },
       {
-        name: 'borderBottom',
-        type: 'boolean',
+        name   : 'borderBottom',
+        type   : 'boolean',
         default: 'false'
       }
     ])}

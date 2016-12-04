@@ -1,7 +1,9 @@
-import {fontFamily} from '../styles/variables';
-import {light, dark} from '../styles/colors';
+// @flow
 
-const generateRootStyle = (containerId, key, sub) => (
+import { fontFamily } from '../styles/variables';
+import { light, dark } from '../styles/colors';
+
+const generateRootStyle = (containerId: string, key: string, sub: string): string => (
   `
    #${containerId} {
       font-family: ${fontFamily};

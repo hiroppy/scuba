@@ -1,5 +1,5 @@
 import React from 'react';
-import {Code} from '../../../../lib';
+import { Code } from '../../../../lib';
 import commonStyles from '../../common';
 
 const generateCodeTemplate = (codeStr, language) => (

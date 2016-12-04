@@ -1,5 +1,5 @@
 import React from 'react';
-import {List, Li} from '../../../../lib';
+import { List, Li } from '../../../../lib';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
@@ -57,8 +57,8 @@ const Lists = () => (
     </List>
     {generateTableTemplate([
       {
-        name: 'type',
-        type: 'none | circle | square | decimal',
+        name   : 'type',
+        type   : 'none | circle | square | decimal',
         default: 'circle'
       }
     ])}
