@@ -10,6 +10,7 @@ function loadStories() {
   require('../stories/Form');
   require('../stories/Table');
   require('../stories/Code');
+  require('../stories/Grid');
 }
 
 configure(loadStories, module);

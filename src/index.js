@@ -5,6 +5,7 @@ export Blockquote from './Blockquote';
 export { List, Li } from './List';
 export { TextField, TextArea } from './Form';
 export Code from './Code';
+export { Grid, Cell } from './Grid';
 export {
   Table,
   TableRow,

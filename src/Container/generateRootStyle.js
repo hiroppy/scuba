@@ -126,6 +126,12 @@ const generateRootStyle = (containerId: string, key: string, sub: string): strin
     #${containerId} .scuba-tablefooter {
       border-top: 1px ${key} solid;
     }
+
+    @media (max-width: 40rem) {
+      #${containerId} .scuba-grid-responsive > .scuba-cell:not(.scuba-cell-offset) {
+        flex: 0 0 100% !important;
+      }
+    }
   `
 );
 
