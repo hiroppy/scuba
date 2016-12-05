@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './style';
-import Container, { List, Li, Button, Paper } from '../../../../lib';
+import Container, {
+  List, Li, Button, Paper, Grid, Cell
+} from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
@@ -55,10 +57,10 @@ const ContainerSection = () => (
       <code>codeColor</code>
       ,
       <em> scuba </em>
-      fetches it from cdnjs.com.
+      fetches its css from cdnjs.com.
     </p>
     <p>
-      {'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/$\{codeTheme\}.min.css'}
+      {'URL template: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/$\{codeTheme\}.min.css'}
     </p>
     <p>see:
       <a
@@ -70,27 +72,32 @@ const ContainerSection = () => (
     </p>
     <p>The theme used on this page is obsidian.</p>
     {generateCodeTemplate(sampleCode1)}
+
     <h3 id="capsule">capsule</h3>
     <p>The theme is reflected only in Container.</p>
-    <div className={styles.capsule}>
-      {generateCodeTemplate(sampleCode2, 'html')}
-      <Paper className={styles.preview}>
-        <Container
-          theme="mint"
-          subColor="light"
-        >
-          <Button>Mint</Button>
-          <span>Mint Button</span>
-        </Container>
-        <Container
-          theme="mikan"
-          subColor="dark"
-        >
-          <Button>Mikan</Button>
-          <span>Mikan Button</span>
-        </Container>
-      </Paper>
-    </div>
+    <Grid>
+      <Cell>
+        {generateCodeTemplate(sampleCode2, 'html')}
+      </Cell>
+      <Cell align="center">
+        <Paper className={styles.preview}>
+          <Container
+            theme="mint"
+            subColor="light"
+          >
+            <Button>Mint</Button>
+            <span>Mint Button</span>
+          </Container>
+          <Container
+            theme="mikan"
+            subColor="dark"
+          >
+            <Button>Mikan</Button>
+            <span>Mikan Button</span>
+          </Container>
+        </Paper>
+      </Cell>
+    </Grid>
   </div>
 );
 

@@ -7,7 +7,7 @@ const sampleCode = `import Container, {Paper} from 'scuba';
 
 <div>
     <Paper style={{marginBottom: 15}}>
-        <span>This is paper!</span>
+        <span>This is a paper!</span>
     </Paper>
 
     <Container
@@ -15,11 +15,11 @@ const sampleCode = `import Container, {Paper} from 'scuba';
         subColor="dark"
     >
         <Paper>
-            <span>This is Paper!</span>
+            <span>This is a paper!</span>
+            <p>これは紙です！</p>
         </Paper>
     </Container>
-</div>
-`;
+</div>`;
 
 const Lists = () => (
   <div>
@@ -28,14 +28,14 @@ const Lists = () => (
     <Paper
       style={{ marginBottom: 15 }}
     >
-      <span>This is paper!</span>
+      <span>This is a paper!</span>
     </Paper>
     <Container
       theme="sunset"
       subColor="dark"
     >
       <Paper>
-        <span>This is paper!</span>
+        <span>This is a paper!</span>
         <p>これは紙です！</p>
       </Paper>
     </Container>

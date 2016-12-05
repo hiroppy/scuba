@@ -20,3 +20,12 @@
 .preview span {
   margin-left: 10px;
 }
+
+.grid {
+  text-align: center;
+}
+
+/* paper */
+.grid > div > div {
+  margin: 10px;
+}

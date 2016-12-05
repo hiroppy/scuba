@@ -1,5 +1,6 @@
 .container {
   align-items: center;
+  left: 0;
   bottom: 0;
   height: 70px;
   position: fixed;

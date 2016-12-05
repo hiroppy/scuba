@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import Concept from './components/Concept';
 import GettingStarted from './components/GettingStarted';
 import Documentation from './components/Documentation';
-import Container from '../../lib/';
+import Container from '../../src';
 import * as colors from '../../lib/styles/colors';
 import styles from './style';
 
@@ -67,7 +67,11 @@ class App extends React.Component {
     const themeColor = fetchColorHex(theme);
 
     return (
-      <div style={{ background, paddingBottom: 100 }}>
+      <div style={{
+        background,
+        padding: '10px 10px 100px 10px',
+        wordWrap: 'break-word'
+      }}>
         <Container
           style={{ background }}
           theme={theme}

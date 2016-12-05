@@ -29,6 +29,11 @@ const Typography = () => (
       </a>
       font.
     </p>
+    <Paper>
+      {
+        `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789'?'"!"(%)[#]{@}/&<-+$*~;:<>/{}`
+      }
+    </Paper>
     <h3>Changing fonts</h3>
     {generateCodeTemplate(sampleCode1, 'html')}
     <h3>Headers</h3>

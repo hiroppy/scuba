@@ -9,6 +9,7 @@ import TablesSection from './Tables';
 import ListsSection from './Lists';
 import FormsSection from './Forms';
 import CodesSection from './Codes';
+import GridsSection from './Grids';
 import styles from './style';
 
 const contents = [
@@ -47,6 +48,10 @@ const contents = [
   {
     name: 'Codes',
     href: '#codes'
+  },
+  {
+    name: 'Grids',
+    href: '#grids'
   }
 ];
 
@@ -92,6 +97,7 @@ const Documentation = () => (
     <ListsSection />
     <FormsSection />
     <CodesSection />
+    <GridsSection />
   </section>
 );
 
