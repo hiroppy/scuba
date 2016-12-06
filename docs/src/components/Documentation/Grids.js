@@ -12,30 +12,30 @@ const sampleCode1 = `import {Grid, Cell} from 'scuba';
 </Grid>`;
 
 const sampleCode2 = `<Grid responsive={false}>
-    <Cell ratio={3}><Paper>Cell-1/3</Paper></Cell>
+    <Cell ratio={1/3}><Paper>Cell-1/3</Paper></Cell>
     <Cell><Paper>Cell-auto</Paper></Cell>
-    <Cell ratio={4}><Paper>Cell-1/4</Paper></Cell>
+    <Cell ratio={1/4}><Paper>Cell-1/4</Paper></Cell>
 </Grid>
 
 <Grid responsive={false}>
-    <Cell offset={3}><Paper>Cell-offset-1/3</Paper></Cell>
+    <Cell offset={1/3}><Paper>Cell-offset-1/3</Paper></Cell>
 </Grid>`;
 
 const sampleCode3 = `<Grid align="center" responsive={false}>
     <Cell><Paper>Cell-auto</Paper></Cell>
-    <Cell ratio={2}><Paper>C<br />e<br />l<br />l<br />1/2</Paper></Cell>
+    <Cell ratio={1/2}><Paper>C<br />e<br />l<br />l<br />1/2</Paper></Cell>
     <Cell><Paper>Cell-auto</Paper></Cell>
 </Grid>
 
 <Grid responsive={false}>
     <Cell align="center"><Paper>Cell-auto</Paper></Cell>
-    <Cell ratio={2}><Paper>C<br />e<br />l<br />l<br />1/2</Paper></Cell>
+    <Cell ratio={1/2}><Paper>C<br />e<br />l<br />l<br />1/2</Paper></Cell>
     <Cell align="bottom"><Paper>Cell-auto</Paper></Cell>
 </Grid>`;
 
 const sampleCode4 = `<Grid>
-    <Cell ratio={4}><Paper>Cell-1/4</Paper></Cell>
-    <Cell ratio={4/3}><Paper>Cell-3/4</Paper></Cell>
+    <Cell ratio={1/4}><Paper>Cell-1/4</Paper></Cell>
+    <Cell ratio={3/4}><Paper>Cell-3/4</Paper></Cell>
 </Grid>`;
 
 const Grids = () => (
@@ -68,13 +68,13 @@ const Grids = () => (
       className={styles.grid}
       responsive={false}
     >
-      <Cell ratio={3}>
+      <Cell ratio={1/3}>
         <Paper>Cell-1/3</Paper>
       </Cell>
       <Cell>
         <Paper>Cell-auto</Paper>
       </Cell>
-      <Cell ratio={4}>
+      <Cell ratio={1/4}>
         <Paper>Cell-1/4</Paper>
       </Cell>
     </Grid>
@@ -83,7 +83,7 @@ const Grids = () => (
       className={styles.grid}
       responsive={false}
     >
-      <Cell offset={3}>
+      <Cell offset={1/3}>
         <Paper>Cell-offset-1/3</Paper>
       </Cell>
     </Grid>
@@ -112,7 +112,7 @@ const Grids = () => (
       <Cell>
         <Paper>Cell-auto</Paper>
       </Cell>
-      <Cell ratio={2}>
+      <Cell ratio={1/2}>
         <Paper>C<br />e<br />l<br />l<br />1/2</Paper>
       </Cell>
       <Cell>
@@ -127,7 +127,7 @@ const Grids = () => (
       <Cell align="center">
         <Paper>Cell-auto</Paper>
       </Cell>
-      <Cell ratio={2}>
+      <Cell ratio={1/2}>
         <Paper>C<br />e<br />l<br />l<br />1/2</Paper>
       </Cell>
       <Cell align="bottom">
@@ -143,10 +143,10 @@ const Grids = () => (
       className={styles.grid}
       responsive
     >
-      <Cell ratio={4}>
+      <Cell ratio={1/4}>
         <Paper>Cell-1/4</Paper>
       </Cell>
-      <Cell ratio={4/3}>
+      <Cell ratio={3/4}>
         <Paper>Cell-3/4</Paper>
       </Cell>
     </Grid>
@@ -169,7 +169,7 @@ const Grids = () => (
     {generateTableTemplate([
       {
         name: 'ratio',
-        type: 'number | string',
+        type: 'number',
         default: 'undefined(auto)'
       },
       {
