@@ -81,7 +81,10 @@ const generateRootStyle = (containerId: string, key: string, sub: string): strin
       margin: 0 .2rem;
       /* background: ${(sub === dark ? light : dark)}; */
     }
-
+    #${containerId} .scuba-avatar-no-img {
+      color: ${sub};
+      border: 1px solid ${key};
+    }
     #${containerId} .scuba-paper {
       color: ${sub};
       border: 1px solid ${key};

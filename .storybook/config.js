@@ -3,6 +3,7 @@ import {configure} from '@kadira/storybook';
 function loadStories() {
   require('../stories/Palet');
   require('../stories/Typography');
+  require('../stories/Avatar');
   require('../stories/Paper');
   require('../stories/Button');
   require('../stories/Blockquotes');
