@@ -20,7 +20,7 @@ storiesOf('Grid', module).add('list', () => (
   <div style={styles.container}>
     <Container>
       <Grid responsive={false}>
-        <Cell ratio="2">
+        <Cell ratio={1 / 2}>
           <div style={styles.cell}>Cell-1/2</div>
         </Cell>
         <Cell>
@@ -33,19 +33,19 @@ storiesOf('Grid', module).add('list', () => (
 
       <h3 style={{ marginTop: 30 }}>Responsive</h3>
       <Grid style={{ marginTop: 30 }}>
-        <Cell offset="2">
+        <Cell offset={1 / 2}>
           <div style={styles.cell}>Cell-offset-1/2</div>
         </Cell>
       </Grid>
 
       <Grid style={{ marginTop: 30 }}>
-        <Cell ratio="3">
+        <Cell ratio={1 / 3}>
           <div style={styles.cell}>Cell-1/3</div>
         </Cell>
         <Cell>
           <div style={styles.cell}>Cell-auto</div>
         </Cell>
-        <Cell ratio="4">
+        <Cell ratio={1 / 4}>
           <div style={styles.cell}>Cell-1/4</div>
         </Cell>
       </Grid>
@@ -54,7 +54,7 @@ storiesOf('Grid', module).add('list', () => (
         style={{ marginTop: 30 }}
         align="bottom"
       >
-        <Cell ratio="3">
+        <Cell ratio={1 / 3}>
           <div style={styles.cell}>Cell-1/3</div>
         </Cell>
         <Cell>
@@ -66,14 +66,14 @@ storiesOf('Grid', module).add('list', () => (
             o<br />
           </div>
         </Cell>
-        <Cell ratio="4">
+        <Cell ratio={1 / 4}>
           <div style={styles.cell}>Cell-1/4</div>
         </Cell>
       </Grid>
 
       <Grid style={{ marginTop: 30 }}>
         <Cell
-          ratio="3"
+          ratio={1 / 3}
           align="center"
         >
           <div style={styles.cell}>Cell-1/3</div>
@@ -88,7 +88,7 @@ storiesOf('Grid', module).add('list', () => (
           </div>
         </Cell>
         <Cell
-          ratio="4"
+          ratio={1 / 4}
           align="bottom"
         >
           <div style={styles.cell}>Cell-1/4</div>

@@ -35,21 +35,21 @@ Grid.defaultProps = {
 };
 
 type CellProps = {
-  ratio?: number | string;
+  ratio?: number;
   align?: 'top' | 'bottom' | 'center';
-  offset?: number | string;
+  offset?: number;
 };
 
 export const Cell = (props: CommonProps & CellProps) => {
   const buildedStyle = {};
 
   if (props.ratio) {
-    buildedStyle.width = `${100 / props.ratio}%`;
+    buildedStyle.width = `${100 * props.ratio}%`;
     buildedStyle.flex = 'none';
   }
 
   if (props.offset) {
-    const per = `${100 / props.offset}%`;
+    const per = `${100 * props.offset}%`;
     buildedStyle.flex = per;
     buildedStyle.marginLeft = per;
   }
