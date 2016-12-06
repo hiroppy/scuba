@@ -2,9 +2,9 @@
   <h1>scuba</h1>
 </div>
 
-<strong>UI components for React</strong>
+<strong>Unified UI components built by React.</strong>
 
-Site: https://abouthiroppy.github.io/scuba/
+see: https://abouthiroppy.github.io/scuba/
 
 [![npm version](https://badge.fury.io/js/scuba.svg)](https://badge.fury.io/js/scuba)
 [![Build Status](https://travis-ci.org/abouthiroppy/scuba.svg?branch=master)](https://travis-ci.org/abouthiroppy/scuba)
@@ -38,18 +38,12 @@ ReactDOM.render(
 );
 ```
 
-## Colors
-- <p style="color:#3498db">Sea(#3498db)<p>
-- <p style="color:#145d8e">DeepSea(#145d8e)<p>
-- <p style="color:#e14d4c">Sunset(#e14d4c)<p>
-- <p style="color:#2be8ce">Mint(#2be8ce)<p>
-- <p style="color:#db9634">Mikan(#db9634)<p>
-
 ## Components List
 - [x] Typography
+- [x] Avatars
 - [x] Blockquotes
 - [x] Buttons
-- [x] codes
+- [x] Codes
 - [ ] Forms
 - [x] Lists
 - [x] Tables

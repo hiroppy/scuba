@@ -9,6 +9,14 @@
   width: 50%;
 }
 
+.avatars {
+  display: flex;
+}
+
+.avatars > *:not(:first-child) {
+  margin-left: 30px;
+}
+
 .buttons > * {
   margin: 0 10px !important;
 }

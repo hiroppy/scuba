@@ -52,6 +52,8 @@ int main() {
 }`
       }
     </Code>
+    {generateCodeTemplate(sampleCode)}
+    <h3>Properties</h3>
     {generateTableTemplate([
       {
         name   : 'language',
@@ -64,7 +66,6 @@ int main() {
         default: 'undefined'
       }
     ])}
-    {generateCodeTemplate(sampleCode)}
   </div>
 );
 

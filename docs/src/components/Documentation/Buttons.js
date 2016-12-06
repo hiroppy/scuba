@@ -21,6 +21,8 @@ const Buttons = () => (
       <Button disabled>DISABLED</Button>
       <Button clear>CLEAR</Button>
     </div>
+    {generateCodeTemplate(sampleCode)}
+    <h3>Properties</h3>
     {generateTableTemplate([
       {
         name   : 'disabled',
@@ -33,7 +35,6 @@ const Buttons = () => (
         default: 'false'
       }
     ])}
-    {generateCodeTemplate(sampleCode)}
   </div>
 );
 

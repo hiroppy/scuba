@@ -9,7 +9,12 @@ const GettingStarted = () => (
     <Code language="bash">$ npm install --save scuba</Code>
     <p>
       We recommend using
-      <a href="https://necolas.github.io/normalize.css/">normalize.css</a>
+      <a
+        href="https://necolas.github.io/normalize.css/"
+        target="_blank"
+      >
+        normalize.css
+      </a>
       or other.
     </p>
     <h3>Usage</h3>

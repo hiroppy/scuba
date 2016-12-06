@@ -5,6 +5,7 @@ import ContainerSection from './Container';
 import TypographySection from './Typography';
 import PapersSection from './Papers';
 import ButtonsSection from './Buttons';
+import AvatarsSection from './Avatars';
 import TablesSection from './Tables';
 import ListsSection from './Lists';
 import FormsSection from './Forms';
@@ -28,6 +29,10 @@ const contents = [
   {
     name: 'Papers',
     href: '#papers'
+  },
+  {
+    name: 'Avatars',
+    href: '#avatars'
   },
   {
     name: 'Buttons',
@@ -74,7 +79,7 @@ const Documentation = () => (
     <h3>Components List</h3>
     <Lists />
     <h3>Customization(common)</h3>
-    <p>If you want to change style or class name or others you can specify it like react.</p>
+    <p>If you want to change style or class name or others you can specify it like React.</p>
     <Code fileName="Button.js">
       {
         `<Button
@@ -92,6 +97,7 @@ const Documentation = () => (
     <ContainerSection />
     <TypographySection />
     <PapersSection />
+    <AvatarsSection />
     <ButtonsSection />
     <TablesSection />
     <ListsSection />

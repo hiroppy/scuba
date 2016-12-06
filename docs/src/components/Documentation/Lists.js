@@ -55,6 +55,8 @@ const Lists = () => (
       <li><p>p, type: decimal</p></li>
       <li><p>p, type: decimal</p></li>
     </List>
+    {generateCodeTemplate(sampleCode)}
+    <h3>Properties</h3>
     {generateTableTemplate([
       {
         name   : 'type',
@@ -62,7 +64,6 @@ const Lists = () => (
         default: 'circle'
       }
     ])}
-    {generateCodeTemplate(sampleCode)}
   </div>
 );
 

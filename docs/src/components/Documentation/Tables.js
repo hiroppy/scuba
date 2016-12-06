@@ -75,6 +75,8 @@ const Tables = () => (
       </TableBody>
     </Table>
 
+    {generateCodeTemplate(sampleCode)}
+    <h3>Properties</h3>
     <p>Only TableRow has custom props.</p>
     {generateTableTemplate([
       {
@@ -88,7 +90,6 @@ const Tables = () => (
         default: 'false'
       }
     ])}
-    {generateCodeTemplate(sampleCode)}
   </div>
 );
 

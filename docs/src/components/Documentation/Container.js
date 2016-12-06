@@ -35,23 +35,6 @@ const ContainerSection = () => (
   <div>
     <h2 id="container">Container</h2>
     <p>You must use Container component in the place you want Scuba to apply.</p>
-    {generateTableTemplate([
-      {
-        name   : 'theme',
-        type   : '(sea | deepSea | sunset | mint | mikan) or hex',
-        default: 'sea'
-      },
-      {
-        name   : 'subColor',
-        type   : '(light | dark) or hex',
-        default: 'light'
-      },
-      {
-        name   : 'codeTheme',
-        type   : 'a theme name',
-        default: 'undefined'
-      }
-    ])}
     <p>
       If you specify
       <code>codeColor</code>
@@ -98,6 +81,24 @@ const ContainerSection = () => (
         </Paper>
       </Cell>
     </Grid>
+    <h3>Properties</h3>
+    {generateTableTemplate([
+      {
+        name   : 'theme',
+        type   : '(sea | deepSea | sunset | mint | mikan) or hex',
+        default: 'sea'
+      },
+      {
+        name   : 'subColor',
+        type   : '(light | dark) or hex',
+        default: 'light'
+      },
+      {
+        name   : 'codeTheme',
+        type   : 'a theme name',
+        default: 'undefined'
+      }
+    ])}
   </div>
 );
 

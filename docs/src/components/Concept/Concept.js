@@ -6,7 +6,7 @@ const Concept = () => (
     <hr />
     <p>
       <em>Scuba </em>
-      is a UI components for React.
+      is the unified UI components for React.
       The features of
       <em> Scuba </em>
       is to have theme and subColor.

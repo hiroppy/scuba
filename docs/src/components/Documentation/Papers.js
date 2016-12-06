@@ -21,7 +21,7 @@ const sampleCode = `import Container, {Paper} from 'scuba';
     </Container>
 </div>`;
 
-const Lists = () => (
+const Papers = () => (
   <div>
     <h2 id="papers">Papers</h2>
     <p />
@@ -39,9 +39,10 @@ const Lists = () => (
         <p>これは紙です！</p>
       </Paper>
     </Container>
-    <p>Papers have no custom props.</p>
     {generateCodeTemplate(sampleCode)}
+    <h3>Properties</h3>
+    <p>Papers have no custom props.</p>
   </div>
 );
 
-export default Lists;
+export default Papers;

@@ -39,7 +39,7 @@ const Typography = () => (
     <h3>Headers</h3>
     <Paper>
       <h1>h1(4.2rem). Heading</h1>
-      <h2>h2(3.5rem). Heading</h2>
+      <h2 className="heading">h2(3.5rem). Heading</h2>
       <h3>h3(2.9rem). Heading</h3>
       <h4>h4(2.2rem). Heading</h4>
       <h5>h5(1.6rem). Heading</h5>
@@ -49,8 +49,9 @@ const Typography = () => (
     <Blockquote>
       <span>the blockquote!</span>
     </Blockquote>
-    <p>Blockquotes have no custom props.</p>
     {generateCodeTemplate(sampleCode2)}
+    <h3>Properties</h3>
+    <p>Blockquotes have no custom props.</p>
   </div>
 );
 

@@ -151,7 +151,7 @@ const Grids = () => (
       </Cell>
     </Grid>
     {generateCodeTemplate(sampleCode4, 'html')}
-
+    <h3>Properties</h3>
     <h4>Grid</h4>
     {generateTableTemplate([
       {

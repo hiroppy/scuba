@@ -27,8 +27,9 @@ const Forms = () => (
       style={{width: '80%'}}
       placeholder="😊"
     />
-    <p>Forms have no custom props.</p>
     {generateCodeTemplate(sampleCode)}
+    <h3>Properties</h3>
+    <p>Forms have no custom props.</p>
   </div>
 );
 
