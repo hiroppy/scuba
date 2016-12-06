@@ -7,9 +7,9 @@ import styles from './style.css';
 const sampleCode = `import {Avatar} from 'scuba';
 
 <div>
-    <Avatar src="../../../images/choko.jpg" />
+    <Avatar src="./images/choko.jpg" />
     <Avatar
-        src="../../../images/choko.jpg"
+        src="./images/choko.jpg"
         form="square"
     />
     <Avatar><span>kao</span></Avatar>
@@ -28,9 +28,9 @@ const Avatars = () => (
       are 60px.
     </p>
     <div className={styles.avatars}>
-      <Avatar src="../../../images/choko.jpg" />
+      <Avatar src="./images/choko.jpg" />
       <Avatar
-        src="../../../images/choko.jpg"
+        src="./images/choko.jpg"
         form="square"
       />
       <Avatar>
