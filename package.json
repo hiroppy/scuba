@@ -4,7 +4,7 @@
   "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
   "version": "0.0.8",
   "license": "MIT",
-  "description": "UI Components for React",
+  "description": "Unified UI components built by React.",
   "files": [
     "lib"
   ],
@@ -21,6 +21,7 @@
   "scripts": {
     "flow": "flow",
     "flowtyped": "flow-typed install",
+    "start": "npm run storybook",
     "prepublish": "npm run babel",
     "storybook": "start-storybook -p 8080",
     "babel": "babel src -d lib",
