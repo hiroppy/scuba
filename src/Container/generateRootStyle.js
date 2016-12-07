@@ -143,7 +143,7 @@ const generateRootStyle = (containerId: string, key: string, sub: string): strin
       border-top: 1px ${key} solid;
     }
 
-    @media (max-width: 40rem) {
+    @media (max-width: 40em) {
       #${containerId} .scuba-grid-responsive > .scuba-cell:not(.scuba-cell-offset) {
         flex: 0 0 100% !important;
       }

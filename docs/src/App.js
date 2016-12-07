@@ -2,6 +2,7 @@ import React from 'react';
 import queryString from 'query-string';
 import GithubCorner from 'react-github-corner';
 import Header from './components/Header';
+// import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
 import Concept from './components/Concept';
 import GettingStarted from './components/GettingStarted';

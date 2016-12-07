@@ -1,5 +1,10 @@
 .container {
-  padding-top: 150px;
+  align-items: center;
+  display: flex;
+  flex: row;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
 }
 
 .logo {

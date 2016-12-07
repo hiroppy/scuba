@@ -170,7 +170,7 @@ const Grids = () => (
       {
         name: 'ratio',
         type: 'number',
-        default: 'undefined(auto)'
+        default: 'auto'
       },
       {
         name: 'align',
@@ -180,7 +180,7 @@ const Grids = () => (
       {
         name: 'offset',
         type: 'number',
-        default: '0'
+        default: '0px'
       }
     ])}
   </div>
