@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import Container, { TextField, TextArea } from '../src';
+import Container, { TextField, TextArea, SelectBox, Select } from '../src';
 
 const styles = {
   box: {
@@ -55,6 +55,29 @@ storiesOf('Form', module).add('TextField', () => (
           onChange={action('onChange')}
         />
       </div>
+    </Container>
+  </div>
+)).add('Select', () => (
+  <div style={styles.box}>
+    <Container subColor="dark">
+      <SelectBox>
+        <Select>select-1</Select>
+        <Select default>select-2</Select>
+        <Select>select-3</Select>
+        <Select value="4">select-4</Select>
+      </SelectBox>
+    </Container>
+
+    <div style={{ paddingTop: 150 }} />
+    <Container subColor="dark">
+      <SelectBox
+        listPosition="top"
+      >
+        <Select>select-1</Select>
+        <Select>select-2</Select>
+        <Select default>select-3</Select>
+        <Select value="4">select-4</Select>
+      </SelectBox>
     </Container>
   </div>
 ));

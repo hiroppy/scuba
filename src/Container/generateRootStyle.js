@@ -122,6 +122,19 @@ const generateRootStyle = (containerId: string, key: string, sub: string): strin
     #${containerId} .scuba-textform:focus {
       border: 1px ${key} solid;
     }
+    #${containerId} .scuba-selectcontainer {
+      border-bottom: 1px ${key} solid;
+    }
+    #${containerId} .scuba-selectbox:hover {
+      opacity: .7;
+    }
+    #${containerId} .scuba-selectlist {
+      background: ${(sub === dark ? light : dark)};
+      box-shadow: 0 0 5px 0 ${sub};
+    }
+    #${containerId} .scuba-selectitem:hover {
+      color: ${key};
+    }
     #${containerId} .scuba-tableheader,
     #${containerId} .scuba-tablerow {
       border-bottom: 1px ${key} solid;

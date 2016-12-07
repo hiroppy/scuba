@@ -8,6 +8,8 @@ import styles from './styles';
 
 type Props = {
   src?: string;
+  width: number | string;
+  height: number | string;
   form?: 'circle' | 'square';
 };
 
@@ -21,6 +23,8 @@ const Avatar = (props: CommonProps & Props) => (
       {},
       (props.src ? { backgroundImage: `url(${props.src})` } : {}),
       styles.container,
+      (props.width ? { width: props.width } : {}),
+      (props.height ? { height: props.height } : {}),
       (props.form === 'circle' ? styles.circle : styles.square),
       props.style
     )}
