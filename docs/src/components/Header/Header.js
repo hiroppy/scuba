@@ -1,7 +1,7 @@
 import React from 'react';
 import GithubCorner from 'react-github-corner';
 import styles from './style';
-import { TextField } from '../../../../lib';
+import { SelectBox, Select, TextField, Grid, Cell } from '../../../../src';
 
 const Header = (props) => (
   <header
@@ -15,31 +15,51 @@ const Header = (props) => (
       </section>
     </div>
     <div className={styles.bottomBox}>
-      <div className={styles.selectBox}>
-        <select
-          name="theme"
-          onChange={(e) => props.changeTheme(e.nativeEvent.target.value)}
+      <Grid
+        align="center"
+        style={{
+          alignItems: 'center',
+          maxWidth: 400
+        }}
+      >
+        <Cell
+          align="center"
+          style={{lineHeight: 2.5, height: '100%'}}
         >
-          <option value="sea" selected>Sea</option>
-          <option value="deepSea">DeepSea</option>
-          <option value="sunset">Sunset</option>
-          <option value="mint">Mint</option>
-          <option value="mikan">Mikan</option>
-        </select>
-        <select
-          name="subColor"
-          onChange={(e) => props.changeSubColor(e.nativeEvent.target.value)}
+          <div className={styles.selectBox}>
+            <SelectBox
+              width={120}
+              listPosition="top"
+              onChange={(value) => props.changeTheme(value)}
+            >
+              <Select value="sea" selected>Sea</Select>
+              <Select value="deepSea">DeepSea</Select>
+              <Select value="sunset">Sunset</Select>
+              <Select value="mint">Mint</Select>
+              <Select value="mikan">Mikan</Select>
+            </SelectBox>
+            <SelectBox
+              width={120}
+              listPosition="top"
+              onChange={(value) => props.changeSubColor(value)}
+            >
+              <Select value="light" selected>Light</Select>
+              <Select value="dark">Dark</Select>
+            </SelectBox>
+          </div>
+        </Cell>
+        <Cell
+          align="center"
+          style={{lineHeight: 2.5, height: '100%'}}
         >
-          <option value="light" selected>Light</option>
-          <option value="dark">Dark</option>
-        </select>
-        <div className={styles.textField}>
-          <TextField
-            placeholder="#333"
-            onChange={(e) => props.changeBackgroundColor(e.nativeEvent.target.value)}
-          />
-        </div>
-      </div>
+          <div className={styles.textField}>
+            <TextField
+              placeholder="#333"
+              onChange={(e) => props.changeBackgroundColor(e.nativeEvent.target.value)}
+            />
+          </div>
+        </Cell>
+      </Grid>
     </div>
   </header>
 );

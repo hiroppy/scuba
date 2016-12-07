@@ -77,7 +77,7 @@ const Tables = () => (
 
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
-    <p>Only TableRow has custom props.</p>
+    <h4>TableRow</h4>
     {generateTableTemplate([
       {
         name   : 'align',

@@ -57,6 +57,7 @@ const Lists = () => (
     </List>
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
+    <h4>List</h4>
     {generateTableTemplate([
       {
         name   : 'type',

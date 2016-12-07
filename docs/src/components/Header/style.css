@@ -17,22 +17,17 @@
 
 .bottomBox {
   display: flex;
-  margin-top: 5px;
   justify-content: flex-end;
-  width: 100%;
+  padding: 0 10px;
+  height: 100%;
 }
 
 .selectBox {
   display: flex;
-  margin-right: 15px;
-}
-
-.selectBox > * {
-  margin: 0 10px;
 }
 
 .textField {
-  width: 70px;
+  width: 90%;
 }
 
 .linkSection {

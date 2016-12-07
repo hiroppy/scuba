@@ -29,6 +29,14 @@
   margin-left: 10px;
 }
 
+.selectBoxes {
+  display: flex;
+}
+
+.selectBoxes > * {
+  margin-right: 15px;
+}
+
 .grid {
   text-align: center;
 }

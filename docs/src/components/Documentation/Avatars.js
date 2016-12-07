@@ -52,6 +52,16 @@ const Avatars = () => (
         name: 'form',
         type: 'circle | square',
         default: 'circle'
+      },
+      {
+        name: 'width',
+        type: 'number | string',
+        default: '60px'
+      },
+      {
+        name: 'height',
+        type: 'number | string',
+        default: '60px'
       }
     ])}
   </div>

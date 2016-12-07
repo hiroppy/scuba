@@ -78,7 +78,7 @@ const Documentation = () => (
     <hr />
     <h3>Components List</h3>
     <Lists />
-    <h3>Customization(common)</h3>
+    <h3>Customization</h3>
     <p>If you want to change style or class name or others you can specify it like React.</p>
     <Code fileName="Button.js">
       {
