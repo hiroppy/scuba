@@ -7,7 +7,7 @@ import logo from '../../../images/icon.svg';
 
 const Hero = () => (
   <div className={styles.container}>
-    <div className={styles.logo}>
+    <div className={`${styles.logo} logo`}>
       <InlineSVG src={logo} />
     </div>
     <h1 className={styles.title}>Scuba</h1>

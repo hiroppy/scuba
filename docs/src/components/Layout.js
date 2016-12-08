@@ -91,6 +91,15 @@ class Layout extends React.Component {
         style={{ background }}
         className={styles.wrapper}
       >
+        <style>
+          {
+            `
+              .logo svg {
+                fill: ${themeColor} !important;
+              }
+            `
+          }
+        </style>
         <Container
           style={{ background }}
           theme={theme}
