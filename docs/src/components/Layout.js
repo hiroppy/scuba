@@ -1,26 +1,22 @@
 import React from 'react';
 import queryString from 'query-string';
 import GithubCorner from 'react-github-corner';
-import Header from './components/Header';
-// import Sidebar from './components/Sidebar';
-import Hero from './components/Hero';
-import Concept from './components/Concept';
-import GettingStarted from './components/GettingStarted';
-import Documentation from './components/Documentation';
-import Container from '../../src';
-import * as colors from '../../lib/styles/colors';
+import Container from '../../../src';
+import * as colors from '../../../src/styles/colors';
+import Header from './Header';
 import styles from './style';
 
 const fetchColorHex = (name) => colors[name];
 
-class App extends React.Component {
-  constructor() {
+class Layout extends React.Component {
+  constructor() { // eslint-disable-line react/sort-comp
     super();
 
     this.state = {
-      theme     : 'sea',
-      subColor  : 'light',
-      background: '#333'
+      theme          : 'sea',
+      subColor       : 'light',
+      background     : '#333',
+      displaedSidebar: true
     };
 
     this.changeTheme = this.changeTheme.bind(this);
@@ -28,15 +24,15 @@ class App extends React.Component {
     this.changeBackgroundColor = this.changeBackgroundColor.bind(this);
   }
 
-  changeTheme(theme) {
+  changeTheme(theme: string) {
     this.setState({ theme });
   }
 
-  changeSubColor(subColor) {
+  changeSubColor(subColor: string) {
     this.setState({ subColor });
   }
 
-  changeBackgroundColor(background) {
+  changeBackgroundColor(background: string) {
     if (background.length === 0) this.setState({ background: '#333' });
     else this.setState({ background: `#${background}` });
   }
@@ -55,24 +51,46 @@ class App extends React.Component {
         }
       }
     });
-    this.setState(res);
+
+    this.setState({
+      res,
+      displaedSidebar: !(window.innerWidth <= 800)
+    });
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', (e) => {
+      const innerWidth = e.currentTarget.innerWidth;
+
+      if (this.state.displaedSidebar && innerWidth <= 800) {
+        this.setState({ displaedSidebar: false });
+      }
+      else if (!this.state.displaedSidebar && innerWidth > 800) {
+        this.setState({ displaedSidebar: true });
+      }
+    });
   }
 
   render() {
     const {
       theme,
       subColor,
-      background
+      background,
+      displaedSidebar
     } = this.state;
+
+    const {
+      main,
+      sidebar
+    } = this.props;
 
     const themeColor = fetchColorHex(theme);
 
     return (
-      <div style={{
-        background,
-        padding: '10px 10px 100px 10px',
-        wordWrap: 'break-word'
-      }}>
+      <div
+        style={{ background }}
+        className={styles.wrapper}
+      >
         <Container
           style={{ background }}
           theme={theme}
@@ -94,16 +112,20 @@ class App extends React.Component {
             changeSubColor={this.changeSubColor}
             changeBackgroundColor={this.changeBackgroundColor}
           />
-          <div className={styles.container}>
-            <Hero />
-            <Concept />
-            <GettingStarted />
-            <Documentation />
-          </div>
+          {
+            sidebar && displaedSidebar ? (
+              <div>
+                <div className={styles.sidebar}>{sidebar}</div>
+                <div className={`${styles.main} ${styles.mainWithSidebar}`}>{main}</div>
+              </div>
+            ) : (
+              <div className={styles.main}>{main}</div>
+            )
+          }
         </Container>
       </div>
     );
   }
 }
 
-export default App;
+export default Layout;

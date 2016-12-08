@@ -47,6 +47,7 @@ const ContainerSection = () => (
     </p>
     <p>see:
       <a
+        rel="noopener noreferrer"
         href="https://cdnjs.com/libraries/highlight.js/"
         target="_blank"
       >

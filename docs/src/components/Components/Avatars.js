@@ -44,23 +44,23 @@ const Avatars = () => (
     <h3>Properties</h3>
     {generateTableTemplate([
       {
-        name: 'src',
-        type: 'string',
+        name   : 'src',
+        type   : 'string',
         default: 'undefined'
       },
       {
-        name: 'form',
-        type: 'circle | square',
+        name   : 'form',
+        type   : 'circle | square',
         default: 'circle'
       },
       {
-        name: 'width',
-        type: 'number | string',
+        name   : 'width',
+        type   : 'number | string',
         default: '60px'
       },
       {
-        name: 'height',
-        type: 'number | string',
+        name   : 'height',
+        type   : 'number | string',
         default: '60px'
       }
     ])}

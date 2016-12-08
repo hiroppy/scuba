@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import GithubCorner from 'react-github-corner';
 import styles from './style';
 import { SelectBox, Select, TextField, Grid, Cell } from '../../../../src';
@@ -10,8 +11,8 @@ const Header = (props) => (
   >
     <div className={styles.topBox}>
       <section className={styles.linkSection}>
-        <a href="#concepts">concepts</a>
-        <a href="#documentation">documentation</a>
+        <Link to="concept">Concept</Link>
+        <Link to="components">Components</Link>
       </section>
     </div>
     <div className={styles.bottomBox}>
@@ -19,12 +20,12 @@ const Header = (props) => (
         align="center"
         style={{
           alignItems: 'center',
-          maxWidth: 400
+          maxWidth  : 400
         }}
       >
         <Cell
           align="center"
-          style={{lineHeight: 2.5, height: '100%'}}
+          style={{ lineHeight: 2.5, height: '100%' }}
         >
           <div className={styles.selectBox}>
             <SelectBox
@@ -50,7 +51,7 @@ const Header = (props) => (
         </Cell>
         <Cell
           align="center"
-          style={{lineHeight: 2.5, height: '100%'}}
+          style={{ lineHeight: 2.5, height: '100%' }}
         >
           <div className={styles.textField}>
             <TextField

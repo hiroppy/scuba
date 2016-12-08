@@ -44,12 +44,12 @@ const Forms = () => (
     <p>TextField and TextArea are changed border color by theme.</p>
     <label style={{ marginBottom: '.5rem' }}>textField</label>
     <TextField
-      style={{width: '80%'}}
+      style={{ width: '80%' }}
       placeholder="placeholder 😎"
     />
     <label style={{ margin: '1.2rem 0 .5rem 0' }}>textArea</label>
     <TextArea
-      style={{width: '80%'}}
+      style={{ width: '80%' }}
       placeholder="😊"
     />
     {generateCodeTemplate(sampleCode1)}
@@ -89,46 +89,46 @@ const Forms = () => (
     <h4>SelectBox</h4>
     {generateTableTemplate([
       {
-        name: 'width',
-        type: 'number | string',
+        name   : 'width',
+        type   : 'number | string',
         default: '100%'
       },
       {
-        name: 'height',
-        type: 'number | string',
+        name   : 'height',
+        type   : 'number | string',
         default: 'auto'
       },
       {
-        name: 'disabled',
-        type: 'boolean',
+        name   : 'disabled',
+        type   : 'boolean',
         default: 'false'
       },
       {
-        name: 'listPosition',
-        type: 'top | bottom',
+        name   : 'listPosition',
+        type   : 'top | bottom',
         default: 'bottom'
       },
       {
-        name: 'listHeight',
-        type: 'number | string',
+        name   : 'listHeight',
+        type   : 'number | string',
         default: 'auto'
       },
       {
-        name: 'onChange',
-        type: 'Function',
+        name   : 'onChange',
+        type   : 'Function',
         default: 'undefined'
       }
     ])}
     <h4>Select</h4>
     {generateTableTemplate([
       {
-        name: 'default',
-        type: 'boolean',
+        name   : 'default',
+        type   : 'boolean',
         default: 'undefined'
       },
       {
-        name: 'value',
-        type: 'string',
+        name   : 'value',
+        type   : 'string',
         default: 'undefined'
       }
     ])}

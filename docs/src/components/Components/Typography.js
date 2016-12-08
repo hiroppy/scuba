@@ -22,6 +22,7 @@ const Typography = () => (
       <em>Scuba </em>
       uses
       <a
+        rel="noopener noreferrer"
         href="https://fonts.google.com/specimen/Cabin"
         target="_blank"
       >
@@ -31,13 +32,13 @@ const Typography = () => (
     </p>
     <Paper>
       {
-        `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789'?'"!"(%)[#]{@}/&<-+$*~;:<>/{}`
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\'?\'"!"(%)[#]{@}/&<-+$*~;:<>/{}'
       }
     </Paper>
     <h3>Changing fonts</h3>
     {generateCodeTemplate(sampleCode1, 'html')}
     <h3>Headers</h3>
-    <style>{`#heading {margin-top: 0 !important}`}</style> {/* [TODO] sorry... */}
+    <style>{'#heading {margin-top: 0 !important}'}</style> {/* [TODO] sorry... */}
     <Paper>
       <h1>h1(4.2rem). Heading</h1>
       <h2 id="heading">h2(3.5rem). Heading</h2>

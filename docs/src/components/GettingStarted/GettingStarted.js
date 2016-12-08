@@ -10,6 +10,7 @@ const GettingStarted = () => (
     <p>
       We recommend using
       <a
+        rel="noopener noreferrer"
         href="https://necolas.github.io/normalize.css/"
         target="_blank"
       >

@@ -1,4 +1,12 @@
 .container {
-  width: 200px;
-  height: 100%;
+  padding-left: 10px;
+}
+
+.container > * {
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding-bottom: 5px;
+}
+
+.container > p:hover:not(li) {
+  border-bottom: 1px solid white;
 }

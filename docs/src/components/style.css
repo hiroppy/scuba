@@ -1,0 +1,32 @@
+.wrapper {
+  min-height: 100vh;
+  padding: 0 10px;
+  word-wrap: break-word;
+}
+
+.githubCorner {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.sidebar {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  margin-top: 100px;
+}
+
+.main {
+  padding: 100px 0;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.mainWithSidebar {
+  padding-left: 200px;
+  margin: 0;
+}

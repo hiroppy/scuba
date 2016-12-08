@@ -68,13 +68,13 @@ const Grids = () => (
       className={styles.grid}
       responsive={false}
     >
-      <Cell ratio={1/3}>
+      <Cell ratio={1 / 3}>
         <Paper>Cell-1/3</Paper>
       </Cell>
       <Cell>
         <Paper>Cell-auto</Paper>
       </Cell>
-      <Cell ratio={1/4}>
+      <Cell ratio={1 / 4}>
         <Paper>Cell-1/4</Paper>
       </Cell>
     </Grid>
@@ -83,7 +83,7 @@ const Grids = () => (
       className={styles.grid}
       responsive={false}
     >
-      <Cell offset={1/3}>
+      <Cell offset={1 / 3}>
         <Paper>Cell-offset-1/3</Paper>
       </Cell>
     </Grid>
@@ -112,7 +112,7 @@ const Grids = () => (
       <Cell>
         <Paper>Cell-auto</Paper>
       </Cell>
-      <Cell ratio={1/2}>
+      <Cell ratio={1 / 2}>
         <Paper>C<br />e<br />l<br />l<br />1/2</Paper>
       </Cell>
       <Cell>
@@ -127,7 +127,7 @@ const Grids = () => (
       <Cell align="center">
         <Paper>Cell-auto</Paper>
       </Cell>
-      <Cell ratio={1/2}>
+      <Cell ratio={1 / 2}>
         <Paper>C<br />e<br />l<br />l<br />1/2</Paper>
       </Cell>
       <Cell align="bottom">
@@ -143,10 +143,10 @@ const Grids = () => (
       className={styles.grid}
       responsive
     >
-      <Cell ratio={1/4}>
+      <Cell ratio={1 / 4}>
         <Paper>Cell-1/4</Paper>
       </Cell>
-      <Cell ratio={3/4}>
+      <Cell ratio={3 / 4}>
         <Paper>Cell-3/4</Paper>
       </Cell>
     </Grid>
@@ -155,31 +155,31 @@ const Grids = () => (
     <h4>Grid</h4>
     {generateTableTemplate([
       {
-        name: 'align',
-        type: 'top | bottom | center',
+        name   : 'align',
+        type   : 'top | bottom | center',
         default: 'top'
       },
       {
-        name: 'responsive',
-        type: 'boolean',
+        name   : 'responsive',
+        type   : 'boolean',
         default: 'true'
       }
     ])}
     <h4>Cell</h4>
     {generateTableTemplate([
       {
-        name: 'ratio',
-        type: 'number',
+        name   : 'ratio',
+        type   : 'number',
         default: 'auto'
       },
       {
-        name: 'align',
-        type: 'top | bottom | center',
+        name   : 'align',
+        type   : 'top | bottom | center',
         default: 'top'
       },
       {
-        name: 'offset',
-        type: 'number',
+        name   : 'offset',
+        type   : 'number',
         default: '0px'
       }
     ])}

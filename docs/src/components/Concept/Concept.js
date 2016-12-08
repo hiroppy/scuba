@@ -2,7 +2,7 @@ import React from 'react';
 
 const Concept = () => (
   <section>
-    <h1 id="concepts">Concepts</h1>
+    <h1>Concept</h1>
     <hr />
     <p>
       <em>Scuba </em>
