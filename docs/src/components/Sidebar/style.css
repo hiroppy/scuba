@@ -2,11 +2,16 @@
   padding-left: 10px;
 }
 
-.container > * {
-  border: 1px solid rgba(0, 0, 0, 0);
+.container > a {
+  margin: 0 !important;
+  border: none !important;
   padding-bottom: 5px;
 }
 
-.container > p:hover:not(li) {
+.container p {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.container p:hover:not(li) {
   border-bottom: 1px solid white;
 }

@@ -1,26 +1,26 @@
 import React from 'react';
-import { List, Li } from '../../../../lib';
+import { List, Item } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
-const sampleCode = `import {List, Li} from 'scuba';
+const sampleCode = `import {List, Item} from 'scuba';
 
 <div>
     <List type="none">
-        <Li><dt>dt, type: none</dt></Li>
-        <Li><dd>dd, type: none</dd></Li>
+        <Item><dt>dt, type: none</dt></Item>
+        <Item><dd>dd, type: none</dd></Item>
     </List>
     <List type="circle">
-        <Li><span>span, type: circle</span></Li>
-        <Li><span>span, type: circle</span></Li>
+        <Item><span>span, type: circle</span></Item>
+        <Item><span>span, type: circle</span></Item>
     </List>
     <List type="square">
-        <Li><span>span, type: square</span></Li>
-        <Li><span>span, type: square</span></Li>
+        <Item><span>span, type: square</span></Item>
+        <Item><span>span, type: square</span></Item>
     </List>
     <List type="decimal">
-        <li><p>p, type: decimal</p></li>
-        <li><p>p, type: decimal</p></li>
+        <Item><p>p, type: decimal</p></Item>
+        <Item><p>p, type: decimal</p></Item>
     </List>
 </div>
 `;
@@ -40,20 +40,20 @@ const Lists = () => (
       as list-style-type.
     </p>
     <List type="none">
-      <Li><dt>dt, type: none</dt></Li>
-      <Li><dd>dd, type: none</dd></Li>
+      <Item><dt>dt, type: none</dt></Item>
+      <Item><dd>dd, type: none</dd></Item>
     </List>
     <List type="circle">
-      <Li><span>span, type: circle</span></Li>
-      <Li><span>span, type: circle</span></Li>
+      <Item><span>span, type: circle</span></Item>
+      <Item><span>span, type: circle</span></Item>
     </List>
     <List type="square">
-      <Li><span>span, type: square</span></Li>
-      <Li><span>span, type: square</span></Li>
+      <Item><span>span, type: square</span></Item>
+      <Item><span>span, type: square</span></Item>
     </List>
     <List type="decimal">
-      <li><p>p, type: decimal</p></li>
-      <li><p>p, type: decimal</p></li>
+      <Item><p>p, type: decimal</p></Item>
+      <Item><p>p, type: decimal</p></Item>
     </List>
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>

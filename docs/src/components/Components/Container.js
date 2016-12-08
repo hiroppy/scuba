@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './style';
-import Container, {
-  List, Li, Button, Paper, Grid, Cell
-} from '../../../../src';
+import Container, { Button, Paper, Grid, Cell } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 

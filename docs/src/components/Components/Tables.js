@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './style';
 import Container, {
   Table, TableHeader, TableRow, TableBody, TableRowColumn, TableHeaderColumn
-} from '../../../../lib';
+} from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { Code, List, Li } from '../../../../src';
+import { Code, List, Item } from '../../../../src';
 import { components as links } from '../../linkslist';
 import styles from './style';
 
@@ -13,9 +13,9 @@ const Components = () => (
       <List type="circle">
         {
           links.map((item) => (
-            <Li key={item.name}>
+            <Item key={item.name}>
               <Link to={`components/${item.href}`}>{item.name}</Link>
-            </Li>
+            </Item>
           ))
         }
       </List>

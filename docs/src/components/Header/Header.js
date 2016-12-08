@@ -11,6 +11,7 @@ const Header = (props) => (
   >
     <div className={styles.topBox}>
       <section className={styles.linkSection}>
+        <Link to="/">Top</Link>
         <Link to="concept">Concept</Link>
         <Link to="components">Components</Link>
       </section>
