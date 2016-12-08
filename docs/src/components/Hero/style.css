@@ -1,21 +1,39 @@
 .container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   margin: auto;
-  height: 500px;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 100;
+  text-align: center;
 }
 
 .logo {
-  background: url("https://placehold.jp/250x250.png?text=logo");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 250px;
   margin: auto;
   width: 250px;
 }
 
+.logo svg {
+  fill: #3498db;
+}
+
 .install {
   text-align: center;
-  margin: 70px 0;
+  margin: 50px 0;
+}
+
+.buttons {
+  max-width: 500px;
+  margin: 50px auto 0;
+}
+
+.buttons > * {
+  margin: 10px;
+}
+
+.buttons a {
+  margin: 0 !important;
 }

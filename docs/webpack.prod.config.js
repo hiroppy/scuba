@@ -32,6 +32,10 @@ module.exports = {
           'style',
           'css?modules&importLoaders=1&localIdentName=[path]__[name]__[local]__[hash:base64:5]'
         ]
+      },
+      {
+        test  : /\.svg$/,
+        loader: 'svg-inline'
       }
     ]
   },

@@ -55,6 +55,7 @@ const Header = (props) => (
         >
           <div className={styles.textField}>
             <TextField
+              style={{ height: 15 }}
               placeholder="#333"
               onChange={(e) => props.changeBackgroundColor(e.nativeEvent.target.value)}
             />

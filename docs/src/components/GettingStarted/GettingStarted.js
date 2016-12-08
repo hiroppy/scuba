@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import Container, { Code } from '../../../../lib';
 
 const GettingStarted = () => (
@@ -45,7 +46,7 @@ const Root = () => (
     <p>The theme and subColor apply within that range.</p>
     <p>
       Details:
-      <a href="#capsule">Capsule</a>
+      <Link to="components/container">Capsule</Link>
     </p>
   </div>
 );
