@@ -4,7 +4,7 @@
   "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
   "version": "0.0.11",
   "license": "MIT",
-  "description": "Unified UI components built by React.",
+  "description": "UI components with color unity that built by React.",
   "files": [
     "lib"
   ],

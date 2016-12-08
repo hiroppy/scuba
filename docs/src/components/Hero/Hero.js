@@ -11,6 +11,7 @@ const Hero = () => (
       <InlineSVG src={logo} />
     </div>
     <h1 className={styles.title}>Scuba</h1>
+    <p>UI components with color unity that built by React.</p>
     <div className={styles.install}>
       <Blockquote style={{ display: 'inline' }}>
         <code>

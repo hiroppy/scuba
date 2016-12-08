@@ -5,7 +5,7 @@ const styles = {
     justifyContent: 'space-around'
   },
   cell: {
-    flex: 1,
+    flex  : 1,
     height: '100%'
   },
   gridAlign: {
