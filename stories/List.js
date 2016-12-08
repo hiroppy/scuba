@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import { Container, List, Li } from '../src';
+import Container, { List, Item } from '../src';
 
 const styles = {
   light: {
@@ -19,41 +19,41 @@ storiesOf('List', module).add('subColor is white', () => (
   <div style={styles.dark}>
     <Container>
       <List type="circle">
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container theme="deepSea">
       <List>
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container theme="sunset">
       <List type="square">
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container theme="mint">
       <List type="decimal">
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container theme="mikan">
       <List>
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container>
       <List type="none">
-        <Li>order-1</Li>
-        <Li>
+        <Item>order-1</Item>
+        <Item>
           <dt>dt-tag</dt>
           <dd>dd-tag</dd>
-        </Li>
+        </Item>
       </List>
     </Container>
   </div>
@@ -61,8 +61,8 @@ storiesOf('List', module).add('subColor is white', () => (
   <div style={styles.light}>
     <Container subColor="dark">
       <List type="circle">
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container
@@ -70,8 +70,8 @@ storiesOf('List', module).add('subColor is white', () => (
       subColor="dark"
     >
       <List>
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container
@@ -79,8 +79,8 @@ storiesOf('List', module).add('subColor is white', () => (
       subColor="dark"
     >
       <List type="square">
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container
@@ -88,8 +88,8 @@ storiesOf('List', module).add('subColor is white', () => (
       subColor="dark"
     >
       <List type="decimal">
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container
@@ -97,19 +97,19 @@ storiesOf('List', module).add('subColor is white', () => (
       subColor="dark"
     >
       <List>
-        <Li>order-1</Li>
-        <Li>order-2</Li>
+        <Item>order-1</Item>
+        <Item>order-2</Item>
       </List>
     </Container>
     <Container
       subColor="dark"
     >
       <List type="none">
-        <Li>order-1</Li>
-        <Li>
+        <Item>order-1</Item>
+        <Item>
           <dt>dt-tag</dt>
           <dd>dd-tag</dd>
-        </Li>
+        </Item>
       </List>
     </Container>
   </div>

@@ -16,8 +16,10 @@ export const Grid = (props: CommonProps & GirdProps) => {
   );
 
   const style = Object.assign(
-    {}, styles.grid,
-    styles.gridAlign[props.align], props.style);
+    {},
+    styles.grid,
+    styles.gridAlign[props.align], props.style
+  );
 
   return (
     <div

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { List, Li } from '../../src';
+import { List, Item } from '../../src';
 
 describe('List component', () => {
   it('should render self and subcomponents', () => {
@@ -47,7 +47,7 @@ describe('List component', () => {
   });
 });
 
-describe('Li component', () => {
+describe('Item component', () => {
   it('should render self and subcomponents', () => {
     const props = {
       style: {
@@ -57,9 +57,9 @@ describe('Li component', () => {
     };
 
     const wrapper = shallow(
-      <Li {...props}>
+      <Item {...props}>
         <p>hello</p>
-      </Li>
+      </Item>
     );
 
     const liProps = wrapper.find('li').props();

@@ -19,7 +19,7 @@ export const List = (props: CommonProps & Props) => (
   </ul>
 );
 
-export const Li = (props: CommonProps) => (
+export const Item = (props: CommonProps) => (
   <li
     style={props.style}
     className={classnames('scuba-list-li', props.className)}
