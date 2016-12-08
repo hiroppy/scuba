@@ -3,6 +3,7 @@
 import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
+import classnames from 'classnames';
 import generateRootStyle from './generateRootStyle';
 import styles from './styles';
 import {
@@ -38,10 +39,10 @@ const subColorRouter = (sub) => {
 };
 
 class Container extends React.Component<void, CommonProps & Props, void> {
-  containerId: string;
+  containerClassName: string;
 
   componentWillMount() {
-    this.containerId = `scuba--${Date.now()}__${Math.floor(Math.random() * 10000)}`;
+    this.containerClassName = `scuba--${Date.now()}__${Math.floor(Math.random() * 10000)}`;
   }
 
   render() {
@@ -56,12 +57,11 @@ class Container extends React.Component<void, CommonProps & Props, void> {
     const key = themeRouter(theme);
     const sub = subColorRouter(subColor);
 
-    const containerStyle = generateRootStyle(this.containerId, key, sub);
+    const containerStyle = generateRootStyle(this.containerClassName, key, sub);
 
     return (
       <div
-        id={this.containerId}
-        className={className}
+        className={classnames(this.containerClassName, className)}
       >
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
         <style>{containerStyle}</style>

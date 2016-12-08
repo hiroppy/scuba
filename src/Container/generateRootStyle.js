@@ -3,9 +3,9 @@
 import { fontFamily } from '../styles/variables';
 import { light, dark } from '../styles/colors';
 
-const generateRootStyle = (containerId: string, key: string, sub: string): string => (
+const generateRootStyle = (containerClassName: string, key: string, sub: string): string => (
   `
-   #${containerId} {
+   .${containerClassName} {
       font-family: ${fontFamily};
       borderColor: ${key};
       color: ${sub};
@@ -14,49 +14,49 @@ const generateRootStyle = (containerId: string, key: string, sub: string): strin
       -webkit-font-smoothing: antialiased;
       -moz-font-smoothing: antialiased;
     }
-    #${containerId} h1,
-    #${containerId} h2,
-    #${containerId} h3,
-    #${containerId} h4,
-    #${containerId} h5,
-    #${containerId} h6 {
+    .${containerClassName} h1,
+    .${containerClassName} h2,
+    .${containerClassName} h3,
+    .${containerClassName} h4,
+    .${containerClassName} h5,
+    .${containerClassName} h6 {
       margin: 0;
       color: ${key};
     }
-    #${containerId} h1 {
+    .${containerClassName} h1 {
       font-size: 4.2rem;
     }
-    #${containerId} h2 {
+    .${containerClassName} h2 {
       font-size: 3.5rem;
     }
-    #${containerId} h3 {
+    .${containerClassName} h3 {
       font-size: 2.9rem;
     }
-    #${containerId} h4 {
+    .${containerClassName} h4 {
       font-size: 2.2rem;
     }
-    #${containerId} h5 {
+    .${containerClassName} h5 {
       font-size: 1.6rem;
     }
-    #${containerId} h6 {
+    .${containerClassName} h6 {
       font-size: 1.0rem;
     }
-    #${containerId} hr {
+    .${containerClassName} hr {
       border-color: ${sub};
     }
-    #${containerId} a {
+    .${containerClassName} a {
       color: ${key};
       margin: 0 .2rem;
       text-decoration: none;
     }
-    #${containerId} a:hover {
+    .${containerClassName} a:hover {
       opacity: .8;
     }
-    #${containerId} label {
+    .${containerClassName} label {
       display: block;
       font-weight: 700;
     }
-    #${containerId} pre:before {
+    .${containerClassName} pre:before {
       background: ${light};
       border: solid 1px ${light};
       border-top: none;
@@ -68,12 +68,12 @@ const generateRootStyle = (containerId: string, key: string, sub: string): strin
       left: 0;
       z-index: 100;
     }
-    #${containerId} pre > code {
+    .${containerClassName} pre > code {
       font-size: 1.0rem;
       margin: 0;
       padding: 0;
     }
-    #${containerId} code {
+    .${containerClassName} code {
       position: relative;
       font-size: 1.1rem;
       padding: .1em;
@@ -81,70 +81,70 @@ const generateRootStyle = (containerId: string, key: string, sub: string): strin
       margin: 0 .2rem;
       /* background: ${(sub === dark ? light : dark)}; */
     }
-    #${containerId} .scuba-avatar-no-img {
+    .${containerClassName} .scuba-avatar-no-img {
       color: ${sub};
       border: 1px solid ${key};
     }
-    #${containerId} .scuba-paper {
+    .${containerClassName} .scuba-paper {
       color: ${sub};
       border: 1px solid ${key};
       background: ${(sub === dark ? light : dark)};
     }
-    #${containerId} .scuba-button {
+    .${containerClassName} .scuba-button {
       color: ${key};
     }
-    #${containerId} .scuba-button:hover {
+    .${containerClassName} .scuba-button:hover {
       color: ${sub};
       background-color: ${key};
     }
-    #${containerId} .scuba-button-disabled {
+    .${containerClassName} .scuba-button-disabled {
       cursor: not-allowed !important;
       color: ${sub};
       opacity: .6;
     }
-    #${containerId} .scuba-button-clear {
+    .${containerClassName} .scuba-button-clear {
       background-color: transparent;
     }
-    #${containerId} .scuba-blockquote {
+    .${containerClassName} .scuba-blockquote {
       border-color: ${key} !important;
     }
-    #${containerId} .scuba-list {
+    .${containerClassName} .scuba-list {
       color: ${key};
     }
-    #${containerId} .scuba-list-li > div {
+    .${containerClassName} .scuba-list-li > div {
       color: ${sub};
     }
-    #${containerId} .scuba-textform {
+    .${containerClassName} .scuba-textform {
       color: ${dark};
       border: 1px ${light} solid;
       background: ${light};
     }
-    #${containerId} .scuba-textform:focus {
+    .${containerClassName} .scuba-textform:focus {
       border: 1px ${key} solid;
     }
-    #${containerId} .scuba-selectcontainer {
+    .${containerClassName} .scuba-selectcontainer {
       border-bottom: 1px ${key} solid;
     }
-    #${containerId} .scuba-selectbox:hover {
+    .${containerClassName} .scuba-selectbox:hover {
       opacity: .7;
     }
-    #${containerId} .scuba-selectlist {
+    .${containerClassName} .scuba-selectlist {
       background: ${(sub === dark ? light : dark)};
       box-shadow: 0 0 5px 0 ${sub};
     }
-    #${containerId} .scuba-selectitem:hover {
+    .${containerClassName} .scuba-selectitem:hover {
       color: ${key};
     }
-    #${containerId} .scuba-tableheader,
-    #${containerId} .scuba-tablerow {
+    .${containerClassName} .scuba-tableheader,
+    .${containerClassName} .scuba-tablerow {
       border-bottom: 1px ${key} solid;
     }
-    #${containerId} .scuba-tablefooter {
+    .${containerClassName} .scuba-tablefooter {
       border-top: 1px ${key} solid;
     }
 
     @media (max-width: 40em) {
-      #${containerId} .scuba-grid-responsive > .scuba-cell:not(.scuba-cell-offset) {
+      .${containerClassName} .scuba-grid-responsive > .scuba-cell:not(.scuba-cell-offset) {
         flex: 0 0 100% !important;
       }
     }

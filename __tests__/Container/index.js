@@ -18,8 +18,8 @@ describe('Container component', () => {
   it('should render self and subcomponents', () => {
     const containerProps = wrapper.find('div').props();
 
-    expect(typeof containerProps.id).toEqual('string');
-    expect(typeof containerProps.className).toEqual('undefined');
+    expect(typeof containerProps.className).toEqual('string');
+    expect(containerProps.className.includes('scuba--')).toEqual(true);
     expect(containerProps.children.length).toEqual(4);
   });
 });
