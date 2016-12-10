@@ -25,8 +25,18 @@ const Buttons = () => (
     <h3>Properties</h3>
     {generateTableTemplate([
       {
+        name   : 'className',
+        type   : 'string',
+        default: 'undefined'
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: 'undefined'
+      },
+      {
         name   : 'width',
-        type   : 'string | number',
+        type   : 'number | string',
         default: 'auto'
       },
       {

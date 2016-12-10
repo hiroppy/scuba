@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
 import styles from './style';
-import Container, { Button, Paper, Grid, Cell } from '../../../../src';
+import Container, { Blockquote, Button, Paper, Grid, Cell } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
@@ -12,7 +13,9 @@ const Root = () => (
     </Container>
 );`;
 
-const sampleCode2 = `<div>
+const sampleCode2 = `import Container, {Button} from 'scuba';
+
+<div>
     <Container
       theme="mint"
       subColor="light"
@@ -31,35 +34,17 @@ const sampleCode2 = `<div>
 
 const ContainerSection = () => (
   <div>
-    <h2 id="container">Container</h2>
+    <h2>Container</h2>
     <p>You must use Container component in the place you want Scuba to apply.</p>
     <p>
-      If you specify
-      <code>codeColor</code>
-      ,
-      <em> scuba </em>
-      fetches its css from cdnjs.com.
+      {'You can choose 5 themes and 2 subColor. Let\'s operate the toolbar below this site😊'}
     </p>
-    <p>
-      {'URL template: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/$\{codeTheme\}.min.css'}
-    </p>
-    <p>see:
-      <a
-        rel="noopener noreferrer"
-        href="https://cdnjs.com/libraries/highlight.js/"
-        target="_blank"
-      >
-        cdnjs/highlight.js
-      </a>
-    </p>
-    <p>The theme used on this page is obsidian.</p>
-    {generateCodeTemplate(sampleCode1)}
-
-    <h3 id="capsule">capsule</h3>
-    <p>The theme is reflected only in Container.</p>
+    <p>If you do not like it, please specify a color.</p>
+    <h3>capsule</h3>
+    <p>The theme and subColor are reflected only in Container.</p>
     <Grid>
       <Cell textAlign="left">
-        {generateCodeTemplate(sampleCode2, 'html')}
+        {generateCodeTemplate(sampleCode2)}
       </Cell>
       <Cell align="center">
         <Paper className={styles.preview}>
@@ -80,8 +65,55 @@ const ContainerSection = () => (
         </Paper>
       </Cell>
     </Grid>
+    <h3>Syntax highlighting for Code component</h3>
+    <p>
+      If you specify
+      <code>codeTheme</code>
+      ,
+      <em> scuba </em>
+      fetches its css from cdnjs.com.
+    </p>
+    <p>generated URL template in Container:</p>
+    <Blockquote style={{ overflowY: 'auto' }}>
+      <code>
+        {'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/$\{codeTheme\}.min.css'}
+      </code>
+    </Blockquote>
+    <p>see:
+      <a
+        rel="noopener noreferrer"
+        href="https://cdnjs.com/libraries/highlight.js/"
+        target="_blank"
+      >
+        cdnjs/highlight.js
+      </a>
+    </p>
+    <p>e.g. The theme used on this site is obsidian.</p>
+    {generateCodeTemplate(sampleCode1, 'javascript', 'obsidian')}
+    <p>Detail: <Link to="/components/codes">Codes</Link></p>
+    <p>
+      We recommend you to write in HTML(e.g. index.html) as
+      <code>
+        Link
+      </code>
+      instead of specifying
+      <code>
+        codeTheme
+      </code>
+      .
+    </p>
     <h3>Properties</h3>
     {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: 'undefined'
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: 'undefined'
+      },
       {
         name   : 'theme',
         type   : '(sea | deepSea | sunset | mint | mikan) or hex',
@@ -89,8 +121,8 @@ const ContainerSection = () => (
       },
       {
         name   : 'subColor',
-        type   : '(light | dark) or hex',
-        default: 'light'
+        type   : '(dark | light) or hex',
+        default: 'dark'
       },
       {
         name   : 'codeTheme',

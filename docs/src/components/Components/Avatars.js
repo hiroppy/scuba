@@ -44,6 +44,16 @@ const Avatars = () => (
     <h3>Properties</h3>
     {generateTableTemplate([
       {
+        name   : 'className',
+        type   : 'string',
+        default: 'undefined'
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: 'undefined'
+      },
+      {
         name   : 'src',
         type   : 'string',
         default: 'undefined'

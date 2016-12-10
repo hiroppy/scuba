@@ -1,14 +1,14 @@
 import React from 'react';
 import Container, {
   Table, TableHeader, TableRow, TableBody, TableRowColumn, TableHeaderColumn
-} from '../../../../lib';
+} from '../../../../src';
 
 const generateTableTemplate = (propsList) => {
   return (
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHeaderColumn>custom props</TableHeaderColumn>
+          <TableHeaderColumn>key</TableHeaderColumn>
           <TableHeaderColumn>type</TableHeaderColumn>
           <TableHeaderColumn>default</TableHeaderColumn>
         </TableRow>

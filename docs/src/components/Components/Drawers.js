@@ -148,6 +148,16 @@ class Drawers extends React.Component {
         <h3>Properties</h3>
         {generateTableTemplate([
           {
+            name   : 'className',
+            type   : 'string',
+            default: 'undefined'
+          },
+          {
+            name   : 'style',
+            type   : 'Object',
+            default: 'undefined'
+          },
+          {
             name   : 'width',
             type   : 'number',
             default: '200px'
@@ -171,6 +181,11 @@ class Drawers extends React.Component {
             name   : 'displayedOverlay',
             type   : 'boolean',
             default: 'false'
+          },
+          {
+            name   : 'onChange',
+            type   : 'Function',
+            default: 'undefined'
           }
         ])}
       </div>

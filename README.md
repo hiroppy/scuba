@@ -2,7 +2,7 @@
   <h1>scuba</h1>
 </div>
 
-<strong>Unified UI components built by React.</strong>
+<strong>UI components with color unity that built by React.</strong>
 
 see: https://abouthiroppy.github.io/scuba/
 
@@ -13,6 +13,9 @@ see: https://abouthiroppy.github.io/scuba/
 [![dependencies Status](https://david-dm.org/abouthiroppy/scuba/status.svg)](https://david-dm.org/abouthiroppy/scuba)
 
 # Getting Started
+
+[scuba/getting-started](https://abouthiroppy.github.io/scuba/#/getting-started)
+
 Install the module with `npm install --save scuba`.
 
 Scuba has 5 themes and 2 subColors.
@@ -39,12 +42,14 @@ ReactDOM.render(
 ```
 
 ## Components List
+[scuba/components](https://abouthiroppy.github.io/scuba/#/components)
+
 - [x] Typography
 - [x] Avatars
 - [x] Blockquotes
 - [x] Buttons
 - [x] Codes
-- [ ] Forms
+- [x] Forms
 - [x] Lists
 - [x] Tables
 - [x] Papers

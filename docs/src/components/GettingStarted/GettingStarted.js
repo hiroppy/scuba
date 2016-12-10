@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Container, { Code } from '../../../../lib';
+import Container, { Code, List, Item } from '../../../../src';
 
 const GettingStarted = () => (
   <div>
@@ -20,6 +20,12 @@ const GettingStarted = () => (
       or other.
     </p>
     <h3>Usage</h3>
+    <List type="decimal">
+      <Item><p>Set Container where you want to apply theme and subColor.</p></Item>
+      <Item><p>Decide theme and subColor.</p></Item>
+      <Item><p>Decide background color.(Scuba does not provide it)</p></Item>
+      <Item><p>Hope you enjoy it !</p></Item>
+    </List>
     <Code
       fileName="index.js"
       language="javascript"
@@ -38,16 +44,6 @@ const Root = () => (
       `
     }
     </Code>
-    <p>
-      First, You use
-      <code>Container</code>
-      to decide the theme and subColor.
-    </p>
-    <p>The theme and subColor apply within that range.</p>
-    <p>
-      Details:
-      <Link to="components/container">Capsule</Link>
-    </p>
   </div>
 );
 

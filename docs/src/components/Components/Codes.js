@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code } from '../../../../lib';
+import { Code } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
@@ -55,6 +55,16 @@ int main() {
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
     {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: 'undefined'
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: 'undefined'
+      },
       {
         name   : 'language',
         type   : 'string',

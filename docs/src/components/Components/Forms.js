@@ -54,7 +54,23 @@ const Forms = () => (
     />
     {generateCodeTemplate(sampleCode1)}
     <h3>Properties</h3>
-    <p>Forms have no custom props.</p>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: 'undefined'
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: 'undefined'
+      },
+      {
+        name   : 'onChange',
+        type   : 'Function',
+        default: 'undefined'
+      }
+    ])}
     <h2 id="selects">Selects</h2>
     <p>
       If you set a value to
