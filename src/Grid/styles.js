@@ -1,8 +1,8 @@
 const styles = {
   grid: {
-    display       : 'flex',
-    flexWrap      : 'wrap',
-    justifyContent: 'space-around'
+    width   : '100%',
+    display : 'flex',
+    flexWrap: 'wrap'
   },
   cell: {
     flex  : 1,

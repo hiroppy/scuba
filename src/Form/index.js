@@ -127,15 +127,22 @@ export class SelectBox extends React.Component<void, CommonProps & SelectBoxProp
         >
           {children}
         </div>
-        <span
-          style={Object.assign(
-            {},
-            styles.selectBoxArrow,
-            (listPosition === 'top' ? {} : { transform: 'rotateX(180deg)' })
-          )}
-        >
-          ▵
-        </span>
+        <div style={styles.selectBoxArrow}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            className="scuba-selectbox-arrow-icon"
+          >
+            <polygon
+              fill="none"
+              points={
+              listPosition === 'top' ?
+                '0, 10 5, 0 10, 10' :
+                '0, 0 5, 10 10, 0'
+            }
+            />
+          </svg>
+        </div>
       </div>
     );
   }

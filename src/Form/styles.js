@@ -15,21 +15,27 @@ const styles = {
   },
   selectBox: {
     cursor    : 'pointer',
+    textAlign : 'left',
     userSelect: 'none'
   },
   selectBoxArrow: {
-    right        : 20,
-    bottom       : 10, // for padding-bottom from selectContainer
-    fontSize     : '.9rem',
+    top          : 0,
     cursor       : 'pointer',
+    right        : 5,
+    width        : 20,
+    height       : 20,
+    bottom       : 0,
+    margin       : 'auto',
+    fontSize     : '.9rem',
     position     : 'absolute',
     pointerEvents: 'none'
   },
   selectList: {
-    width    : 'calc(100% - 40px)', // 20 * 2
+    width    : '100%',
     zIndex   : 1200,
     padding  : 20,
     position : 'absolute',
+    textAlign: 'left',
     overflowY: 'auto'
   },
   select: {

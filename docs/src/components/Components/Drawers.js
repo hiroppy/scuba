@@ -105,7 +105,7 @@ class Drawers extends React.Component {
         </Drawer>
         <Grid justifyContent="flex-start">
           <Cell
-            ratio={1/5}
+            ratio={1 / 5}
             textAlign="left"
           >
             <Button
@@ -132,7 +132,7 @@ class Drawers extends React.Component {
         </Drawer>
         <Grid justifyContent="flex-start">
           <Cell
-            ratio={1/5}
+            ratio={1 / 5}
             textAlign="left"
           >
             <Button

@@ -7,6 +7,7 @@ import styles from './styles';
 type GirdProps = {
   align?: 'top' | 'bottom' | 'center';
   responsive?: boolean;
+  justifyContent?: 'flex-start' | 'flex-end' | 'center' |  'space-between' | 'space-around';
 };
 
 export const Grid = (props: CommonProps & GirdProps) => {
@@ -18,7 +19,9 @@ export const Grid = (props: CommonProps & GirdProps) => {
   const style = Object.assign(
     {},
     styles.grid,
-    styles.gridAlign[props.align], props.style
+    styles.gridAlign[props.align],
+    { justifyContent: props.justifyContent },
+    props.style
   );
 
   return (
@@ -32,8 +35,9 @@ export const Grid = (props: CommonProps & GirdProps) => {
 };
 
 Grid.defaultProps = {
-  align     : 'top',
-  responsive: true
+  align         : 'top',
+  responsive    : true,
+  justifyContent: 'space-around'
 };
 
 type CellProps = {

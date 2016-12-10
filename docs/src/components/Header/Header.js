@@ -15,7 +15,8 @@ const Header = (props) => (
         <a
           href={`https://github.com/abouthiroppy/scuba/releases/tag/v${VERSION}`}
           target="_blank"
-          style={{color: '#f5f5f5'}}
+          rel="noopener noreferrer"
+          style={{ color: '#f5f5f5' }}
         >
           {VERSION}
         </a>

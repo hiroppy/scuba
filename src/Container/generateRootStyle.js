@@ -5,6 +5,15 @@ import { light, dark } from '../styles/colors';
 
 const generateRootStyle = (containerClassName: string, key: string, sub: string): string => (
   `
+  .${containerClassName} *,
+  .${containerClassName} *:before,
+  .${containerClassName} *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    }
    .${containerClassName} {
       font-family: ${fontFamily};
       borderColor: ${key};
@@ -12,7 +21,7 @@ const generateRootStyle = (containerClassName: string, key: string, sub: string)
       font-size: 1.1rem;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
     .${containerClassName} h1,
     .${containerClassName} h2,
@@ -127,6 +136,9 @@ const generateRootStyle = (containerClassName: string, key: string, sub: string)
     }
     .${containerClassName} .scuba-selectbox:hover {
       opacity: .7;
+    }
+    .${containerClassName} .scuba-selectbox-arrow-icon > polygon {
+      stroke: ${sub};
     }
     .${containerClassName} .scuba-selectlist {
       background: ${(sub === dark ? light : dark)};
