@@ -1,7 +1,5 @@
 const styles = {
   container: {
-    width             : 60,
-    height            : 60,
     display           : 'flex',
     justifyContent    : 'center',
     alignItems        : 'center',

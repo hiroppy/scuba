@@ -23,8 +23,10 @@ const Avatar = (props: CommonProps & Props) => (
       {},
       (props.src ? { backgroundImage: `url(${props.src})` } : {}),
       styles.container,
-      (props.width ? { width: props.width } : {}),
-      (props.height ? { height: props.height } : {}),
+      {
+        width : props.width,
+        height: props.height
+      },
       (props.form === 'circle' ? styles.circle : styles.square),
       props.style
     )}
@@ -34,7 +36,9 @@ const Avatar = (props: CommonProps & Props) => (
 );
 
 Avatar.defaultProps = {
-  form: 'circle'
+  form  : 'circle',
+  width : 60,
+  height: 60
 };
 
 export default Avatar;

@@ -30,6 +30,7 @@ describe('Button component', () => {
       outline     : 'none',
       padding     : '5px 15px',
       fontSize    : '1.0rem',
+      textAlign   : 'center',
       fontWeight  : 400,
       lineHeight  : 1.5,
       userSelect  : 'none',
@@ -79,6 +80,7 @@ describe('Button component', () => {
       outline     : 'none',
       padding     : '5px 15px',
       fontSize    : '1.0rem',
+      textAlign   : 'center',
       fontWeight  : 400,
       lineHeight  : 1.5,
       userSelect  : 'none',
@@ -87,7 +89,6 @@ describe('Button component', () => {
       borderRadius: '5px'
     });
 
-    expect(buttonProps.disabled).toEqual(true);
     expect(buttonProps.className).toEqual('scuba-button-disabled');
   });
 
@@ -98,21 +99,21 @@ describe('Button component', () => {
 
     expect(buttonProps.style).toEqual({
       margin      : 0,
+      border      : 'none',
       cursor      : 'pointer',
       display     : 'inline-block',
       outline     : 'none',
       padding     : '5px 15px',
       fontSize    : '1.0rem',
+      textAlign   : 'center',
       fontWeight  : 400,
       lineHeight  : 1.5,
       userSelect  : 'none',
       borderWidth : 1,
       borderStyle : 'solid',
-      borderRadius: '5px',
-      border      : 'none'
+      borderRadius: '5px'
     });
 
-    expect(buttonProps.clear).toEqual(true);
     expect(buttonProps.className).toEqual('scuba-button-clear');
   });
 });
