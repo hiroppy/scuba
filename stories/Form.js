@@ -49,7 +49,7 @@ storiesOf('Form', module).add('TextField', () => (
   </div>
 )).add('TextArea', () => (
   <div>
-    <Container theme="mikan" subColor="dark">
+    <Container theme="mikan">
       <div style={styles.box}>
         <TextArea
           onChange={action('onChange')}
@@ -59,7 +59,7 @@ storiesOf('Form', module).add('TextField', () => (
   </div>
 )).add('Select', () => (
   <div style={styles.box}>
-    <Container subColor="dark">
+    <Container>
       <SelectBox>
         <Select>select-1</Select>
         <Select default>select-2</Select>
@@ -69,10 +69,8 @@ storiesOf('Form', module).add('TextField', () => (
     </Container>
 
     <div style={{ paddingTop: 150 }} />
-    <Container subColor="dark">
-      <SelectBox
-        listPosition="top"
-      >
+    <Container>
+      <SelectBox listPosition="top">
         <Select>select-1</Select>
         <Select>select-2</Select>
         <Select default>select-3</Select>

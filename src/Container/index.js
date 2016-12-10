@@ -23,23 +23,33 @@ type Props = {
   codeTheme?: string;
 };
 
+type DefaultProps = {
+  theme: string;
+  subColor: string;
+};
+
 const themeRouter = (theme) => {
   if (theme === 'sea') return sea;
   if (theme === 'deepSea') return deepSea;
   if (theme === 'sunset') return sunset;
   if (theme === 'mint') return mint;
   if (theme === 'mikan') return mikan;
-  return sea;
+  return theme;
 };
 
 const subColorRouter = (sub) => {
   if (sub === 'light') return light;
   if (sub === 'dark') return dark;
-  return light;
+  return sub;
 };
 
-class Container extends React.Component<void, CommonProps & Props, void> {
+class Container extends React.Component<DefaultProps, CommonProps & Props, void> {
   containerClassName: string;
+
+  static defaultProps = {
+    theme   : 'sea',
+    subColor: 'dark'
+  };
 
   componentWillMount() {
     this.containerClassName = `scuba--${Date.now()}__${Math.floor(Math.random() * 10000)}`;

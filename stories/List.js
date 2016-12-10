@@ -17,37 +17,37 @@ const styles = {
 
 storiesOf('List', module).add('subColor is white', () => (
   <div style={styles.dark}>
-    <Container>
+    <Container subColor="light">
       <List type="circle">
         <Item>order-1</Item>
         <Item>order-2</Item>
       </List>
     </Container>
-    <Container theme="deepSea">
+    <Container theme="deepSea" subColor="light">
       <List>
         <Item>order-1</Item>
         <Item>order-2</Item>
       </List>
     </Container>
-    <Container theme="sunset">
+    <Container theme="sunset" subColor="light">
       <List type="square">
         <Item>order-1</Item>
         <Item>order-2</Item>
       </List>
     </Container>
-    <Container theme="mint">
+    <Container theme="mint" subColor="light">
       <List type="decimal">
         <Item>order-1</Item>
         <Item>order-2</Item>
       </List>
     </Container>
-    <Container theme="mikan">
+    <Container theme="mikan" subColor="light">
       <List>
         <Item>order-1</Item>
         <Item>order-2</Item>
       </List>
     </Container>
-    <Container>
+    <Container subColor="light">
       <List type="none">
         <Item>order-1</Item>
         <Item>

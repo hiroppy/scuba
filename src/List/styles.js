@@ -1,6 +1,7 @@
 const styles = {
   ul: {
-    margin: 0
+    margin     : 0,
+    paddingLeft: 20
   }
 };
 

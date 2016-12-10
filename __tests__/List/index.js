@@ -22,7 +22,8 @@ describe('List component', () => {
     expect(listProps.style).toEqual({
       margin       : 0,
       listStyleType: undefined,
-      background   : '#fff'
+      background   : '#fff',
+      paddingLeft  : 20
     });
     expect(listProps.className).toEqual('scuba-list test-class');
     expect(wrapper.contains(<p>hello</p>)).toEqual(true);
@@ -42,7 +43,8 @@ describe('List component', () => {
     expect(listProps.style).toEqual({
       margin       : 0,
       listStyleType: 'circle',
-      background   : '#fff'
+      background   : '#fff',
+      paddingLeft  : 20
     });
   });
 });

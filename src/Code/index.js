@@ -25,7 +25,8 @@ class Code extends React.Component<void, CommonProps & Props, void> {
   componentDidMount() {
     highlight.highlightBlock(findDOMNode(this.code));
 
-    const el = document.getElementById(this.id);
+    const el = document.querySelector(`#${this.id}`);
+
     if (this.props.fileName && el) el.setAttribute('data-content', this.props.fileName);
   }
 
