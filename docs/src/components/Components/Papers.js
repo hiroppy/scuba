@@ -41,7 +41,13 @@ const Papers = () => (
     </Container>
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
-    <p>Papers have no custom props.</p>
+    {generateTableTemplate([
+      {
+        name   : 'backgroundColor',
+        type   : 'string',
+        default: 'right or dark'
+      }
+    ])}
   </div>
 );
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../../../../lib';
+import { Button } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 import styles from './style';
@@ -24,6 +24,11 @@ const Buttons = () => (
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
     {generateTableTemplate([
+      {
+        name   : 'width',
+        type   : 'string | number',
+        default: 'auto'
+      },
       {
         name   : 'disabled',
         type   : 'boolean',

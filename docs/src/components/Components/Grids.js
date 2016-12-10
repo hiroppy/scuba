@@ -181,6 +181,16 @@ const Grids = () => (
         name   : 'offset',
         type   : 'number',
         default: '0px'
+      },
+      {
+        name   : 'margin',
+        type   : 'string | number',
+        default: '0'
+      },
+      {
+        name   : 'textAlign',
+        type   : 'left | center | right',
+        default: 'center'
       }
     ])}
   </div>

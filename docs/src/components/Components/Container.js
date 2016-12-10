@@ -58,7 +58,7 @@ const ContainerSection = () => (
     <h3 id="capsule">capsule</h3>
     <p>The theme is reflected only in Container.</p>
     <Grid>
-      <Cell>
+      <Cell textAlign="left">
         {generateCodeTemplate(sampleCode2, 'html')}
       </Cell>
       <Cell align="center">
@@ -94,7 +94,7 @@ const ContainerSection = () => (
       },
       {
         name   : 'codeTheme',
-        type   : 'a theme name',
+        type   : 'string',
         default: 'undefined'
       }
     ])}

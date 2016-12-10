@@ -47,6 +47,10 @@ export const components = [
     href: 'tables'
   },
   {
+    name: 'Drawers',
+    href: 'drawers'
+  },
+  {
     name: 'Lists',
     href: 'lists'
   },

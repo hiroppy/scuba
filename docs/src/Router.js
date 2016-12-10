@@ -23,6 +23,7 @@ import Components, {
   ColorsSection,
   PapersSection,
   TablesSection,
+  DrawersSection,
   AvatarsSection,
   ButtonsSection,
   ContainerSection,
@@ -89,6 +90,10 @@ const PageRouter = () => (
         <Route
           path="tables"
           component={createComponents(TablesSection, true)}
+        />
+        <Route
+          path="drawers"
+          component={createComponents(DrawersSection, true)}
         />
         <Route
           path="lists"

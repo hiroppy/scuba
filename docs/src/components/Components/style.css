@@ -37,10 +37,6 @@
   margin-right: 15px;
 }
 
-.grid {
-  text-align: center;
-}
-
 /* paper */
 .grid > div > div {
   margin: 10px;
