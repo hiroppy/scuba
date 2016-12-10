@@ -12,6 +12,7 @@ function loadStories() {
   require('../stories/Table');
   require('../stories/Code');
   require('../stories/Grid');
+  require('../stories/Drawer');
 }
 
 configure(loadStories, module);
