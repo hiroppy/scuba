@@ -143,6 +143,10 @@ const generateRootStyle = (containerClassName: string, key: string, sub: string)
       border-top: 1px ${key} solid;
     }
 
+    .${containerClassName} .scuba-drawer {
+      background: ${(sub === dark ? light : dark)};
+    }
+
     @media (max-width: 40em) {
       .${containerClassName} .scuba-grid-responsive > .scuba-cell:not(.scuba-cell-offset) {
         flex: 0 0 100% !important;

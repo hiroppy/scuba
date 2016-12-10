@@ -10,6 +10,7 @@ const common = {
   outline     : 'none',
   padding     : '5px 15px',
   fontSize    : '1.0rem',
+  textAlign   : 'center',
   fontWeight  : 400,
   lineHeight  : 1.5,
   userSelect  : 'none',

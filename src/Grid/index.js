@@ -39,7 +39,9 @@ Grid.defaultProps = {
 type CellProps = {
   ratio?: number;
   align?: 'top' | 'bottom' | 'center';
+  margin?: string | number;
   offset?: number;
+  textAlign?: 'left' | 'center' | 'right';
 };
 
 export const Cell = (props: CommonProps & CellProps) => {
@@ -56,9 +58,15 @@ export const Cell = (props: CommonProps & CellProps) => {
     buildedStyle.marginLeft = per;
   }
 
-  if (props.align) {
-    Object.assign(buildedStyle, styles.cellAlign[props.align]);
-  }
+  if (props.textAlign === 'left') buildedStyle.textAlign = 'left';
+  if (props.textAlign === 'center') buildedStyle.textAlign = 'center';
+  if (props.textAlign === 'right') buildedStyle.textAlign = 'right';
+
+  Object.assign(
+    buildedStyle,
+    styles.cellAlign[props.align],
+    (props.margin && !props.offset ? { margin: props.margin } : {})
+  );
 
   const style = Object.assign({}, styles.cell, buildedStyle, props.style);
 
@@ -76,4 +84,8 @@ export const Cell = (props: CommonProps & CellProps) => {
       {props.children}
     </div>
   );
+};
+
+Cell.defaultProps = {
+  textAlign: 'center'
 };

@@ -48,6 +48,7 @@ class Container extends React.Component<void, CommonProps & Props, void> {
   render() {
     const {
       theme,
+      style,
       subColor,
       children,
       className,
@@ -61,10 +62,10 @@ class Container extends React.Component<void, CommonProps & Props, void> {
 
     return (
       <div
+        style={style}
         className={classnames(this.containerClassName, className)}
       >
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
-        <style>{containerStyle}</style>
         {
           codeTheme ? (
             <link
@@ -73,6 +74,7 @@ class Container extends React.Component<void, CommonProps & Props, void> {
             />
           ) : null
         }
+        <style>{containerStyle}</style>
         {children}
       </div>
     );
