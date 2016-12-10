@@ -10,6 +10,16 @@ const Header = (props) => (
     style={{ backgroundColor: props.themeHex }}
   >
     <div className={styles.topBox}>
+      <span className={styles.version}>
+        Version:{' '}
+        <a
+          href={`https://github.com/abouthiroppy/scuba/releases/tag/v${VERSION}`}
+          target="_blank"
+          style={{color: '#f5f5f5'}}
+        >
+          {VERSION}
+        </a>
+      </span>
       <section className={styles.linkSection}>
         <Link to="/">Top</Link>
         <Link to="concept">Concept</Link>
@@ -56,7 +66,7 @@ const Header = (props) => (
         >
           <div className={styles.textField}>
             <TextField
-              style={{ height: 15 }}
+              style={{ padding: 2 }}
               placeholder="#333"
               onChange={(e) => props.changeBackgroundColor(e.nativeEvent.target.value)}
             />

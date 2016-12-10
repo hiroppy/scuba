@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry : path.join(__dirname, 'src', 'index.js'),
@@ -40,6 +41,11 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(require('../package.json').version)
+    })
+  ],
   devServer: {
     hot        : false,
     port       : 3000,

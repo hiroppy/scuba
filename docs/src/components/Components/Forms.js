@@ -44,12 +44,12 @@ const Forms = () => (
     <p>TextField and TextArea are changed border color by theme.</p>
     <label style={{ marginBottom: '.5rem' }}>textField</label>
     <TextField
-      style={{ width: '80%' }}
+      style={{ width: '100%' }}
       placeholder="placeholder 😎"
     />
     <label style={{ margin: '1.2rem 0 .5rem 0' }}>textArea</label>
     <TextArea
-      style={{ width: '80%' }}
+      style={{ width: '100%' }}
       placeholder="😊"
     />
     {generateCodeTemplate(sampleCode1)}

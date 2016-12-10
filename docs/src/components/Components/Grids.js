@@ -163,6 +163,11 @@ const Grids = () => (
         name   : 'responsive',
         type   : 'boolean',
         default: 'true'
+      },
+      {
+        name   : 'justifyContent',
+        type   : 'flex-start | flex-end | center | space-between | space-around',
+        default: 'space-around'
       }
     ])}
     <h4>Cell</h4>

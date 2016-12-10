@@ -9,10 +9,15 @@
 }
 
 .topBox {
+  background: #535353;
   display: flex;
   height: 25px;
-  justify-content: flex-end;
+  padding: 0 10px;
   width: 100%;
+}
+
+.version {
+  width: 150px;
 }
 
 .bottomBox {
@@ -27,11 +32,10 @@
 }
 
 .textField {
-  width: 90%;
+  width: 100%;
 }
 
 .linkSection {
-  background: #535353;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -42,4 +46,8 @@
   font-weight: 200;
   margin: 0 10px !important;
   text-decoration: none;
+}
+
+.linkSection > a:last-child {
+  margin-right: 0 !important;
 }

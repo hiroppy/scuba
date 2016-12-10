@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, Button } from '../../../../src';
+import { Drawer, Button, Grid, Cell } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 import styles from './style.css';
@@ -11,10 +11,10 @@ class Drawer extends React.Component {
         super();
 
         this.state = {opened: false};
-        this.openDrawer = this.openDrawer.bind(this);
+        this.toggleDrawer = this.toggleDrawer.bind(this);
     }
 
-    openDrawer() {
+    toggleDrawer() {
         this.setState({opened: !this.state.opened});
     }
 
@@ -28,7 +28,7 @@ class Drawer extends React.Component {
                     <p>section4</p>
                     <p>section5</p>
                 </Drawer>
-                <Button onClick={this.openDrawer}>push!</Button>
+                <Button onClick={this.toggleDrawer}>open!</Button>
             </div>
         );
     }
@@ -42,10 +42,10 @@ class Drawer extends React.Component {
         super();
 
         this.state = {opened: false};
-        this.openDrawer = this.openDrawer.bind(this);
+        this.toggleDrawer = this.toggleDrawer.bind(this);
     }
 
-    openDrawer() {
+    toggleDrawer() {
         this.setState({opened: !this.state.opened});
     }
 
@@ -54,7 +54,7 @@ class Drawer extends React.Component {
             <div>
                 <Drawer
                     opened={this.state.opened}
-                    onChange={this.openDrawer}
+                    onChange={this.toggleDrawer}
                     displayedOverlay
                   >
                     <p>section1</p>
@@ -63,7 +63,7 @@ class Drawer extends React.Component {
                     <p>section4</p>
                     <p>section5</p>
                 </Drawer>
-                <Button onClick={this.openDrawer}>push!</Button>
+                <Button onClick={this.toggleDrawer}>open!</Button>
             </div>
         );
     }
@@ -94,7 +94,7 @@ class Drawers extends React.Component {
     return (
       <div>
         <h2>Drawers</h2>
-        <p>Avatars can be used to images and letters(or icon, etc).</p>
+        <p>Drawers provide only the outer frame.</p>
         <h3>Normal Drawers</h3>
         <Drawer opened={this.state.openedDrawer}>
           <p>section1</p>
@@ -103,7 +103,19 @@ class Drawers extends React.Component {
           <p>section4</p>
           <p>section5</p>
         </Drawer>
-        <Button onClick={this.openDrawer}>push!</Button>
+        <Grid justifyContent="flex-start">
+          <Cell
+            ratio={1/5}
+            textAlign="left"
+          >
+            <Button
+              width="100%"
+              onClick={this.openDrawer}
+            >
+              open!
+            </Button>
+          </Cell>
+        </Grid>
         {generateCodeTemplate(sampleCode1)}
 
         <h3>Drawers with overlay</h3>
@@ -118,7 +130,19 @@ class Drawers extends React.Component {
           <p>section4</p>
           <p>section5</p>
         </Drawer>
-        <Button onClick={this.openDrawerWithOverlay}>push!</Button>
+        <Grid justifyContent="flex-start">
+          <Cell
+            ratio={1/5}
+            textAlign="left"
+          >
+            <Button
+              width="100%"
+              onClick={this.openDrawerWithOverlay}
+            >
+              open!
+            </Button>
+          </Cell>
+        </Grid>
         {generateCodeTemplate(sampleCode2)}
 
         <h3>Properties</h3>
