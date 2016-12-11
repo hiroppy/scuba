@@ -27,12 +27,17 @@ const Buttons = () => (
       {
         name   : 'className',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       },
       {
         name   : 'style',
         type   : 'Object',
-        default: 'undefined'
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
       },
       {
         name   : 'width',
@@ -48,6 +53,11 @@ const Buttons = () => (
         name   : 'clear',
         type   : 'boolean',
         default: 'false'
+      },
+      {
+        name   : 'onClick',
+        type   : 'Function',
+        default: ''
       }
     ])}
   </div>

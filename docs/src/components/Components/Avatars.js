@@ -46,17 +46,22 @@ const Avatars = () => (
       {
         name   : 'className',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       },
       {
         name   : 'style',
         type   : 'Object',
-        default: 'undefined'
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
       },
       {
         name   : 'src',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       },
       {
         name   : 'form',

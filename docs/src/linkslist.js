@@ -59,6 +59,10 @@ export const components = [
     href: 'forms'
   },
   {
+    name: 'selectBoxes',
+    href: 'select-boxes'
+  },
+  {
     name: 'Codes',
     href: 'codes'
   },

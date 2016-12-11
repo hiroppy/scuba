@@ -150,12 +150,17 @@ class Drawers extends React.Component {
           {
             name   : 'className',
             type   : 'string',
-            default: 'undefined'
+            default: ''
           },
           {
             name   : 'style',
             type   : 'Object',
-            default: 'undefined'
+            default: ''
+          },
+          {
+            name   : 'children',
+            type   : 'React.Element<*>',
+            default: ''
           },
           {
             name   : 'width',
@@ -185,7 +190,7 @@ class Drawers extends React.Component {
           {
             name   : 'onChange',
             type   : 'Function',
-            default: 'undefined'
+            default: ''
           }
         ])}
       </div>

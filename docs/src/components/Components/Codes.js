@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import { Code } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
@@ -32,10 +33,20 @@ const Codes = () => (
     <h2 id="codes">Codes</h2>
     <p>
       We use
-      <a href="https://highlightjs.org/">highlight.js</a>
+      <a
+        href="https://highlightjs.org/"
+      >
+        highlight.js
+      </a>
       .
     </p>
-    <p>If you want to use color theme, you specify the theme name to Container props.</p>
+    <p>
+      If you want to use a color theme, you specify the theme name to
+      <Link to="components/container">
+        Container
+      </Link>
+      props.
+    </p>
     <Code
       fileName="index.cpp"
       language="cpp"
@@ -52,28 +63,33 @@ int main() {
 }`
       }
     </Code>
-    {generateCodeTemplate(sampleCode)}
+    {generateCodeTemplate(sampleCode, 'javascript', 'main.js')}
     <h3>Properties</h3>
     {generateTableTemplate([
       {
         name   : 'className',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       },
       {
         name   : 'style',
         type   : 'Object',
-        default: 'undefined'
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
       },
       {
         name   : 'language',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       },
       {
         name   : 'fileName',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       }
     ])}
   </div>

@@ -27,7 +27,8 @@ import Components, {
   AvatarsSection,
   ButtonsSection,
   ContainerSection,
-  TypographySection
+  TypographySection,
+  SelectBoxesSection
 } from './components/Components';
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
@@ -102,6 +103,10 @@ const PageRouter = () => (
         <Route
           path="forms"
           component={createComponents(FormsSection, true)}
+        />
+        <Route
+          path="select-boxes"
+          component={createComponents(SelectBoxesSection, true)}
         />
         <Route
           path="codes"

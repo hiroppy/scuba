@@ -31,6 +31,7 @@ const GettingStarted = () => (
       language="javascript"
     >{
       `import React from 'react';
+import ReactDOM from 'react-dom';
 import Container, {TextField} from 'scuba';
 
 const Root = () => (
@@ -41,7 +42,11 @@ const Root = () => (
         <TextField placeholder="hello:)" />
     </Container>
 );
-      `
+
+ReactDOM.render(
+    <Root />,
+    document.getElementById('root')
+);`
     }
     </Code>
   </div>

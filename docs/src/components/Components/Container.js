@@ -107,12 +107,17 @@ const ContainerSection = () => (
       {
         name   : 'className',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       },
       {
         name   : 'style',
         type   : 'Object',
-        default: 'undefined'
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
       },
       {
         name   : 'theme',
@@ -127,7 +132,7 @@ const ContainerSection = () => (
       {
         name   : 'codeTheme',
         type   : 'string',
-        default: 'undefined'
+        default: ''
       }
     ])}
   </div>
