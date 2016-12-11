@@ -93,11 +93,6 @@ const SelectBoxes = () => (
         default: '100%'
       },
       {
-        name   : 'height',
-        type   : 'number | string',
-        default: 'auto'
-      },
-      {
         name   : 'disabled',
         type   : 'boolean',
         default: 'false'
