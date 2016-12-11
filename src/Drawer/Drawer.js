@@ -20,7 +20,12 @@ const Drawer = (props: CommonProps & Props) => {
     {},
     styles.container,
     props.position === 'right' ? { right: 0 } : { left: 0 },
-    props.style
+    props.style,
+    { width: props.width },
+    (props.paddingWidth !== 10 ? {
+      paddingLeft : props.paddingWidth,
+      paddingRight: props.paddingWidth
+    } : {})
   );
 
   if (!props.opened) {
@@ -60,6 +65,7 @@ const Drawer = (props: CommonProps & Props) => {
 
 Drawer.defaultProps = {
   width           : 200,
+  opened          : false,
   position        : 'left',
   paddingWidth    : 10,
   displayedOverlay: false
