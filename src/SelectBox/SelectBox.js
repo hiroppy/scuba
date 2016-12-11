@@ -8,7 +8,6 @@ import styles from './style';
 
 type SelectBoxProps = {
   width?: number | string;
-  height?: number | string;
   listHeight: number | string;
   disabled?: boolean; // 未実装
   listPosition?: 'top' | 'bottom';
@@ -20,10 +19,18 @@ type SelectBoxState = {
   currentSelectedLabel: string;
 };
 
-class SelectBox extends React.Component<void, CommonProps & SelectBoxProps, SelectBoxState> {
+type DefaultProps = {
+  width: number | string;
+};
+
+class SelectBox extends React.Component<DefaultProps, CommonProps & SelectBoxProps, SelectBoxState> {
   state = {
     displayedSelects    : false,
     currentSelectedLabel: ''
+  };
+
+  static defaultProps = {
+    width: '100%'
   };
 
   componentWillMount() {
@@ -70,7 +77,6 @@ class SelectBox extends React.Component<void, CommonProps & SelectBoxProps, Sele
     const {
       style,
       width,
-      height,
       children,
       className,
       listHeight,
@@ -79,7 +85,7 @@ class SelectBox extends React.Component<void, CommonProps & SelectBoxProps, Sele
 
     return (
       <div
-        style={{ width, height, ...styles.selectContainer }}
+        style={{ width, ...styles.selectContainer }}
         className="scuba-selectcontainer"
       >
         <div
