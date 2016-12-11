@@ -5,6 +5,14 @@ import Container, { Blockquote, Button, Paper, Grid, Cell } from '../../../../sr
 import generateCodeTemplate from './generateCodeTemplate';
 import generateTableTemplate from './generateTableTemplate';
 
+
+const sampleCode0 = `import Container from 'scuba';
+
+<Container
+    theme="#f5f5f5"
+    subColor="#333"
+/>`;
+
 const sampleCode1 = `import Container from 'Scuba';
 
 const Root = () => (
@@ -39,14 +47,15 @@ const ContainerSection = () => (
     <p>
       {'You can choose 5 themes and 2 subColor. Let\'s operate the toolbar below this site😊'}
     </p>
-    <p>If you do not like it, please specify a color.</p>
+    <p>If you do not like it, you can specify a color.</p>
+    {generateCodeTemplate(sampleCode0, 'javascript', 'customization')}
     <h3>capsule</h3>
     <p>The theme and subColor are reflected only in Container.</p>
     <Grid>
-      <Cell textAlign="left">
+      <Cell textAlign="left" margin="10px">
         {generateCodeTemplate(sampleCode2)}
       </Cell>
-      <Cell align="center">
+      <Cell align="center" margin="10px">
         <Paper className={styles.preview}>
           <Container
             theme="mint"

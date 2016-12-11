@@ -12,8 +12,9 @@
 }
 
 .sidebar {
-  height: 100%;
+  height: calc(100% - 175px);
   left: 0;
+  overflow-y: auto;
   position: fixed;
   top: 0;
   width: 200px;

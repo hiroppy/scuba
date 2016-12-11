@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import { List, Item } from '../../../../src';
 import generateCodeTemplate from './generateCodeTemplate';
 
@@ -11,6 +12,7 @@ const sampleCode = `import {
 const Colors = () => (
   <div>
     <h2 id="colors">Colors</h2>
+    <h3>Themes</h3>
     <p>
       <em>Scuba </em>
       provides Sea, DeepSea, Sunset, Mint and Mikan as themes.
@@ -23,6 +25,7 @@ const Colors = () => (
       <Item><span style={{ color: '#db9634' }}>Mikan: #db9634</span></Item>
     </List>
     <p>The default theme is Sea.</p>
+    <h3>SubColors</h3>
     <p>
       <em>Scuba </em>
       provides Light and Dark as sub colors.
@@ -51,7 +54,6 @@ const Colors = () => (
     </List>
     <p>The default subColor is light.</p>
     {generateCodeTemplate(sampleCode)}
-    <p>You can also specify a color value.</p>
   </div>
 );
 

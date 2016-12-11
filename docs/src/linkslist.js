@@ -19,10 +19,6 @@ const rootLinks = [
 
 export const components = [
   {
-    name: 'Colors',
-    href: 'colors'
-  },
-  {
     name: 'Container',
     href: 'container'
   },

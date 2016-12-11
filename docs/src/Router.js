@@ -54,16 +54,15 @@ const PageRouter = () => (
         path="getting-started"
         component={createComponents(GettingStarted, true)}
       />
-      <Route
-        path="concept"
-        component={createComponents(Concept, true)}
-      />
-      <Route path="components">
-        <IndexRoute component={createComponents(Components, true)} />
+      <Route path="concept">
+        <IndexRoute component={createComponents(Concept, true)} />
         <Route
           path="colors"
           component={createComponents(ColorsSection, true)}
         />
+      </Route>
+      <Route path="components">
+        <IndexRoute component={createComponents(Components, true)} />
         <Route
           path="container"
           component={createComponents(ContainerSection, true)}
