@@ -4,6 +4,12 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './style';
 
+type CellProps = {
+  ratio?: number | string;
+  align?: 'top' | 'bottom' | 'center';
+  offset?: number | string;
+};
+
 const Cell = (props: CommonProps & CellProps) => {
   const buildedStyle = {};
 
@@ -47,6 +53,7 @@ const Cell = (props: CommonProps & CellProps) => {
 };
 
 Cell.defaultProps = {
+  align    : 'top',
   textAlign: 'center'
 };
 
