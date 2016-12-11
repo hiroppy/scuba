@@ -6,7 +6,8 @@ export Avatar from './Avatar';
 export Container from './Container';
 export Blockquote from './Blockquote';
 export { List, Item } from './List';
-export { TextField, TextArea, SelectBox, Select } from './Form';
+export { TextField, TextArea } from './Form';
+export { SelectBox, Select } from './SelectBox';
 export { Grid, Cell } from './Grid';
 export {
   Table,

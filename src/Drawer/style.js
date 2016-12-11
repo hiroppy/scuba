@@ -1,5 +1,10 @@
 import { dark } from '../styles/colors';
 
+/**
+ * animation
+ * fyi: http://www.knockknock.jp/archives/184
+ */
+
 const styles = {
   container: {
     top       : 0,
@@ -8,7 +13,7 @@ const styles = {
     zIndex    : 2000,
     padding   : 10,
     position  : 'fixed',
-    transition: 'transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms' // fix
+    transition: 'transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0ms' // quadraticEaseOut
   },
   overlay: {
     top       : 0,

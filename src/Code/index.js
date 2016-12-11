@@ -64,7 +64,7 @@ class Code extends React.Component<void, CommonProps & Props, void> {
           <code
             ref={(ref) => this.code = ref}
             style={Object.assign({}, styles.code)}
-            className={classnames(language, className)}
+            className={classnames(language)}
           >
             {children}
           </code>
