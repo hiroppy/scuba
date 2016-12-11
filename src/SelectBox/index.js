@@ -1,1 +1,2 @@
-export { SelectBox, Select } from './SelectBox';
+export SelectBox from './SelectBox';
+export Select from './Select';

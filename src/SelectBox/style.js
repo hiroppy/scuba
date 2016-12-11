@@ -20,6 +20,10 @@ const styles = {
     position     : 'absolute',
     pointerEvents: 'none'
   },
+  arrowIcon: {
+    width : '100%',
+    height: '100%'
+  },
   selectList: {
     width    : '100%',
     zIndex   : 1200,

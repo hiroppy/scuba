@@ -20,12 +20,7 @@ type SelectBoxState = {
   currentSelectedLabel: string;
 };
 
-type SelectProps = {
-  default?: boolean;
-  value?: string;
-};
-
-export class SelectBox extends React.Component<void, CommonProps & SelectBoxProps, SelectBoxState> {
+class SelectBox extends React.Component<void, CommonProps & SelectBoxProps, SelectBoxState> {
   state = {
     displayedSelects    : false,
     currentSelectedLabel: ''
@@ -117,6 +112,7 @@ export class SelectBox extends React.Component<void, CommonProps & SelectBoxProp
         </div>
         <div style={styles.selectBoxArrow}>
           <svg
+            style={styles.arrowIcon}
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             className="scuba-selectbox-arrow-icon"
@@ -136,16 +132,4 @@ export class SelectBox extends React.Component<void, CommonProps & SelectBoxProp
   }
 }
 
-export const Select = (props: CommonProps & SelectProps) => (
-  <div
-    style={Object.assign(
-      {},
-      styles.select,
-      props.style
-    )}
-    data-value={props.value}
-    className={classnames('scuba-selectitem', props.className)}
-  >
-    {props.children}
-  </div>
-);
+export default SelectBox;
