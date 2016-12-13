@@ -3,11 +3,16 @@
 const path = require('path');
 const webpack = require('webpack');
 
+require('babel-polyfill');
+
 module.exports = {
-  entry : path.join(__dirname, 'src', 'index.js'),
+  entry : {
+    bundle: path.join(__dirname, 'src', 'index.js'),
+    polyfill: 'babel-polyfill'
+  },
   output: {
     path      : path.join(__dirname, 'dist'),
-    filename  : 'bundle.js',
+    filename  : '[name].js',
     publicPath: '/dist/'
   },
   target : 'web',

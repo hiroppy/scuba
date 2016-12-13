@@ -8,6 +8,7 @@ const sampleCode = `import {Button} from 'scuba';
 
 <div>
     <Button>BUTTON</Button>
+    <Button backgroundColor="none">BUTTON</Button>
     <Button disabled>DISABLED</Button>
     <Button clear>CLEAR</Button>
 </div>
@@ -18,6 +19,7 @@ const Buttons = () => (
     <h2 id="buttons">Buttons</h2>
     <div className={styles.buttons}>
       <Button>BUTTON</Button>
+      <Button backgroundColor="none">BUTTON</Button>
       <Button disabled>DISABLED</Button>
       <Button clear>CLEAR</Button>
     </div>
@@ -44,6 +46,11 @@ const Buttons = () => (
         name   : 'width',
         type   : 'number | string',
         default: 'auto'
+      },
+      {
+        name   : 'backgroundColor',
+        type   : 'none | string',
+        default: 'a theme\'s color'
       },
       {
         name   : 'disabled',
