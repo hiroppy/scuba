@@ -29,7 +29,6 @@ const generateRootStyle = (containerClassName: string, key: string, sub: string)
     .${containerClassName} h4,
     .${containerClassName} h5,
     .${containerClassName} h6 {
-      margin: 0;
       color: ${key};
     }
     .${containerClassName} h1 {

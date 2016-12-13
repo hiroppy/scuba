@@ -4,6 +4,7 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 const createAlignStyle = (
@@ -22,6 +23,7 @@ type TableRowProps = {
 
 const TableRow = (props: CommonProps & TableRowProps) => (
   <tr
+    {...excludeProps(props, ['align', 'borderBottom'])}
     style={Object.assign({}, createAlignStyle(props.align), props.style)}
     className={classnames((props.borderBottom ? 'scuba-tablerow' : ''), props.className)}
   >

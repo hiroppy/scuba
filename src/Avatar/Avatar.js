@@ -4,6 +4,7 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 type Props = {
@@ -15,6 +16,7 @@ type Props = {
 
 const Avatar = (props: CommonProps & Props) => (
   <div
+    {...excludeProps(props, ['src', 'width', 'height', 'form'])}
     className={classnames(
       (props.src ? undefined : 'scuba-avatar-no-img'),
       props.className

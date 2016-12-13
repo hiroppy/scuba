@@ -2,6 +2,7 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 type GirdProps = {
@@ -26,6 +27,7 @@ const Grid = (props: CommonProps & GirdProps) => {
 
   return (
     <div
+      {...excludeProps(props, ['align', 'responsive', 'justifyContent'])}
       style={style}
       className={className}
     >

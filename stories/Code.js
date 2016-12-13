@@ -9,7 +9,6 @@ storiesOf('Code', module).add('list', () => (
     >
       <Code
         fileName="hoge"
-        theme="brownPaper"
         language="javascript"
       >
         {
@@ -27,7 +26,6 @@ const Root = () => (
     </Container>
     <Container subColor="dark">
       <Code
-        theme="github"
         language="javascript"
         showLineNumbers
       >
@@ -42,7 +40,6 @@ const num: number = 1;
     </Container>
     <Container subColor="dark">
       <Code
-        theme="rainbow"
         language="html"
         fileName="index.html"
         showLineNumbers

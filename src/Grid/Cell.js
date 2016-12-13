@@ -2,12 +2,15 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 type CellProps = {
   ratio?: number | string;
   align?: 'top' | 'bottom' | 'center';
+  margin?: number | string;
   offset?: number | string;
+  textAlign?: 'left' | 'center' | 'right';
 };
 
 const Cell = (props: CommonProps & CellProps) => {
@@ -44,6 +47,7 @@ const Cell = (props: CommonProps & CellProps) => {
 
   return (
     <div
+      {...excludeProps(props, ['ratio', 'align', 'margin', 'offset', 'textAlign'])}
       className={className}
       style={style}
     >

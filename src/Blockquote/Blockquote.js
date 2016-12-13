@@ -3,12 +3,13 @@
 import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
-import styles from './style';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
+import styles from './style';
 
 const Blockquote = (props: CommonProps) => (
   <pre
-    {...props}
+    {...excludeProps(props)}
     style={Object.assign({}, styles.pre, props.style)}
     className={classnames('scuba-blockquote', props.className)}
   >

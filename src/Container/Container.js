@@ -62,7 +62,8 @@ class Container extends React.Component<DefaultProps, CommonProps & Props, void>
       subColor,
       children,
       className,
-      codeTheme
+      codeTheme,
+      ...others
     } = this.props;
 
     const key = themeRouter(theme);
@@ -72,6 +73,7 @@ class Container extends React.Component<DefaultProps, CommonProps & Props, void>
 
     return (
       <div
+        {...others}
         style={style}
         className={classnames(this.containerClassName, className)}
       >

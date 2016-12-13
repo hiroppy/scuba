@@ -4,6 +4,7 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 type Props = {
@@ -21,6 +22,7 @@ const createClasses = (disabled, className, clear): string => {
 
 const Button = (props: CommonProps & Props) => (
   <a
+    {...excludeProps(props, ['clear', 'width', 'onClick', 'disabled'])}
     style={
       Object.assign(
         {},

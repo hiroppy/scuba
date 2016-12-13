@@ -4,6 +4,7 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 type SelectProps = {
@@ -13,6 +14,7 @@ type SelectProps = {
 
 const Select = (props: CommonProps & SelectProps) => (
   <div
+    {...excludeProps(props, ['default', 'value'])}
     style={Object.assign(
       {},
       styles.select,

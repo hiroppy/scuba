@@ -4,6 +4,7 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 type Props = {
@@ -12,11 +13,12 @@ type Props = {
 
 const Paper = (props: CommonProps & Props) => (
   <div
+    {...excludeProps(props, ['backgroundColor'])}
     style={
       Object.assign(
         {},
         styles.container,
-        (props.backgroundColor ? props.backgroundColor : {}),
+        (props.backgroundColor ? { backgroundColor: props.backgroundColor } : {}),
         props.style
       )
     }

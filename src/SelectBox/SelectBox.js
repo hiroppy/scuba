@@ -80,11 +80,13 @@ class SelectBox extends React.Component<DefaultProps, CommonProps & SelectBoxPro
       children,
       className,
       listHeight,
-      listPosition
+      listPosition,
+      ...others
     } = this.props;
 
     return (
       <div
+        {...others}
         style={{ width, ...styles.selectContainer }}
         className="scuba-selectcontainer"
       >

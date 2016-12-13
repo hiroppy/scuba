@@ -4,6 +4,7 @@ import type { CommonProps } from '../CommonTypes';
 
 import React from 'react';
 import classnames from 'classnames';
+import excludeProps from '../utils/excludeProps';
 import styles from './style';
 
 type Props = {
@@ -54,6 +55,11 @@ const Drawer = (props: CommonProps & Props) => {
         ) : null
       }
       <div
+        {
+          ...excludeProps(props, [
+            'width', 'opened', 'onChange', 'position', 'paddingWidth', 'displayedOverlay'
+          ])
+        }
         className={classnames('scuba-drawer', props.className)}
         style={style}
       >

@@ -1,3 +1,3 @@
 // @flow
 
-export const fontFamily = 'Cabin, Roboto, "Helvetica Neue", Helvetica, sans-serif';
+export const fontFamily = 'Cabin, "Helvetica Neue", Helvetica, sans-serif';

@@ -5,8 +5,9 @@ import type { CommonProps } from '../CommonTypes';
 import React from 'react';
 import { findDOMNode } from 'react-dom';
 import classnames from 'classnames';
-import styles from './style';
 import highlight from 'highlight.js';
+import excludeProps from '../utils/excludeProps';
+import styles from './style';
 
 type Props = {
   id: string;
@@ -57,6 +58,7 @@ class Code extends React.Component<void, CommonProps & Props, void> {
           ) : null
         }
         <pre
+          {...excludeProps(this.props, ['id', 'language', 'fileName'])}
           id={classnames(this.id, id)}
           style={Object.assign({}, styles.pre, style)}
           className={classnames('scuba-code', className)}
