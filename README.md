@@ -19,7 +19,7 @@ see: https://abouthiroppy.github.io/scuba/
 Install the module with `npm install --save scuba`.
 
 Scuba has 5 themes and 2 subColors.
-The theme and subColor are reflected only in Container.
+Theme and subColor are reflected only in Container.
 
 ```javascript
 import React from 'react';

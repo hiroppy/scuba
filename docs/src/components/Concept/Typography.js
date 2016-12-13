@@ -17,7 +17,7 @@ const Typography = () => (
       </a>
       font.
     </p>
-    <p>fontFamily: Cabin, "Helvetica Neue", Helvetica, sans-serif</p>
+    <p>{'fontFamily: Cabin, "Helvetica Neue", Helvetica, sans-serif'}</p>
     <Paper>
       {
         'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789\'?\'"!"(%)[#]{@}/&<-+$*~;:<>/{}'
