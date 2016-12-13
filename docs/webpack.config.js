@@ -6,8 +6,8 @@ const webpack = require('webpack');
 require('babel-polyfill');
 
 module.exports = {
-  entry : {
-    bundle: path.join(__dirname, 'src', 'index.js'),
+  entry: {
+    bundle  : path.join(__dirname, 'src', 'index.js'),
     polyfill: 'babel-polyfill'
   },
   output: {

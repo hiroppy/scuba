@@ -21,9 +21,9 @@ const createClasses = (disabled, className, clear): string => {
   return classnames('scuba-button', className);
 };
 
-const createBackground = (color): {backgroundColor: string} => {
-  if (color === 'none') return {backgroundColor: 'transparent'};
-  else if (typeof color === 'string') return {backgroundColor: color};
+const createBackground = (color): {backgroundColor?: string; } => {
+  if (color === 'none') return { backgroundColor: 'transparent' };
+  else if (typeof color === 'string') return { backgroundColor: color };
   return {};
 };
 

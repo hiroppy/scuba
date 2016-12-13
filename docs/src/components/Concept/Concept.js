@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
+import {
+  Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn
+} from '../../../../src';
 
 const Concept = () => (
   <section>
@@ -57,7 +60,48 @@ const Concept = () => (
       .
     </p>
     <h3>Browsers</h3>
-    <p>wip</p>
+    <p>We always support the latest browsers.</p>
+    <p>
+      If you have bugs or requests, please post
+      <a
+        rel="noopener noreferrer"
+        href="https://github.com/abouthiroppy/scuba/issues"
+        target="_blank"
+      >
+        issue
+      </a>
+      .
+    </p>
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHeaderColumn>Browser</TableHeaderColumn>
+          <TableHeaderColumn>Version</TableHeaderColumn>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        <TableRow>
+          <TableRowColumn>Chrome</TableRowColumn>
+          <TableRowColumn>latest</TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>Firefox</TableRowColumn>
+          <TableRowColumn>latest</TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>Safari</TableRowColumn>
+          <TableRowColumn>9.11</TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>IE</TableRowColumn>
+          <TableRowColumn>11</TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>Edge</TableRowColumn>
+          <TableRowColumn>latest</TableRowColumn>
+        </TableRow>
+      </TableBody>
+    </Table>
   </section>
 );
 
