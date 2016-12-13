@@ -40,12 +40,11 @@ const Concept = () => (
       >
         <code>rem</code>
       </a>
-      as a unit of
+      as a unit for something like
       <code>font-size</code>
       or
       <code>margin</code>
-      or others
-      , and use
+      or the others, and also we use
       <a
         rel="noopener noreferrer"
         href="http://www.w3schools.com/css/css3_flexbox.asp"

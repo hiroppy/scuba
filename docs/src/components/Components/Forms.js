@@ -17,7 +17,7 @@ const sampleCode1 = `import {TextField, TextArea} from 'scuba';
 const Forms = () => (
   <div>
     <h2 id="forms">Forms</h2>
-    <p>TextField and TextArea are changed border color by theme.</p>
+    <p>A border color can be changed in TextField and TextArea by a theme.</p>
     <label style={{ marginBottom: '.5rem' }}>textField</label>
     <TextField
       style={{ width: '100%' }}

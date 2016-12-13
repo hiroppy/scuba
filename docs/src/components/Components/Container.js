@@ -43,7 +43,7 @@ const sampleCode2 = `import Container, {Button} from 'scuba';
 const ContainerSection = () => (
   <div>
     <h2>Container</h2>
-    <p>You must use Container component in the place you want Scuba to apply.</p>
+    <p>In the scuba, this Container component is required to be used as a wrapper.</p>
     <p>
       {'You can choose 5 themes and 2 subColor. Let\'s operate the toolbar below this site😊'}
     </p>

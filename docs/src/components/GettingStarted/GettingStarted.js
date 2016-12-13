@@ -25,8 +25,9 @@ const GettingStarted = () => (
       <Item><p>Set Container where you want to apply theme and subColor.</p></Item>
       <Item>
         <p>
-          Decide theme and subColor.
-          <Link to="concept/colors">  Colors</Link>
+          Pick a color from
+          <Link to="concept/colors">Colors</Link>
+          , and apply it into theme and subColor.
         </p>
       </Item>
       <Item><p>Decide background color.(Scuba does not provide it)</p></Item>

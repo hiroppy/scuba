@@ -38,13 +38,11 @@ const Codes = () => (
       >
         highlight.js
       </a>
-      .
+      to highlight Code component content.
     </p>
     <p>
-      If you want to use a color theme, you specify the theme name to
-      <Link to="components/container">
-        Container
-      </Link>
+      To use a color theme, you can pass a theme name to
+      <Link to="components/container">Container</Link>
       props.
     </p>
     <p>Codes provide fileName and language.</p>
