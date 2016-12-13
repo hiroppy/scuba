@@ -47,6 +47,7 @@ const Codes = () => (
       </Link>
       props.
     </p>
+    <p>Codes provide fileName and language.</p>
     <Code
       fileName="index.cpp"
       language="cpp"
@@ -65,6 +66,7 @@ int main() {
     </Code>
     {generateCodeTemplate(sampleCode, 'javascript', 'main.js')}
     <h3>Properties</h3>
+    <h4>Code</h4>
     {generateTableTemplate([
       {
         name   : 'className',

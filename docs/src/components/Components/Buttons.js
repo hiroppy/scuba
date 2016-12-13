@@ -23,6 +23,7 @@ const Buttons = () => (
     </div>
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
+    <h4>Button</h4>
     {generateTableTemplate([
       {
         name   : 'className',

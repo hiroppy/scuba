@@ -14,6 +14,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
 import Concept from './components/Concept';
+import TypographySection from './components/Concept/Typography';
 import GettingStarted from './components/GettingStarted';
 import Components, {
   CodesSection,
@@ -27,7 +28,7 @@ import Components, {
   AvatarsSection,
   ButtonsSection,
   ContainerSection,
-  TypographySection,
+  BlockquotesSection,
   SelectBoxesSection
 } from './components/Components';
 
@@ -60,6 +61,10 @@ const PageRouter = () => (
           path="colors"
           component={createComponents(ColorsSection, true)}
         />
+        <Route
+          path="typography"
+          component={createComponents(TypographySection, true)}
+        />
       </Route>
       <Route path="components">
         <IndexRoute component={createComponents(Components, true)} />
@@ -68,8 +73,8 @@ const PageRouter = () => (
           component={createComponents(ContainerSection, true)}
         />
         <Route
-          path="typography"
-          component={createComponents(TypographySection, true)}
+          path="blockquotes"
+          component={createComponents(BlockquotesSection, true)}
         />
         <Route
           path="grids"

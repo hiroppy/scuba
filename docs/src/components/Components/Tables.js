@@ -33,25 +33,7 @@ const sampleCode = `import {
 const Tables = () => (
   <div>
     <h2 id="tables">Tables</h2>
-    <p>
-      We use
-      <code>{'<Table>'}</code>
-      ,
-      <code>{'<TableHeader>'}</code>
-      ,
-      <code>{'<TableHeaderColumn>'}</code>
-      ,
-      <code>{'<TableFooter>'}</code>
-      ,
-      <code>{'<TableBody>'}</code>
-      ,
-      <code>{'<TableRow>'}</code>
-      ,
-      <code>{'<TableRowColumn>'}</code>
-      ,
-
-    </p>
-
+    <p>A simple table.</p>
     <Table>
       <TableHeader>
         <TableRow align="center">
@@ -77,8 +59,95 @@ const Tables = () => (
 
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
+    <h4>Table</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      }
+    ])}
+    <h4>TableHeader</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      }
+    ])}
+    <h4>TableHeaderColumn</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      }
+    ])}
+    <h4>TableBody</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      }
+    ])}
     <h4>TableRow</h4>
     {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      },
       {
         name   : 'align',
         type   : 'left | center | right',
@@ -88,6 +157,42 @@ const Tables = () => (
         name   : 'borderBottom',
         type   : 'boolean',
         default: 'false'
+      }
+    ])}
+    <h4>TableRowColumn</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      }
+    ])}
+    <h4>TableFooter</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
       }
     ])}
   </div>

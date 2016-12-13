@@ -19,18 +19,6 @@ const rootLinks = [
 
 export const components = [
   {
-    name: 'Container',
-    href: 'container'
-  },
-  {
-    name: 'Typography',
-    href: 'typography'
-  },
-  {
-    name: 'Papers',
-    href: 'papers'
-  },
-  {
     name: 'Avatars',
     href: 'avatars'
   },
@@ -39,32 +27,44 @@ export const components = [
     href: 'buttons'
   },
   {
-    name: 'Tables',
-    href: 'tables'
-  },
-  {
-    name: 'Drawers',
-    href: 'drawers'
-  },
-  {
-    name: 'Lists',
-    href: 'lists'
-  },
-  {
-    name: 'Forms',
-    href: 'forms'
-  },
-  {
-    name: 'selectBoxes',
-    href: 'select-boxes'
+    name: 'Blockquotes',
+    href: 'blockquotes'
   },
   {
     name: 'Codes',
     href: 'codes'
   },
   {
+    name: 'Container',
+    href: 'container'
+  },
+  {
+    name: 'Drawers',
+    href: 'drawers'
+  },
+  {
+    name: 'Forms',
+    href: 'forms'
+  },
+  {
     name: 'Grids',
     href: 'grids'
+  },
+  {
+    name: 'Lists',
+    href: 'lists'
+  },
+  {
+    name: 'Papers',
+    href: 'papers'
+  },
+  {
+    name: 'SelectBoxes',
+    href: 'select-boxes'
+  },
+  {
+    name: 'Tables',
+    href: 'tables'
   }
 ];
 

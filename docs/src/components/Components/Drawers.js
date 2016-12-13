@@ -146,6 +146,7 @@ class Drawers extends React.Component {
         {generateCodeTemplate(sampleCode2)}
 
         <h3>Properties</h3>
+        <h4>Drawer</h4>
         {generateTableTemplate([
           {
             name   : 'className',

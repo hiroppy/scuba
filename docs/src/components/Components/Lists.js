@@ -29,7 +29,7 @@ const Lists = () => (
   <div>
     <h2 id="lists">Lists</h2>
     <p>
-      We have
+      Lists have
       <code>none</code>
       ,
       <code>circle</code>
@@ -60,9 +60,42 @@ const Lists = () => (
     <h4>List</h4>
     {generateTableTemplate([
       {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      },
+      {
         name   : 'type',
         type   : 'none | circle | square | decimal',
         default: 'circle'
+      }
+    ])}
+    <h4>Item</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
       }
     ])}
   </div>

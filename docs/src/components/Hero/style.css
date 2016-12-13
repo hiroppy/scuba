@@ -4,6 +4,7 @@
 }
 
 .title {
+  margin: 0;
   font-size: 5rem;
   font-weight: 100;
   text-align: center;

@@ -100,7 +100,7 @@ const Grids = () => (
       to Grid or Cell.
     </p>
     <p>
-      The defaults are
+      The default is
       <code>top</code>
       .
     </p>
@@ -137,7 +137,11 @@ const Grids = () => (
     {generateCodeTemplate(sampleCode3, 'html')}
 
     <h3>Responsive</h3>
-    <p>[WIP]</p>
+    <p>
+      Breakpoints are
+      <code>40em</code>
+      (wip).
+    </p>
     <p>Responsive is valid by default.</p>
     <Grid
       className={styles.grid}
@@ -154,6 +158,21 @@ const Grids = () => (
     <h3>Properties</h3>
     <h4>Grid</h4>
     {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      },
       {
         name   : 'align',
         type   : 'top | bottom | center',
@@ -173,6 +192,21 @@ const Grids = () => (
     <h4>Cell</h4>
     {generateTableTemplate([
       {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'children',
+        type   : 'React.Element<*>',
+        default: ''
+      },
+      {
         name   : 'ratio',
         type   : 'number',
         default: 'auto'
@@ -189,8 +223,8 @@ const Grids = () => (
       },
       {
         name   : 'margin',
-        type   : 'string | number',
-        default: '0'
+        type   : 'number | string',
+        default: '0px'
       },
       {
         name   : 'textAlign',

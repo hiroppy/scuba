@@ -9,7 +9,7 @@ export DrawersSection from './Drawers';
 export AvatarsSection from './Avatars';
 export ButtonsSection from './Buttons';
 export ContainerSection from './Container';
-export TypographySection from './Typography';
+export BlockquotesSection from './Blockquotes';
 export SelectBoxesSection from './SelectBoxes';
 
 export default from './Components';

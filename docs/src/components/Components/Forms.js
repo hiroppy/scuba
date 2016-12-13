@@ -30,6 +30,30 @@ const Forms = () => (
     />
     {generateCodeTemplate(sampleCode1)}
     <h3>Properties</h3>
+    <h4>TextField</h4>
+    {generateTableTemplate([
+      {
+        name   : 'className',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'style',
+        type   : 'Object',
+        default: ''
+      },
+      {
+        name   : 'placeholder',
+        type   : 'string',
+        default: ''
+      },
+      {
+        name   : 'onChange',
+        type   : 'Function',
+        default: ''
+      }
+    ])}
+    <h4>TextArea</h4>
     {generateTableTemplate([
       {
         name   : 'className',

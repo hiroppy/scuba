@@ -18,7 +18,7 @@ const sampleCode = `import {Avatar} from 'scuba';
 
 const Avatars = () => (
   <div>
-    <h2 id="avatars">Avatars</h2>
+    <h2>Avatars</h2>
     <p>Avatars can be used to images and letters(or icon, etc).</p>
     <p>
       The default
@@ -42,6 +42,7 @@ const Avatars = () => (
     </div>
     {generateCodeTemplate(sampleCode)}
     <h3>Properties</h3>
+    <h4>Avatar</h4>
     {generateTableTemplate([
       {
         name   : 'className',
