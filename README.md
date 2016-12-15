@@ -1,7 +1,3 @@
-<div align="center">
-<img src="./docs/images/readme_icon.png" width="160" height="160" />
-</div>
-
 # Scuba
 
 <strong>UI components with color unity that built by React.</strong>
