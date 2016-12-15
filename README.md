@@ -9,6 +9,7 @@ see: https://abouthiroppy.github.io/scuba/
 [![Build status](https://ci.appveyor.com/api/projects/status/hrk1vpy5gsxl8r37/branch/master?svg=true)](https://ci.appveyor.com/project/abouthiroppy/scuba/branch/master)
 [![codecov](https://codecov.io/gh/abouthiroppy/scuba/branch/master/graph/badge.svg)](https://codecov.io/gh/abouthiroppy/scuba)
 [![dependencies Status](https://david-dm.org/abouthiroppy/scuba/status.svg)](https://david-dm.org/abouthiroppy/scuba)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 # Getting Started
 
