@@ -1,6 +1,6 @@
 # Scuba
 
-<strong>UI components with color unity that built by React.</strong>
+<strong>UI components with a color unity that built by React.</strong>
 
 see: https://abouthiroppy.github.io/scuba/
 

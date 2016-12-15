@@ -49,7 +49,7 @@ const ContainerSection = () => (
     </p>
     <p>If you do not like it, you can specify a color.</p>
     {generateCodeTemplate(sampleCode0, 'javascript', 'customization')}
-    <h3>capsule</h3>
+    <h3>Capsule</h3>
     <p>The theme and subColor are reflected only in Container.</p>
     <Grid>
       <Cell textAlign="left" margin="10px">
@@ -74,7 +74,7 @@ const ContainerSection = () => (
         </Paper>
       </Cell>
     </Grid>
-    <h3>Syntax highlighting for Code component</h3>
+    <h3>Syntax highlighting for Code Component</h3>
     <p>
       If you specify
       <code>codeTheme</code>
