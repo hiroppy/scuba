@@ -59,6 +59,8 @@ class SelectBox extends React.Component<DefaultProps, CommonProps & SelectBoxPro
   }
 
   onClickSelectColumn(e: any) {
+    if (!e.nativeEvent.target.className.includes('scuba-selectitem')) return;
+
     const currentSelectedLabel = e.nativeEvent.target;
     const text  = currentSelectedLabel.textContent;
     const value = currentSelectedLabel.getAttribute('data-value');
