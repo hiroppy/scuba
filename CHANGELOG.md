@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/abouthiroppy/scuba/compare/v0.1.0...v0.1.1) (2016-12-28)
+
+
+### Bug Fixes
+
+* **SelectBox:** fixed bug when selecting ([18c9f11](https://github.com/abouthiroppy/scuba/commit/18c9f11))
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/abouthiroppy/scuba/compare/v0.0.17...v0.1.0) (2016-12-15)
 
