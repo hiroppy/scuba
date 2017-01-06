@@ -55,7 +55,7 @@
     "flow-typed": "^2.0.0",
     "jest": "^17.0.3",
     "nyc": "^10.0.0",
-    "react-addons-test-utils": "^15.4.1"
+    "react-addons-test-utils": "^15.4.2"
   },
   "jest": {
     "moduleFileExtensions": [
